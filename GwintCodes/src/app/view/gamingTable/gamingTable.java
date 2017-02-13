@@ -5,8 +5,8 @@ package app.view.gamingTable;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 
@@ -32,11 +32,18 @@ public class gamingTable extends Application {
     private void mainScene() {
         anchorPane = new AnchorPane();
 
-        String css = this.getClass().getResource("gamingTable.css").toExternalForm();
         Scene scene = new Scene(drawingMainElementsGamingTable(anchorPane));
-        scene.getStylesheets().add(css);
 
+      /*
+        String css = this.getClass().getResource("gamingTable.css").toExternalForm();
+        scene.getStylesheets().add(css);
         anchorPane.getStyleClass().add("anchorrpane");
+        */
+
+        //тестовый фон для построения макета!
+        Image image = new Image(getClass().getResource("images/tableTimes.png").toExternalForm());
+
+        anchorPane.setBackground(new Background(new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(1366.0, 768.0, true, true, true, false))));
 
         stage.setScene(scene);
     }
@@ -45,7 +52,7 @@ public class gamingTable extends Application {
         anchorPane.setPrefSize(1366, 768);
 
         enemyLider = new Pane();
-        
+
         //пока тестирую буду использовать прямые ссылки, в будущем будет изображения из проекта.
         enemyLider.setStyle("-fx-background-image: url(\"http://vignette3.wikia.nocookie.net/witcher/images/a/a0/290px-Tw3_gwent_card_face_Mysterious_Elf.png/revision/latest?cb=20151026174236\"); fx-background-repeat: no-repeat;-fx-background-size: contain;");
         enemyLider.setPrefSize(290 / 2, 533 / 2);
