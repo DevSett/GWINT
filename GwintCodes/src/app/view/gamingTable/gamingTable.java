@@ -10,8 +10,9 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 
+
 public class gamingTable extends Application {
-    private AnchorPane anchorPane;
+    private Pane pane;
     private Stage stage;
     private Pane enemyLider;
     private Pane frendlyLider;
@@ -30,55 +31,67 @@ public class gamingTable extends Application {
     }
 
     private void mainScene() {
-        anchorPane = new AnchorPane();
+        pane = new AnchorPane();
 
-        Scene scene = new Scene(drawingMainElementsGamingTable(anchorPane));
+        Scene scene = new Scene(drawingMainElementsGamingTable(pane));
 
       /*
         String css = this.getClass().getResource("gamingTable.css").toExternalForm();
         scene.getStylesheets().add(css);
-        anchorPane.getStyleClass().add("anchorrpane");
+        pane.getStyleClass().add("anchorrpane");
         */
 
         //тестовый фон для построения макета!
         Image image = new Image(getClass().getResource("images/tableTimes.png").toExternalForm());
 
-        anchorPane.setBackground(new Background(new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(1366.0, 768.0, true, true, true, false))));
+        pane.setBackground(new Background(new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(1366.0, 768.0, true, true, true, false))));
 
         stage.setScene(scene);
     }
 
-    private AnchorPane drawingMainElementsGamingTable(AnchorPane anchorPane) {
-        anchorPane.setPrefSize(1366, 768);
+    double size;
 
-        enemyLider = new Pane();
+    private Pane drawingMainElementsGamingTable(Pane pane) {
+        pane.setPrefSize(1366, 768);
 
-        //пока тестирую буду использовать прямые ссылки, в будущем будет изображения из проекта.
-        enemyLider.setStyle("-fx-background-image: url(\"http://vignette3.wikia.nocookie.net/witcher/images/a/a0/290px-Tw3_gwent_card_face_Mysterious_Elf.png/revision/latest?cb=20151026174236\"); fx-background-repeat: no-repeat;-fx-background-size: contain;");
-        enemyLider.setPrefSize(290 / 2, 533 / 2);
+        //создание лидеров
+        Image image = new Image("http://vignette3.wikia.nocookie.net/witcher/images/a/a0/290px-Tw3_gwent_card_face_Mysterious_Elf.png/revision/latest?cb=20151026174236");
 
+        enemyLider = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),false);
 
-        /* p.setEventDispatcher(new EventDispatcher() {
-            @Override
-            public Event dispatchEvent(Event event, EventDispatchChain tail) {
-                System.out.println(event.getTarget());
-                return event;
-            }
-        });*/
+        enemyLider.setLayoutX(10);
+        enemyLider.setLayoutY(10);
 
-        AnchorPane.setTopAnchor(enemyLider, 10.0);
-        AnchorPane.setLeftAnchor(enemyLider, 10.0);
-        anchorPane.getChildren().add(enemyLider);
+        pane.getChildren().add(enemyLider);
 
-        frendlyLider = new Pane();
-        frendlyLider.setStyle("-fx-background-image: url(\"http://vignette3.wikia.nocookie.net/witcher/images/a/a0/290px-Tw3_gwent_card_face_Mysterious_Elf.png/revision/latest?cb=20151026174236\"); fx-background-repeat: no-repeat;-fx-background-size: contain;");
-        frendlyLider.setPrefSize(290 / 2, 533 / 2);
+        frendlyLider = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
 
-        AnchorPane.setBottomAnchor(frendlyLider, 10.0);
-        AnchorPane.setLeftAnchor(frendlyLider, 10.0);
-        anchorPane.getChildren().add(frendlyLider);
+        frendlyLider.setLayoutX(10);
+        frendlyLider.setLayoutY(pane.getPrefHeight() - frendlyLider.getPrefHeight() - 10);
 
-        return anchorPane;
+        pane.getChildren().add(frendlyLider);
+
+        //колода(тестирование)
+       /* HBox rectangle = new HBox();
+        Pane a = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane b = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane c = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane a1 = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane b1 = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane c1 = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane a2 = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane b2 = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane c2 = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane a3 = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane b3 = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+        Pane c3 = new card(image,290,533,0.7,2,pane.getPrefWidth(),pane.getPrefHeight(),true);
+
+        rectangle.setLayoutX(pane.getPrefWidth()/2);
+        rectangle.setLayoutY(pane.getPrefHeight()-a.getPrefHeight()-10);
+        rectangle.getChildren().addAll(a,b,c,a1,b1,c1,a2,b2,c2,a3,b3,c3);
+        pane.getChildren().add(rectangle);*/
+
+        return pane;
     }
 
 }
