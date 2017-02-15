@@ -1,55 +1,44 @@
 package app.view.gamingTable;
 
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.Timeline;
-import javafx.scene.Node;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
-import javafx.util.Duration;
 
 /**
  * Created by kills on 14.02.2017.
  */
-public class card extends Pane {
+public class GamingCard extends Pane {
     private Image image;
     private double sizeX;
     private double sizeY;
-    private double perSecondUpdate;
-    private double parentSizeX;
-    private double parentSizeY;
     private int del;
-    private Timeline animation;
-    private double checkLocation;
-    private boolean up;
 
-    public card(Image image, double sizeX, double sizeY, double updateAnimation, int del, double sizeParentX, double sizeParentY, boolean upOrDown) {
+//    private Timeline animation;
+
+
+    public GamingCard(Image image, double sizeX, double sizeY, int del) {
         this.image = image;
         this.sizeX = sizeX;
         this.sizeY = sizeY;
         this.del = del;
-        parentSizeX = sizeParentX;
-        parentSizeY = sizeParentY;
-        perSecondUpdate = updateAnimation;
-        this.up = upOrDown;
+
         setBackground(new Background
                 (new BackgroundImage(
                         image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER,
                         new BackgroundSize(sizeX, sizeY, true, true, true, false))));
         setPrefSize(sizeX / del, sizeY / del);
-        setOnMouseClicked(event -> {
-            animation.play();
-            for (Node node : getParent().getChildrenUnmodifiable()) {
-                if (!node.equals(this)) node.setDisable(true);
-            }
+//        setOnMouseClicked(event -> {
+//            animation.play();
+//            for (Node node : getParent().getChildrenUnmodifiable()) {
+//                if (!node.equals(this)) node.setDisable(true);
+//            }
+//
+//        });
 
-        });
-
-        animationPlay();
+//        animationPlay();
 
     }
 
-    public void animationPlay() {
+    /*public void animationPlay() {
         if (up) parentSizeY = parentSizeY / -1;
         else parentSizeY = parentSizeY - getPrefHeight() * del;
         KeyFrame keyFrameStartPosition = new KeyFrame(Duration.seconds(perSecondUpdate),
@@ -85,5 +74,5 @@ public class card extends Pane {
                         keyFrameStartPosition);
             }
         });
-    }
+    }*/
 }
