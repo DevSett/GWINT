@@ -9,6 +9,8 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+
 
 public class GamingTable extends Application {
     private Pane pane;
@@ -31,8 +33,8 @@ public class GamingTable extends Application {
 
     private void mainScene() {
         pane = new AnchorPane();
-
-        Scene scene = new Scene(drawingMainElementsGamingTable(pane));
+        drawingMainElementsGamingTable();
+        Scene scene = new Scene(pane);
 
       /*
         String css = this.getClass().getResource("GamingTable.css").toExternalForm();
@@ -50,7 +52,7 @@ public class GamingTable extends Application {
 
     double size;
 
-    private Pane drawingMainElementsGamingTable(Pane pane) {
+    private void drawingMainElementsGamingTable() {
         pane.setPrefSize(1366, 768);
 
         //создание лидеров
@@ -58,7 +60,6 @@ public class GamingTable extends Application {
 
         enemyLider = new GamingCard(image, 290, 533, 2);
 
-        setAnimationOnCard(enemyLider,true);
         enemyLider.setLayoutX(10);
         enemyLider.setLayoutY(10);
 
@@ -68,61 +69,43 @@ public class GamingTable extends Application {
 
         frendlyLider.setLayoutX(10);
         frendlyLider.setLayoutY(pane.getPrefHeight() - frendlyLider.getPrefHeight() - 10);
-        setAnimationOnCard(frendlyLider,false);
 
         pane.getChildren().addAll(frendlyLider);
 
 
         //колода(тестирование)
-        GamingCard a = new GamingCard(image, 290, 533, 2);
-        GamingCard b = new GamingCard(image, 290, 533, 2);
-        GamingCard c = new GamingCard(image, 290, 533, 2);
-        GamingCard a1 = new GamingCard(image, 290, 533, 2);
-        GamingCard b1 = new GamingCard(image, 290, 533, 2);
-        GamingCard c1 = new GamingCard(image, 290, 533, 2);
-        GamingCard a2 = new GamingCard(image, 290, 533, 2);
-        GamingCard b2 = new GamingCard(image, 290, 533, 2);
-        GamingCard c2 = new GamingCard(image, 290, 533, 2);
-        GamingCard a3 = new GamingCard(image, 290, 533, 2);
-        GamingCard b3 = new GamingCard(image, 290, 533, 2);
-        GamingCard c3 = new GamingCard(image, 290, 533, 2);
+        ArrayList<GamingCard> cards = new ArrayList<>();
+        int locale = 0;
+        while (cards.size() != 11) {
+            cards.add(new GamingCard(image, 290, 533, 4));
+            if (cards.size() != 1) {
+                GamingCard card = cards.get(cards.size() - 1);
+                card.setLayoutX(locale += 50);
 
-        a.setTranslateX(100);
-        CardsHand cardsHand = new CardsHand(700, 200);
+            }
+        }
+        double y = (1366 - 600) / 2;
+        CardsHand cardsHand = new CardsHand(600, 200);
         AnchorPane.setBottomAnchor(cardsHand, 10.0);
-        double y = (1366 - 700) / 2;
         AnchorPane.setLeftAnchor(cardsHand, y);
         AnchorPane.setRightAnchor(cardsHand, y);
-        cardsHand.add(a);
-        cardsHand.add(b);
-        cardsHand.add(c);
-        cardsHand.add(a1);
-        cardsHand.add(b1);
-        cardsHand.add(c1);
-        cardsHand.add(a2);
-        cardsHand.add(b2);
-        cardsHand.add(c2);
-        cardsHand.add(a3);
-        cardsHand.add(b3);
-        cardsHand.add(c3);
-        pane.getChildren().add(cardsHand);
-        //        rectangle.setLayoutX(pane.getPrefWidth()/2);
-//        rectangle.setLayoutY(pane.getPrefHeight()-a.getPrefHeight()-10);
-//        rectangle.getChildren().addAll(a,b,c,a1,b1,c1,a2,b2,c2,a3,b3,c3);
-//        pane.getChildren().add(rectangle);
+        cardsHand.addAll(cards);
 
-        return pane;
+        AnimationCardTest test = new AnimationCardTest(enemyLider,2,pane.getPrefWidth(),pane.getPrefHeight(),0.15);
+        enemyLider.setOnMouseClicked(event -> test.animationStart());
+        pane.getChildren().add(cardsHand);
+        pane.getChildren().add(test);
     }
-    private void setAnimationOnCard(Pane pane,boolean up)
-    {
+
+    private void setAnimationOnCard(Pane pane) {
         AnimationCard enemyAnimationCard = new AnimationCard(
                 pane,
-                pane.getWidth(),
-                pane.getHeight(),
-                up,
+                this.pane.getPrefWidth(),
+                this.pane.getPrefHeight(),
                 2,
                 0.7);
-       pane.setOnMouseClicked(event -> enemyAnimationCard.animationStart());
+        pane.setOnMouseClicked(event -> {
+            if (event.getButton().name().equals("SECONDARY")) enemyAnimationCard.animationStart();
+        });
     }
-
 }

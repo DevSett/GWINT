@@ -16,10 +16,14 @@ public class AnimationCard {
     private boolean checkLocation;
     private Timeline animation = new Timeline();
 
-    public AnimationCard(Pane card, double mainSizeX, double mainSizeY, boolean up, int del, double perSecondUpdate) {
+    public AnimationCard(Pane card, double mainSizeX, double mainSizeY, int del, double perSecondUpdate) {
 
-        if (up) mainSizeY = mainSizeY / -1;
-        else mainSizeY = mainSizeY - card.getPrefWidth() * del;
+        double transCardWigth = mainSizeX/2-card.getPrefWidth();
+        double transCardHeigt = mainSizeY/2 - card.getPrefHeight();
+        if(card.getLayoutY()>mainSizeY/2)
+        {
+            transCardHeigt = -mainSizeY/8 - card.getPrefHeight();
+        }
         checkLocation = false;
 
         keyFrameStartPosition = new KeyFrame(Duration.seconds(perSecondUpdate),
@@ -27,15 +31,17 @@ public class AnimationCard {
                 new KeyValue(card.translateYProperty(), 0),
                 new KeyValue(card.prefHeightProperty(), card.getPrefHeight()),
                 new KeyValue(card.prefWidthProperty(), card.getPrefWidth()));
+
         keyFrameCenter = new KeyFrame(Duration.seconds(perSecondUpdate),
-                new KeyValue(card.translateXProperty(), mainSizeX / del - card.getPrefWidth()),
-                new KeyValue(card.translateYProperty(), mainSizeY / del),
+                new KeyValue(card.translateXProperty(), transCardWigth),
+                new KeyValue(card.translateYProperty(), transCardHeigt),
                 new KeyValue(card.prefHeightProperty(), card.getPrefHeight() * del),
                 new KeyValue(card.prefWidthProperty(), card.getPrefWidth() * del));
         animation.getKeyFrames().clear();
         animation.getKeyFrames().addAll(
                 keyFrameCenter
         );
+
         animation.setOnFinished(event1 -> {
             animation.stop();
             if (checkLocation) {
