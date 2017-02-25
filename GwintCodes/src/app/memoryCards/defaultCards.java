@@ -10,17 +10,18 @@ import java.util.ArrayList;
  */
 public class defaultCards {
     private ArrayList<defaultCard> cards = new ArrayList<>();
-    private int id = 0;
 
     void add(int damage, String description, CardRare rare, CardColor cardColor) {
-        cards.add(new defaultCard(id++, damage, description, rare, cardColor));
+        cards.add(new defaultCard(cards.size(), damage, description, rare, cardColor));
     }
 
     void add(defaultCard card) {
-        id++;
         cards.add(card);
     }
-
+    void remove(int id)
+    {
+        cards.remove(id);
+    }
     defaultCard[] get() {
         defaultCard[] cards = new defaultCard[this.cards.size()];
         int index = 0;

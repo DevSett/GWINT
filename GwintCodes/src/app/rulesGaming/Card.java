@@ -1,7 +1,4 @@
-package app.memoryCards;
-
-import app.rulesGaming.CardColor;
-import app.rulesGaming.CardRare;
+package app.rulesGaming;
 
 /**
  * Created by kills on 16.02.2017.
@@ -13,7 +10,7 @@ public class Card {
     private CardRare rare;
     private CardColor color;
 
-    public Card(int id, int damage,String description,CardRare rare,CardColor color)
+    public Card(int id, int damage, String description, CardRare rare, CardColor color)
     {
         this.id=id;
         this.damage=damage;

@@ -1,8 +1,4 @@
-package app;
-
-import app.rulesGaming.Card;
-import app.rulesGaming.CardColor;
-import app.rulesGaming.CardRare;
+package app.rulesGaming;
 
 import java.util.ArrayList;
 
@@ -11,15 +7,17 @@ import java.util.ArrayList;
  */
 public class Cards {
     private ArrayList<Card> cards = new ArrayList<>();
-    private int id = 0;
 
-    void add(int damage, String description, CardRare rare, CardColor cardColor) {
-        cards.add(new Card(id++, damage, description, rare, cardColor));
+    void add(int id, int damage, String description, CardRare rare, CardColor cardColor) {
+        cards.add(new Card(id, damage, description, rare, cardColor));
     }
 
     void add(Card card) {
-        id++;
         cards.add(card);
+    }
+
+    void remove(int index) {
+        cards.remove(index);
     }
 
     Card[] get() {

@@ -6,14 +6,14 @@ import app.rulesGaming.CardRare;
 /**
  * Created by kills on 16.02.2017.
  */
-public class Card {
+public class defaultCard {
     private int id;
     private int damage;
     private String description;
     private CardRare rare;
     private CardColor color;
 
-    public Card(int id, int damage,String description,CardRare rare,CardColor color)
+    public defaultCard(int id, int damage, String description, CardRare rare, CardColor color)
     {
         this.id=id;
         this.damage=damage;
