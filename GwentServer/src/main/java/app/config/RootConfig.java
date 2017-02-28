@@ -22,7 +22,6 @@ public class RootConfig {
 
     public RootConfig() {
         configLobbi = new jsonConfigLobbi();
-
         configGame = new jsonConfigGame();
     }
 
@@ -34,11 +33,18 @@ public class RootConfig {
         HashMap map = new HashMap();
 
         switch ((String) arrayMessage[1]) {
+            case CommandGwent.NICKNAME:
+            {
+                configLobbi.updateNickname((String )arrayMessage[0],(String)arrayMessage[2]);
+                map.put("id","all");
+                map.put("message",message);
+                return map;
+            }
             case CommandGwent.CONNECTION: {
 
                 addLobbi(
                         (String) arrayMessage[0],
-                        (String) arrayMessage[2]
+                        null
                 );
                 map.put("id", arrayMessage[0]);
                 map.put("message", getConfigLobbi());
@@ -84,7 +90,20 @@ public class RootConfig {
                 map.put("message",message);
                 return map;
             }
-
+            case CommandGwent.REMOVELOBBI:
+            {
+               updateLobbi((String) arrayMessage[0],-1,-1);
+                map.put("id","all");
+                map.put("message",message);
+                return map;
+            }
+            case CommandGwent.DISCONNECTEDLOBBI:
+            {
+                updateLobbi((String) arrayMessage[0],-1,-1);
+                map.put("id","all");
+                map.put("message",message);
+                return map;
+            }
             /*case CommandGwent.DAMAGE: {
                 return CommandGwent.damage(arrayMessage);
             }*/
@@ -111,10 +130,9 @@ public class RootConfig {
     private Object[] getToArrayMessage(String message) {
         ArrayList listMessage = new ArrayList();
         StringTokenizer stringTokenizer = new StringTokenizer(message, "|");
-        String token;
 
-        while ((token = stringTokenizer.nextToken()) != null) {
-            listMessage.add(token);
+        while (stringTokenizer.hasMoreElements()) {
+            listMessage.add(stringTokenizer.nextElement());
         }
         return listMessage.toArray();
     }
@@ -127,7 +145,6 @@ public class RootConfig {
                 -1
         );
     }
-
     private void removeElementLobbi(String id) {
         configLobbi.remove(id);
     }

@@ -5,7 +5,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Created by kills on 05.11.2016.
@@ -86,7 +86,20 @@ class jsonConfigLobbi {
     }
 
     protected String getJson() {
+        System.out.println("json:"+array.toJSONString());
+
         return array.toJSONString();
+    }
+
+    public boolean updateNickname(String id, String nickName) {
+        for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
+            JSONObject obs = (JSONObject) array.get(indexParseJs);
+            if (id.equals(obs.get("id"))) {
+                obs.replace("nickname", nickName);
+            return true;
+            }
+        }
+        return false;
     }
 }
 
