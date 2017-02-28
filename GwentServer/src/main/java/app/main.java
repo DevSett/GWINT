@@ -13,7 +13,7 @@ public class main {
     public static void main(String[] args) throws DeploymentException,
             IOException {
         Map<String, Object> properties = Collections.emptyMap();
-        org.glassfish.tyrus.server.Server server = new org.glassfish.tyrus.server.Server("10.1.1.10", 8732, "/ws", properties,
+        org.glassfish.tyrus.server.Server server = new org.glassfish.tyrus.server.Server(args[0], Integer.parseInt(args[1]), "/ws", properties,
                 Server.class);
         try {
             server.start();
@@ -22,6 +22,4 @@ public class main {
             server.stop();
         }
     }
-
-
 }
