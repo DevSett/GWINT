@@ -1,5 +1,6 @@
 package app;
 
+import app.view.menuGame.Menu;
 import app.view.optionGame.OptionController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -8,31 +9,45 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 /**
  * Created by kills on 01.03.2017.
  */
-public class MainApp extends Application{
+public class MainApp extends Application {
 
-
-
+    private Stage stage;
+    private Menu menu;
+    public static double del;
     @Override
-    public void start(Stage primaryStage) throws Exception {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/optionGame/option.fxml"));
+    public void start(Stage primaryStage) {
 
-             AnchorPane anchorPane = (AnchorPane) loader.load();
+        stage = primaryStage;
+        try {
+            optionPane();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-            OptionController opt = loader.getController();
+    }
+
+    public void optionPane() throws IOException {
+
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(MainApp.class.getResource("view/optionGame/option.fxml"));
+
+        AnchorPane anchorPane = (AnchorPane) loader.load();
+
+        OptionController opt = loader.getController();
         Image image = new Image(getClass().getResource("view/gamingTable/images/tableTimes.png").toExternalForm());
-        opt.setMainApp(this,image);
+        opt.setMainApp(this, image);
 
-            primaryStage = new Stage();
-            Scene scene = new Scene(anchorPane);
-            primaryStage.setScene(scene);
-            primaryStage.setResizable(false);
-            primaryStage.setAlwaysOnTop(true);
-            primaryStage.show();
-
+        stage = new Stage();
+        Scene scene = new Scene(anchorPane);
+        stage.setScene(scene);        stage.getIcons().add(new Image(getClass().getResourceAsStream("hearts.png")));
+        stage.setResizable(false);
+        stage.setAlwaysOnTop(true);
+        stage.show();
     }
 
     public static void main(String[] args) {
@@ -40,6 +55,9 @@ public class MainApp extends Application{
     }
 
 
-    public void playGame(double del) {
+    public void playGame(double del, boolean selected) {
+        this.del = del;
+        Menu menu = new Menu(del,selected,stage.getIcons().get(0));
     }
+
 }

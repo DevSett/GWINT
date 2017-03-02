@@ -3,6 +3,7 @@ package app.view.optionGame;
 import app.MainApp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
@@ -13,22 +14,13 @@ import javafx.stage.Stage;
  */
 public class OptionController {
     MainApp mainApp;
-    int[] sizesX = {1920, 1600, 1366, 1280, 1024, 960, 864, 720, 640};
-    int[] sizeY = {1080, 900, 768, 720, 576, 540, 486, 405, 360};
-    double[] del = {
-            sizesX[0] / sizesX[0],
-            sizesX[0] / sizesX[1],
-            sizesX[0] / sizesX[2],
-            sizesX[0] / sizesX[3],
-            sizesX[0] / sizesX[4],
-            sizesX[0] / sizesX[5],
-            sizesX[0] / sizesX[6],
-            sizesX[0] / sizesX[7],
-            sizesX[0] / sizesX[8],
-    };
+    ScreenResolution screenResolution = new ScreenResolution();
 
     @FXML
     private Pane panePicture;
+
+    @FXML
+    private CheckBox checkFullScreen;
 
     @FXML
     private ChoiceBox<String> boxSize;
@@ -40,16 +32,17 @@ public class OptionController {
 
     @FXML
     void handlePlay(ActionEvent event) {
-        mainApp.playGame(getDel());
+        mainApp.playGame(getDel(),checkFullScreen.isSelected());
         Stage stage = (Stage) boxSize.getScene().getWindow();
         stage.close();
     }
 
     private double getDel() {
-        for (int index = 0; index < sizesX.length; index++) {
+        for (int index = 0; index < screenResolution.SIZEX.length; index++) {
             if (index != boxSize.getSelectionModel().getSelectedIndex())
                 continue;
-            return this.del[index];
+            System.out.println(screenResolution.DEL[index]);
+            return screenResolution.DEL[index];
         }
         return 1;
     }
@@ -57,16 +50,18 @@ public class OptionController {
     @FXML
     void initialize() {
         boxSize.getItems().addAll(
-                sizesX[0] + "x" + sizeY[0],
-                sizesX[1] + "x" + sizeY[1],
-                sizesX[2] + "x" + sizeY[2],
-                sizesX[3] + "x" + sizeY[3],
-                sizesX[4] + "x" + sizeY[4],
-                sizesX[5] + "x" + sizeY[5],
-                sizesX[6] + "x" + sizeY[6],
-                sizesX[7] + "x" + sizeY[7],
-                sizesX[8] + "x" + sizeY[8]
+               screenResolution.SIZEX[0] + "x" + screenResolution.SIZEY[0],
+                screenResolution.SIZEX[1] + "x" + screenResolution.SIZEY[1],
+                screenResolution.SIZEX[2] + "x" + screenResolution.SIZEY[2],
+                screenResolution.SIZEX[3] + "x" + screenResolution.SIZEY[3],
+                screenResolution.SIZEX[4] + "x" + screenResolution.SIZEY[4],
+                screenResolution.SIZEX[5] + "x" + screenResolution.SIZEY[5],
+                screenResolution.SIZEX[6] + "x" + screenResolution.SIZEY[6],
+                screenResolution.SIZEX[7] + "x" + screenResolution.SIZEY[7],
+                screenResolution.SIZEX[8] + "x" + screenResolution.SIZEY[8]
         );
+        boxSize.getSelectionModel().select(1);
+        checkFullScreen.setSelected(true);
 
     }
 
