@@ -1,4 +1,4 @@
-package app.webNetwork;
+package app.webNetwork.classes;
 
 import javax.websocket.ContainerProvider;
 import javax.websocket.DeploymentException;

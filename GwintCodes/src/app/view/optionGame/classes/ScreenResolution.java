@@ -1,4 +1,4 @@
-package app.view.optionGame;
+package app.view.optionGame.classes;
 
 /**
  * Created by kills on 02.03.2017.

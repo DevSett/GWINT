@@ -1,10 +1,11 @@
 package app;
 
-import app.view.menuGame.Menu;
-import app.view.optionGame.OptionController;
+import app.view.menuGame.classes.Menu;
+import app.view.optionGame.classes.OptionController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -34,7 +35,7 @@ public class MainApp extends Application {
     public void optionPane() throws IOException {
 
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(MainApp.class.getResource("view/optionGame/option.fxml"));
+        loader.setLocation(MainApp.class.getResource("view/optionGame/classes/option.fxml"));
 
         AnchorPane anchorPane = (AnchorPane) loader.load();
 
@@ -44,7 +45,7 @@ public class MainApp extends Application {
 
         stage = new Stage();
         Scene scene = new Scene(anchorPane);
-        stage.setScene(scene);        stage.getIcons().add(new Image(getClass().getResourceAsStream("hearts.png")));
+        stage.setScene(scene);        stage.getIcons().add(new Image(getClass().getResourceAsStream("images/hearts.png")));
         stage.setResizable(false);
         stage.setAlwaysOnTop(true);
         stage.show();
@@ -57,7 +58,12 @@ public class MainApp extends Application {
 
     public void playGame(double del, boolean selected) {
         this.del = del;
-        Menu menu = new Menu(del,selected,stage.getIcons().get(0));
+        Menu menu = new Menu(selected,stage.getIcons().get(0));
+        menu.setMainApp(this);
     }
 
+    public void lobbi(TextField fieldIp, TextField fieldPort, TextField fieldName) {
+
+
+    }
 }

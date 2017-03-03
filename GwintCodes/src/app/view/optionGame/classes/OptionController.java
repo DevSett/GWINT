@@ -1,4 +1,4 @@
-package app.view.optionGame;
+package app.view.optionGame.classes;
 
 import app.MainApp;
 import javafx.event.ActionEvent;
