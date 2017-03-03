@@ -25,11 +25,11 @@ public class Menu {
     private TextField fieldName;
     private MainApp mainApp;
 
-    public Menu(boolean fullscreen, Image image) {
+    public Menu(Image image) {
         this.stage = new Stage();
         stage.setMaxHeight(1080 / MainApp.del);
         stage.setMaxWidth(1920 / MainApp.del);
-        stage.setFullScreen(fullscreen);
+        stage.setFullScreen(MainApp.fullscreen);
         stage.setResizable(false);
         stage.getIcons().add(image);
         mainPane();
@@ -131,7 +131,7 @@ public class Menu {
         hBox.getChildren().addAll(fieldIp, fieldPort);
         hBox.setAlignment(Pos.CENTER);
 
-        vBox.getChildren().addAll(hBox,hBox3,hBox2);
+        vBox.getChildren().addAll(hBox, hBox3, hBox2);
         pane.setCenter(vBox);
 
         vBox.setAlignment(Pos.CENTER);
@@ -162,7 +162,7 @@ public class Menu {
     }
 
     private void actionAcceptButton() {
-        mainApp.lobbi(fieldIp, fieldPort, fieldName);
+        mainApp.lobbi(fieldIp.getText(), fieldPort.getText(), fieldName.getText(),stage);
     }
 
 

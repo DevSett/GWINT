@@ -1,7 +1,9 @@
 package app;
 
+import app.view.lobbiGame.classes.Lobbi;
 import app.view.menuGame.classes.Menu;
 import app.view.optionGame.classes.OptionController;
+import app.webNetwork.classes.StartClient;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -19,6 +21,7 @@ public class MainApp extends Application {
 
     private Stage stage;
     private Menu menu;
+    public static boolean fullscreen;
     public static double del;
     @Override
     public void start(Stage primaryStage) {
@@ -58,12 +61,18 @@ public class MainApp extends Application {
 
     public void playGame(double del, boolean selected) {
         this.del = del;
-        Menu menu = new Menu(selected,stage.getIcons().get(0));
+        fullscreen=selected;
+        Menu menu = new Menu(stage.getIcons().get(0));
         menu.setMainApp(this);
     }
 
-    public void lobbi(TextField fieldIp, TextField fieldPort, TextField fieldName) {
-
-
+    public void menuGame()
+    {
+        Menu menu = new Menu(stage.getIcons().get(0));
+        menu.setMainApp(this);
+    }
+    public void lobbi(String fieldIp, String fieldPort, String fieldName,Stage stage) {
+        Lobbi lobbi = new Lobbi(stage);
+        StartClient client = new StartClient(fieldIp,fieldPort,fieldName);
     }
 }
