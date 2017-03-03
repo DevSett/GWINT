@@ -39,7 +39,7 @@ public class Menu {
         pane = new BorderPane();
         pane.setPrefSize(stage.getMaxWidth(), stage.getMaxHeight());
 
-        Image image = new Image(getClass().getResource("images/background.jpg").toExternalForm());
+        Image image = new Image(MainApp.class.getResource("view/menuGame/images/background.jpg").toExternalForm());
         pane.setBackground(new Background(
                 new BackgroundImage(
                         image,
@@ -65,7 +65,7 @@ public class Menu {
 
     private void showButton() {
         pane.getChildren().clear();
-        pane.getStylesheets().add(getClass().getResource("button.css").toExternalForm());
+        pane.getStylesheets().add(MainApp.class.getResource("view/menuGame/button.css").toExternalForm());
 
         singlePlay = singleButton();
         singlePlay.setId("single-button");
