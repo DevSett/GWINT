@@ -17,7 +17,6 @@ public class Client {
 
     @OnMessage
     public void onMessage(String message) {
-        System.out.printf("Response: %s%n", message);
     }
 
     @OnClose

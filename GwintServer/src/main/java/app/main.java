@@ -12,7 +12,7 @@ import java.util.Map;
  * Created by kills on 25.02.2017.
  */
 public class main {
-static  RootConfig rootConfig = new RootConfig();
+static RootConfig rootConfig = new RootConfig();
 
     public static void main(String[] args) throws DeploymentException,
             IOException {

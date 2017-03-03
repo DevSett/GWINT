@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="GwentServer" />
+        <module name="GwintServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="GwentServer" target="1.8" />
+      <module name="GwintServer" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

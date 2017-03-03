@@ -6,17 +6,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/view/lobbiGame/classes/Lobbi.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/webNetwork/json/Command.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GwintCodes/app/webNetwork/classes/start$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GwintCodes/app/webNetwork/classes/start$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GwintCodes/app/webNetwork/classes/start.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/webNetwork/classes/start.java" afterPath="$PROJECT_DIR$/src/app/webNetwork/classes/StartClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GwintCodes/app/MainApp.class" afterPath="$PROJECT_DIR$/out/production/GwintCodes/app/MainApp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GwintCodes/app/view/menuGame/classes/Menu.class" afterPath="$PROJECT_DIR$/out/production/GwintCodes/app/view/menuGame/classes/Menu.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/webNetwork/config/CommandGwent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/webNetwork/config/RootConfig.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/dictionaries/kills.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__javax_ejb_ejb_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__junit_junit_4_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_glassfish_grizzly_grizzly_framework_2_3_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_glassfish_grizzly_grizzly_http_2_3_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_glassfish_grizzly_grizzly_http_server_2_3_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_client_1_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_container_grizzly_client_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_container_grizzly_server_1_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_core_1_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_server_1_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_glassfish_tyrus_tyrus_spi_1_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/GwentServer.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/src/main/java/app/Server.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/src/main/java/app/config/CommandGwent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/src/main/java/app/config/HelpClass.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/src/main/java/app/config/RootConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/src/main/java/app/config/jsonConfigGame.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/src/main/java/app/config/jsonConfigLobbi.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/src/main/java/app/main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/target/classes/app/Server.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/target/classes/app/config/CommandGwent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/target/classes/app/config/HelpClass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/target/classes/app/config/RootConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/target/classes/app/config/jsonConfigGame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/target/classes/app/config/jsonConfigLobbi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../GwentServer/target/classes/app/main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/webNetwork/json/Command.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/MainApp.java" afterPath="$PROJECT_DIR$/src/app/MainApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/view/menuGame/classes/Menu.java" afterPath="$PROJECT_DIR$/src/app/view/menuGame/classes/Menu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/webNetwork/classes/Client.java" afterPath="$PROJECT_DIR$/src/app/webNetwork/classes/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/webNetwork/classes/StartClient.java" afterPath="$PROJECT_DIR$/src/app/webNetwork/classes/StartClient.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,23 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OptionController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/view/optionGame/classes/OptionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="63" column="40" lean-forward="false" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/webNetwork/classes/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,20 +183,32 @@
       <file leaf-file-name="StartClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/webNetwork/classes/StartClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1408#1409#0" expanded="true" />
+                <element signature="e#1463#1464#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Command.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/webNetwork/json/Command.java">
+      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/webNetwork/config/RootConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandGwent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/webNetwork/config/CommandGwent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="62" lean-forward="true" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -184,7 +219,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="167">
               <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-              <folding />
+              <folding>
+                <element signature="e#0#2044#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -230,10 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/app/view/gamingTable/asggsa.java" />
-        <option value="$PROJECT_DIR$/src/app/view/gamingTable/BasicOpsTest.java" />
-        <option value="$PROJECT_DIR$/src/app/view/gamingTable/test.java" />
-        <option value="$PROJECT_DIR$/src/app/view/gamingTable/PuzzlePieces.java" />
         <option value="$PROJECT_DIR$/src/app/view/gamingTable/MouseEventsSample.java" />
         <option value="$PROJECT_DIR$/src/app/view/gamingTable/gamingTable.css" />
         <option value="$PROJECT_DIR$/src/app/view/gamingTable/card.java" />
@@ -279,8 +312,12 @@
         <option value="$PROJECT_DIR$/src/app/view/lobbiGame/classes/Lobbi.java" />
         <option value="$PROJECT_DIR$/src/app/view/menuGame/classes/Menu.java" />
         <option value="$PROJECT_DIR$/src/app/MainApp.java" />
-        <option value="$PROJECT_DIR$/src/app/webNetwork/classes/StartClient.java" />
         <option value="$PROJECT_DIR$/src/app/webNetwork/json/Command.java" />
+        <option value="$PROJECT_DIR$/src/app/webNetwork/config/CommandGwent.java" />
+        <option value="$PROJECT_DIR$/src/app/webNetwork/classes/Client.java" />
+        <option value="$PROJECT_DIR$/src/app/webNetwork/classes/StartClient.java" />
+        <option value="$PROJECT_DIR$/src/app/webNetwork/classes/RootConfig.java" />
+        <option value="$PROJECT_DIR$/src/app/webNetwork/config/RootConfig.java" />
       </list>
     </option>
   </component>
@@ -361,7 +398,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="json" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,7 +606,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="C:/libForJava/json-simple-1.1.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GwentServer" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -588,6 +625,8 @@
       <recent name="C:\Users\kills\OneDrive\Документы\git\Gwint\GwintCodes\src\main\view" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app.webNetwork.classes" />
+      <recent name="app.webNetwork.config" />
       <recent name="app.rulesGaming" />
       <recent name="main.view.gamingTable" />
     </key>
@@ -643,7 +682,7 @@
     <configuration default="false" name="StartClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="app.webNetwork.classes.*" />
+          <option name="PATTERN" value="app.webNetwork.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1141,8 +1180,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/asfggsag.png" />
-    <entry file="file://$PROJECT_DIR$/src/app/view/gamingTable/MouseEventsSample.java" />
     <entry file="file://$PROJECT_DIR$/src/1.png" />
     <entry file="file://$PROJECT_DIR$/src/2.png" />
     <entry file="file://$PROJECT_DIR$/src/app/view/gamingTable/BasicOpsTest.java" />
@@ -1410,28 +1447,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/webNetwork/classes/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/webNetwork/classes/StartClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#2044#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1439,7 +1460,43 @@
     <entry file="file://$PROJECT_DIR$/src/app/webNetwork/json/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/webNetwork/config/CommandGwent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="62" lean-forward="true" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/webNetwork/classes/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/webNetwork/classes/StartClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/webNetwork/config/RootConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>

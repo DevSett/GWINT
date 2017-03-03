@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GwentServer.iml" filepath="$PROJECT_DIR$/GwentServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GwintServer.iml" filepath="$PROJECT_DIR$/GwintServer.iml" />
     </modules>
   </component>
 </project>
