@@ -1,7 +1,5 @@
 package app.webNetwork.classes;
 
-import app.webNetwork.config.RootConfig;
-
 import javax.websocket.ContainerProvider;
 import javax.websocket.DeploymentException;
 import javax.websocket.Session;
@@ -21,7 +19,6 @@ public class StartClient implements Runnable {
     private Session session;
 
     public StartClient(String fieldIp, String fieldPort, String fieldName) {
-        RootConfig rootConfig = new RootConfig();
 
         this.fieldIp = fieldIp;
         this.fieldPort = fieldPort;

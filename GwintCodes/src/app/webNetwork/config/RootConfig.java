@@ -1,5 +1,8 @@
 package app.webNetwork.config;
 
+
+import app.MainApp;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
@@ -7,14 +10,10 @@ import java.util.StringTokenizer;
 /**
  * Created by kills on 27.02.2017.
  */
-public class    RootConfig {
+public class RootConfig {
 
-    private jsonConfigGame configGame;
     private jsonConfigLobbi configLobbi;
-
-    public String getConfigGame() {
-        return configGame.getJson();
-    }
+    private MainApp mainApp;
 
     public String getConfigLobbi() {
         return configLobbi.getJson();
@@ -22,9 +21,11 @@ public class    RootConfig {
 
     public RootConfig() {
         configLobbi = new jsonConfigLobbi();
-        configGame = new jsonConfigGame();
     }
-
+    public void setConfig(String text)
+    {
+        configLobbi.setText(text);
+    }
 
     public HashMap checkCommands(String message) {
 
@@ -33,95 +34,34 @@ public class    RootConfig {
         HashMap map = new HashMap();
 
         switch ((String) arrayMessage[1]) {
-            case CommandGwent.NICKNAME:
-            {
-                configLobbi.updateNickname((String )arrayMessage[0],(String)arrayMessage[2]);
-                map.put("id","all");
-                map.put("message",message);
-                return map;
-            }
-            case CommandGwent.CONNECTION: {
+            case CommandGwent.NEW_CONNECTED: {
 
-                addLobbi(
-                        (String) arrayMessage[0],
-                        null
-                );
-                map.put("id", arrayMessage[0]);
-                map.put("message", getConfigLobbi());
-                return map;
+
 
             }
-            case CommandGwent.DISCONNECTION: {
+            case CommandGwent.LIST_CONNECTION: {
 
-                removeElementLobbi((String) arrayMessage[0]);
-                map.put("id","all");
-                map.put("message",message);
-                return map;
             }
-            case CommandGwent.CONNECTEDLOBBI: {
+            case CommandGwent.DISCONNECTED: {
 
-                updateLobbi(
-                        (String) arrayMessage[0],
-                        -1,
-                        HelpClass.toInt(arrayMessage[2])
-                );
-                map.put("id","all");
-                map.put("message",message);
-                return map;
-            }
-            case CommandGwent.CREATELOBBI: {
-
-                updateLobbi(
-                        (String) arrayMessage[0],
-                        HelpClass.toInt(arrayMessage[2]),
-                        HelpClass.toInt(arrayMessage[2])
-                );
-                map.put("id","all");
-                map.put("message",message);
-                return map;
-            }
-
-            case CommandGwent.STARTGAME: {
-                configGame.add((String) arrayMessage[0], (String) arrayMessage[2]);
-                return null;
             }
             case CommandGwent.STEP: {
-                map.put("id",configGame.findIdEnemy((String) arrayMessage[0]));
-                map.put("message",message);
-                return map;
-            }
-            case CommandGwent.REMOVELOBBI:
-            {
-               updateLobbi((String) arrayMessage[0],-1,-1);
-                map.put("id","all");
-                map.put("message",message);
-                return map;
-            }
-            case CommandGwent.DISCONNECTEDLOBBI:
-            {
-                updateLobbi((String) arrayMessage[0],-1,-1);
-                map.put("id","all");
-                map.put("message",message);
-                return map;
-            }
-            /*case CommandGwent.DAMAGE: {
-                return CommandGwent.damage(arrayMessage);
-            }*/
-            /*case CommandGwent.EFFECT: {
-                return CommandGwent.effect(arrayMessage);
-            }*/
 
-            case CommandGwent.IDCARDSHAND: {
-//                return CommandGwent.idCardsHand(arrayMessage);
             }
-            case CommandGwent.IDCARDSPACK: {
-//                return CommandGwent.idCardsPack(arrayMessage);
+            case CommandGwent.CREATE_LOBBI: {
+
             }
-            case CommandGwent.IDCARDTRASH: {
-//                return CommandGwent.idCardsPack(arrayMessage);
+            case CommandGwent.CONNECTED_LOBBI: {
+
             }
-            case CommandGwent.READYTOLOBBI: {
-//                return CommandGwent.readyToLobbi(arrayMessage);
+            case CommandGwent.DISCONNECTED_LOBBI: {
+
+            }
+            case CommandGwent.REMOVE_LOBBI: {
+
+            }
+            case CommandGwent.START_GAME: {
+
             }
         }
         return null;
@@ -136,23 +76,7 @@ public class    RootConfig {
         }
         return listMessage.toArray();
     }
-
-    private void addLobbi(String id, String nickName) {
-        configLobbi.add(
-                id,
-                nickName,
-                -1,
-                -1
-        );
-    }
-    private void removeElementLobbi(String id) {
-        configLobbi.remove(id);
-    }
-
-    private void updateLobbi(String id, int lobbiCo, int lobbiCr) {
-        configLobbi.update(
-                id,
-                lobbiCo,
-                lobbiCr);
+    public void setMainApp(MainApp mainApp) {
+        this.mainApp = mainApp;
     }
 }

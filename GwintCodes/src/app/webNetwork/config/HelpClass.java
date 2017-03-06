@@ -1,4 +1,4 @@
-package app.config;
+package app.webNetwork.config;
 
 /**
  * Created by kills on 27.02.2017.

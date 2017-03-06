@@ -1,4 +1,4 @@
-package app.config;
+package app.webNetwork.config;
 
 
 import org.json.simple.JSONArray;
@@ -100,6 +100,7 @@ class jsonConfigLobbi {
         }
         return false;
     }
+
 }
 
 

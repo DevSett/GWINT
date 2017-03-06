@@ -1,6 +1,9 @@
 package app.webNetwork.classes;
 
+import app.MainApp;
+
 import javax.websocket.*;
+import java.util.HashMap;
 
 @ClientEndpoint
 public class Client {
@@ -17,6 +20,8 @@ public class Client {
 
     @OnMessage
     public void onMessage(String message) {
+        HashMap map = MainApp.rootConfig.checkCommands(message);
+        session.getAsyncRemote().sendText((String) map.get("message"));
     }
 
     @OnClose

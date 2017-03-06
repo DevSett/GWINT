@@ -4,10 +4,10 @@ import app.view.lobbiGame.classes.Lobbi;
 import app.view.menuGame.classes.Menu;
 import app.view.optionGame.classes.OptionController;
 import app.webNetwork.classes.StartClient;
+import app.webNetwork.config.RootConfig;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -21,6 +21,7 @@ public class MainApp extends Application {
 
     private Stage stage;
     private Menu menu;
+    public static RootConfig rootConfig = new RootConfig();
     public static boolean fullscreen;
     public static double del;
     @Override
@@ -74,5 +75,6 @@ public class MainApp extends Application {
     public void lobbi(String fieldIp, String fieldPort, String fieldName,Stage stage) {
         Lobbi lobbi = new Lobbi(stage);
         StartClient client = new StartClient(fieldIp,fieldPort,fieldName);
+        rootConfig.setMainApp(this);
     }
 }
