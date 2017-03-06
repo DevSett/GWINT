@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
  * Created by kills on 27.02.2017.
  */
 public class RootConfig {
-
+    int idCreateLobbi = 0;
     private jsonConfigGame configGame;
     private jsonConfigLobbi configLobbi;
 
@@ -33,11 +33,10 @@ public class RootConfig {
         HashMap map = new HashMap();
 
         switch ((String) arrayMessage[1]) {
-            case CommandGwent.NICKNAME:
-            {
-                configLobbi.updateNickname((String )arrayMessage[0],(String)arrayMessage[2]);
-                map.put("id","all");
-                map.put("message",message);
+            case CommandGwent.NICKNAME: {
+                configLobbi.updateNickname((String) arrayMessage[0], (String) arrayMessage[2]);
+                map.put("id", "all");
+                map.put("message", message);
                 return map;
             }
             case CommandGwent.CONNECTION: {
@@ -54,8 +53,8 @@ public class RootConfig {
             case CommandGwent.DISCONNECTION: {
 
                 removeElementLobbi((String) arrayMessage[0]);
-                map.put("id","all");
-                map.put("message",message);
+                map.put("id", "all");
+                map.put("message", message);
                 return map;
             }
             case CommandGwent.CONNECTEDLOBBI: {
@@ -65,19 +64,18 @@ public class RootConfig {
                         -1,
                         HelpClass.toInt(arrayMessage[2])
                 );
-                map.put("id","all");
-                map.put("message",message);
+                map.put("id", "all");
+                map.put("message", message);
                 return map;
             }
             case CommandGwent.CREATELOBBI: {
 
                 updateLobbi(
                         (String) arrayMessage[0],
-                        HelpClass.toInt(arrayMessage[2]),
-                        HelpClass.toInt(arrayMessage[2])
-                );
-                map.put("id","all");
-                map.put("message",message);
+                        idCreateLobbi++,
+                        idCreateLobbi++);
+                map.put("id", "all");
+                map.put("message", message);
                 return map;
             }
 
@@ -86,22 +84,20 @@ public class RootConfig {
                 return null;
             }
             case CommandGwent.STEP: {
-                map.put("id",configGame.findIdEnemy((String) arrayMessage[0]));
-                map.put("message",message);
+                map.put("id", configGame.findIdEnemy((String) arrayMessage[0]));
+                map.put("message", message);
                 return map;
             }
-            case CommandGwent.REMOVELOBBI:
-            {
-               updateLobbi((String) arrayMessage[0],-1,-1);
-                map.put("id","all");
-                map.put("message",message);
+            case CommandGwent.REMOVELOBBI: {
+                updateLobbi((String) arrayMessage[0], -1, -1);
+                map.put("id", "all");
+                map.put("message", message);
                 return map;
             }
-            case CommandGwent.DISCONNECTEDLOBBI:
-            {
-                updateLobbi((String) arrayMessage[0],-1,-1);
-                map.put("id","all");
-                map.put("message",message);
+            case CommandGwent.DISCONNECTEDLOBBI: {
+                updateLobbi((String) arrayMessage[0], -1, -1);
+                map.put("id", "all");
+                map.put("message", message);
                 return map;
             }
             /*case CommandGwent.DAMAGE: {
@@ -145,6 +141,7 @@ public class RootConfig {
                 -1
         );
     }
+
     private void removeElementLobbi(String id) {
         configLobbi.remove(id);
     }

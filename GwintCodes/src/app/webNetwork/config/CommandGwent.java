@@ -21,6 +21,6 @@ public final class CommandGwent {
     protected final static String STEP = "Step";
     protected final static String NICKNAME = "Nickname";
     protected final static String NEW_CONNECTED = "NewConnected";
-    protected final static String LIST_CONNECTION = "ListConnected";
+    protected final static String INFO_USERS = "InfoUsers";
     protected final static String DISCONNECTED = "Disconnected";
 }

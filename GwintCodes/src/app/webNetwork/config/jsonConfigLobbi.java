@@ -3,9 +3,12 @@ package app.webNetwork.config;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by kills on 05.11.2016.
@@ -101,6 +104,44 @@ class jsonConfigLobbi {
         return false;
     }
 
+    public HashMap parseText(String text) {
+        HashMap map = new HashMap();
+        try {
+
+            String read = text;
+            if (read == null) {
+                array = new JSONArray();
+            } else {
+                JSONParser parser = new JSONParser();
+                array = (JSONArray) parser.parse(read);
+            }
+
+            map.put("createdLobbi", checkCreateLobbi());
+            map.put("connectedLobbi", checkConnectedLobbi());
+            return map;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    private Object[] checkConnectedLobbi() {
+        ArrayList list = new ArrayList();
+        for (int index = 0; index < array.size(); index++) {
+            JSONObject obs = (JSONObject) array.get(index);
+            if (obs.get("lobbiCreate").equals("-1")) list.add(obs.get("lobbiCreate"));
+        }
+        return list.toArray();
+    }
+
+    private Object[] checkCreateLobbi() {
+        ArrayList list = new ArrayList();
+        for (int index = 0; index < array.size(); index++) {
+            JSONObject obs = (JSONObject) array.get(index);
+            if (obs.get("lobbiConnection").equals("-1")) list.add(obs.get("lobbiConnection"));
+        }
+        return list.toArray();
+    }
 }
 
 
