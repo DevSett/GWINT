@@ -129,7 +129,7 @@ class jsonConfigLobbi {
         ArrayList list = new ArrayList();
         for (int index = 0; index < array.size(); index++) {
             JSONObject obs = (JSONObject) array.get(index);
-            if (obs.get("lobbiCreate").equals("-1")) list.add(obs.get("lobbiCreate"));
+            if (!obs.get("lobbiCreate").equals("-1")) list.add(obs.get("lobbiCreate"));
         }
         return list.toArray();
     }
@@ -138,9 +138,31 @@ class jsonConfigLobbi {
         ArrayList list = new ArrayList();
         for (int index = 0; index < array.size(); index++) {
             JSONObject obs = (JSONObject) array.get(index);
-            if (obs.get("lobbiConnection").equals("-1")) list.add(obs.get("lobbiConnection"));
+            if (!obs.get("lobbiConnection").equals("-1")) list.add(obs.get("lobbiConnection"));
         }
         return list.toArray();
+    }
+
+    public int checksCreateLobbi(Object o) {
+
+        for (int index = 0; index < array.size(); index++) {
+            JSONObject obs = (JSONObject) array.get(index);
+            if (obs.get("id").equals(o)) {
+                return HelpClass.toInt(obs.get("lobbiCreate"));
+            }
+        }
+        return -1;
+    }
+
+    public int checksConnectedLobbi(Object o) {
+
+        for (int index = 0; index < array.size(); index++) {
+            JSONObject obs = (JSONObject) array.get(index);
+            if (obs.get("id").equals(o)) {
+                return HelpClass.toInt(obs.get("lobbiConnection"));
+            }
+        }
+        return -1;
     }
 }
 

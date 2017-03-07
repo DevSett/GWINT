@@ -1,0 +1,14 @@
+
+^squid:S1226"DIntroduce a new variable instead of reusing the parameter "message".(úø°‰úÿÿÿÿ
+jsquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(÷•İ
+csquid:S1132"IMove the "all" string literal on the left side of this string comparison.(Ô½€şÿÿÿÿ
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(Ù¤·–ıÿÿÿÿ
+]squid:S1192"HDefine a constant instead of duplicating this literal "message" 4 times.(¶´¬‹
+T
+squid:S106";Replace this usage of System.out or System.err by a logger.(Ø„Šúÿÿÿÿ
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ªŞ¦¸
+O
+squid:S106";Replace this usage of System.out or System.err by a logger.(ìÖ½»
+jsquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(‡£©î
+ssquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä€ÎÀúÿÿÿÿ

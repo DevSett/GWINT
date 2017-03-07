@@ -21,6 +21,7 @@ public class Client {
     @OnMessage
     public void onMessage(String message) {
         HashMap map = MainApp.rootConfig.checkCommands(message);
+        if (map!=null)
         session.getAsyncRemote().sendText((String) map.get("message"));
     }
 

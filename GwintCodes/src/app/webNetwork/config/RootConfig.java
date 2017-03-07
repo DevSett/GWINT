@@ -43,57 +43,63 @@ public class RootConfig {
                 Object[] objectsLobbiCreated = (Object[]) mapConfigLobbi.get("createdLobbi");
                 Object[] objectsLobbiConnected = (Object[]) mapConfigLobbi.get("connectedLobbi");
 
-                if (mainApp.status.equals(StatusMainWindow.OPTION)) {
-                    //
-                } else {
-                    //
+                for (Object objectCreat : objectsLobbiCreated) {
+                    mainApp.listCreatedLobbi.add(objectCreat);
                 }
+                for (Object objectConn : objectsLobbiConnected) {
+                    mainApp.listConnectedLobbi.add(objectConn);
+                }
+
+                lobbiUpdate();
+
             }
             case CommandGwent.DISCONNECTED: {
-                //
+                int lobbi;
+                if (mainApp.status.equals(StatusMainWindow.LOBBI)) {
+                    if ((lobbi = configLobbi.checksCreateLobbi(arrayMessage[0])) != -1) {
+                        mainApp.lobbiRooms.removeLobbi(lobbi);
+                        mainApp.listCreatedLobbi.remove(lobbi);
+                    }
+                    if ((lobbi = configLobbi.checksConnectedLobbi(arrayMessage[0])) != -1) {
+                        mainApp.lobbiRooms.freeLobbi(lobbi);
+                        mainApp.listConnectedLobbi.remove(lobbi);
+                    }
+                }
             }
             case CommandGwent.STEP: {
-                //
             }
             case CommandGwent.CREATE_LOBBI: {
 
-                //
+                mainApp.listCreatedLobbi.add(arrayMessage[0]);
 
-                if (mainApp.status.equals(StatusMainWindow.OPTION)) {
-                    //
-                } else {
-                    //
-                }
+                lobbiUpdate();
             }
             case CommandGwent.CONNECTED_LOBBI: {
-                //
-                if (mainApp.status.equals(StatusMainWindow.OPTION)) {
-                    //
-                } else {
-                    //
-                }
+                mainApp.listConnectedLobbi.add(arrayMessage[0]);
+
+                lobbiUpdate();
             }
             case CommandGwent.DISCONNECTED_LOBBI: {
-                //
-                if (mainApp.status.equals(StatusMainWindow.OPTION)) {
-                    //
-                } else {
-                    //
-                }
+                mainApp.listConnectedLobbi.remove(arrayMessage[0]);
+
+                lobbiUpdate();
             }
             case CommandGwent.REMOVE_LOBBI: {
-                //
-                if (mainApp.status.equals(StatusMainWindow.OPTION)) {
-                    //
-                } else {
-                    //
-                }
+                mainApp.listCreatedLobbi.remove(arrayMessage[0]);
+
+                lobbiUpdate();
             }
             case CommandGwent.START_GAME: {
-                //
+//                mainApp.startGame();
             }
         }
         return null;
+    }
+
+    private void lobbiUpdate() {
+        if (mainApp.status.equals(StatusMainWindow.OPTION)) {
+            mainApp.lobbiRooms.updateRooms();
+        }
     }
 
     private Object[] getToArrayMessage(String message) {

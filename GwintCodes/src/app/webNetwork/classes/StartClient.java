@@ -29,7 +29,7 @@ public class StartClient implements Runnable {
         thread.start();
 
     }
-
+    boolean connection=true;
     @Override
     public void run() {
         WebSocketContainer container = ContainerProvider
@@ -39,8 +39,11 @@ public class StartClient implements Runnable {
                     URI.create(url));
         } catch (DeploymentException e) {
             e.printStackTrace();
+            connection=false;
         } catch (IOException e) {
             e.printStackTrace();
+            connection=false;
+
         }
     }
 
@@ -49,4 +52,7 @@ public class StartClient implements Runnable {
         session.getAsyncRemote().sendText(text);
     }
 
+    public boolean getConnection() {
+        return connection;
+    }
 }

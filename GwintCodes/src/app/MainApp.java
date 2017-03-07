@@ -21,6 +21,8 @@ import java.util.ArrayList;
 public class MainApp extends Application {
     public StatusMainWindow status = new StatusMainWindow(StatusMainWindow.UNCNOWN);
 
+    public Lobbi lobbiRooms;
+
     public ArrayList<Object> listCreatedLobbi = new ArrayList<>();
     public ArrayList<Object> listConnectedLobbi = new ArrayList<>();
 
@@ -57,7 +59,8 @@ public class MainApp extends Application {
 
         stage = new Stage();
         Scene scene = new Scene(anchorPane);
-        stage.setScene(scene);        stage.getIcons().add(new Image(getClass().getResourceAsStream("images/hearts.png")));
+        stage.setScene(scene);
+        stage.getIcons().add(new Image(getClass().getResourceAsStream("images/hearts.png")));
         stage.setResizable(false);
         stage.setAlwaysOnTop(true);
         stage.show();
@@ -72,14 +75,13 @@ public class MainApp extends Application {
 
     public void playGame(double del, boolean selected) {
         this.del = del;
-        fullscreen=selected;
+        fullscreen = selected;
 
         menuGame();
 
     }
 
-    public void menuGame()
-    {
+    public void menuGame() {
         Menu menu = new Menu(stage.getIcons().get(0));
         menu.setMainApp(this);
 
@@ -87,11 +89,15 @@ public class MainApp extends Application {
 
     }
 
-    public void lobbi(String fieldIp, String fieldPort, String fieldName,Stage stage) {
-        Lobbi lobbi = new Lobbi(stage);
-        StartClient client = new StartClient(fieldIp,fieldPort,fieldName);
+    public void lobbi(String fieldIp, String fieldPort, String fieldName, Stage stage) {
+        StartClient client = new StartClient(fieldIp, fieldPort, fieldName);
+        if(client.getConnection())
+        {
+
+        lobbiRooms = new Lobbi(stage);
         rootConfig.setMainApp(this);
 
         status.set(StatusMainWindow.LOBBI);
+        }
     }
 }
