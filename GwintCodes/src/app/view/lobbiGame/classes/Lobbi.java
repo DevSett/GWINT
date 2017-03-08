@@ -27,16 +27,17 @@ public class Lobbi {
         }
         panel = (BorderPane) node;
         panel.getChildren().clear();
+
+        stage.getScene().getStylesheets().add(getClass().getResource("lobbi.css").toExternalForm());
         lobbi();
     }
 
     public void lobbi() {
-
         TableView tableView = new TableView();
         TableColumn<String, Object> tableColumnHost = new TableColumn("Хост");
         TableColumn<String, Object> tableColumnEnemy = new TableColumn("Соперник");
         TableColumn<Circle, Object> tableColumnStatus = new TableColumn("Статус");
-
+        tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         tableView.getColumns().addAll(tableColumnHost,tableColumnEnemy,tableColumnStatus);
 
         BorderPane pane = new BorderPane();
@@ -44,7 +45,6 @@ public class Lobbi {
         Button buttonExit = new Button("Выход");
         Button buttonJoin = new Button("Подключится");
         Button buttonCreate = new Button("Создать");
-
         pane.setCenter(buttonCreate);
         pane.setLeft(buttonExit);
         pane.setRight(buttonJoin);

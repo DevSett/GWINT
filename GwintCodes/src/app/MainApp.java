@@ -36,7 +36,7 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-
+        rootConfig.setMainApp(this);
         stage = primaryStage;
         try {
             optionPane();
@@ -89,15 +89,31 @@ public class MainApp extends Application {
 
     }
 
-    public void lobbi(String fieldIp, String fieldPort, String fieldName, Stage stage) {
-        StartClient client = new StartClient(fieldIp, fieldPort, fieldName);
-        if(client.getConnection())
-        {
+    StartClient client;
 
-        lobbiRooms = new Lobbi(stage);
-        rootConfig.setMainApp(this);
 
-        status.set(StatusMainWindow.LOBBI);
+    public void client(String fieldIp, String fieldPort, String fieldName, Stage stage) {
+        this.stage = stage;
+        Thread threadClient = new Thread(() -> {
+            client = new StartClient(fieldIp, fieldPort, fieldName);
+            client.start();
+        });
+        threadClient.start();
+
+        //экран загрузки
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+        //
+
+
+        if(client.isAlive()) lobbi();
+    }
+
+    public void lobbi() {
+        lobbiRooms = new Lobbi(stage);
+        status.set(StatusMainWindow.LOBBI);
     }
 }

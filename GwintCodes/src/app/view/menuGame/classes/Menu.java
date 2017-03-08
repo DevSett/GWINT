@@ -162,7 +162,7 @@ public class Menu {
     }
 
     private void actionAcceptButton() {
-        mainApp.lobbi(fieldIp.getText(), fieldPort.getText(), fieldName.getText(),stage);
+        mainApp.client(fieldIp.getText(), fieldPort.getText(), fieldName.getText(),stage);
     }
 
 

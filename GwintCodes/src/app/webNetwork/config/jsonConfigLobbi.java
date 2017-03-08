@@ -129,7 +129,8 @@ class jsonConfigLobbi {
         ArrayList list = new ArrayList();
         for (int index = 0; index < array.size(); index++) {
             JSONObject obs = (JSONObject) array.get(index);
-            if (!obs.get("lobbiCreate").equals("-1")) list.add(obs.get("lobbiCreate"));
+            if (!obs.get("lobbiCreate").toString().equals("-1"))
+                list.add(obs.get("lobbiCreate"));
         }
         return list.toArray();
     }
@@ -138,7 +139,8 @@ class jsonConfigLobbi {
         ArrayList list = new ArrayList();
         for (int index = 0; index < array.size(); index++) {
             JSONObject obs = (JSONObject) array.get(index);
-            if (!obs.get("lobbiConnection").equals("-1")) list.add(obs.get("lobbiConnection"));
+            if (!obs.get("lobbiConnection").toString().equals("-1"))
+                list.add(obs.get("lobbiConnection"));
         }
         return list.toArray();
     }

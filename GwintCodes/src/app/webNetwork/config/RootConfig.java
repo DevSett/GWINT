@@ -42,10 +42,11 @@ public class RootConfig {
                 HashMap mapConfigLobbi = configLobbi.parseText((String) arrayMessage[0]);
                 Object[] objectsLobbiCreated = (Object[]) mapConfigLobbi.get("createdLobbi");
                 Object[] objectsLobbiConnected = (Object[]) mapConfigLobbi.get("connectedLobbi");
-
+                if(objectsLobbiCreated!=null)
                 for (Object objectCreat : objectsLobbiCreated) {
                     mainApp.listCreatedLobbi.add(objectCreat);
                 }
+                if (objectsLobbiConnected!=null)
                 for (Object objectConn : objectsLobbiConnected) {
                     mainApp.listConnectedLobbi.add(objectConn);
                 }

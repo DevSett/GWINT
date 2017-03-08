@@ -11,10 +11,10 @@ import java.util.concurrent.CountDownLatch;
 /**
  * Created by kills on 25.02.2017.
  */
-public class StartClient implements Runnable {
+public class StartClient {
     static final CountDownLatch latch = new CountDownLatch(1);
 
-    private String fieldIp, fieldPort, fieldName;
+    public static String fieldIp, fieldPort, fieldName;
     private String url;
     private Session session;
 
@@ -25,13 +25,10 @@ public class StartClient implements Runnable {
         this.fieldName = fieldName;
         url = "ws://" + fieldIp + ":" + fieldPort + "/ws/gwent";
 
-        Thread thread = new Thread(this);
-        thread.start();
 
     }
-    boolean connection=true;
-    @Override
-    public void run() {
+
+    public void start() {
         WebSocketContainer container = ContainerProvider
                 .getWebSocketContainer();
         try {
@@ -39,20 +36,22 @@ public class StartClient implements Runnable {
                     URI.create(url));
         } catch (DeploymentException e) {
             e.printStackTrace();
-            connection=false;
         } catch (IOException e) {
             e.printStackTrace();
-            connection=false;
-
         }
     }
 
-    public void send(String text)
-    {
+    public boolean isAlive() {
+        if (session == null)
+            return false;
+        if (!session.isOpen())
+            return false;
+        return true;
+    }
+
+    public void send(String text) {
         session.getAsyncRemote().sendText(text);
     }
 
-    public boolean getConnection() {
-        return connection;
-    }
+
 }
