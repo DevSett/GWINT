@@ -1,11 +1,14 @@
 package app;
 
 import app.view.lobbiGame.classes.Lobbi;
+import app.view.lobbiGame.classes.LobbiItems;
 import app.view.menuGame.classes.Menu;
 import app.view.optionGame.classes.OptionController;
 import app.webNetwork.classes.StartClient;
 import app.webNetwork.config.RootConfig;
 import javafx.application.Application;
+import javafx.beans.property.SimpleListProperty;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -13,7 +16,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * Created by kills on 01.03.2017.
@@ -23,8 +25,7 @@ public class MainApp extends Application {
 
     public Lobbi lobbiRooms;
 
-    public ArrayList<Object> listCreatedLobbi = new ArrayList<>();
-    public ArrayList<Object> listConnectedLobbi = new ArrayList<>();
+    public ObservableList<LobbiItems> data = new SimpleListProperty<>();
 
     private Stage stage;
     private Menu menu;
@@ -34,6 +35,7 @@ public class MainApp extends Application {
     public static boolean fullscreen;
     public static double del;
 
+    public static String nickname;
     @Override
     public void start(Stage primaryStage) {
         rootConfig.setMainApp(this);
@@ -89,11 +91,11 @@ public class MainApp extends Application {
 
     }
 
-    StartClient client;
+    public StartClient client;
 
-
-    public void client(String fieldIp, String fieldPort, String fieldName, Stage stage) {
+    public void startClient(String fieldIp, String fieldPort, String fieldName, Stage stage) {
         this.stage = stage;
+        nickname=fieldName;
         Thread threadClient = new Thread(() -> {
             client = new StartClient(fieldIp, fieldPort, fieldName);
             client.start();
@@ -102,7 +104,7 @@ public class MainApp extends Application {
 
         //экран загрузки
         try {
-            Thread.sleep(200);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -114,6 +116,7 @@ public class MainApp extends Application {
 
     public void lobbi() {
         lobbiRooms = new Lobbi(stage);
+        lobbiRooms.setMainApp(this);
         status.set(StatusMainWindow.LOBBI);
     }
 }

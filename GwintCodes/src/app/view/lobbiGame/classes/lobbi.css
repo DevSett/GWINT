@@ -8,7 +8,6 @@
 .table-view .column-header {
     -fx-background-color: transparent;
 }
-
 .table-view {
     -fx-background-color: rgba(0, 100, 100, 0.5);
     -fx-background-radius: 10;
@@ -16,11 +15,13 @@
 }
 .table-view .table-cell{
     -fx-text-fill: white;
+    -fx-text-alignment: center;
 }
 
 .table-row-cell {
     -fx-background-color: rgba(0, 100, 100, 0.5);
     -fx-background-radius: 10;
+    -fx-text-alignment: center;
 }
 .table-view .column-header-background{
     -fx-background-color: rgba(0, 100, 100, 0.5);

@@ -1,9 +1,11 @@
 package app.view.lobbiGame.classes;
 
+import app.MainApp;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
@@ -14,15 +16,25 @@ import javafx.stage.Stage;
  */
 public class Lobbi {
     private Stage stage;
-    BorderPane panel;
+    private BorderPane panel;
+    private TableView<LobbiItems> tableView;
+    private MainApp mainApp;
 
+    /*  private final ObservableList<LobbiItems> data =
+              FXCollections.observableArrayList(
+                      new LobbiItems("Jacob", "", "Smith", "", Color.GREEN, 0),
+                      new LobbiItems("Jacob1", "", "Smith", "", Color.RED, 1),
+                      new LobbiItems("Jacob2", "", "Smith", "", Color.YELLOW, 2),
+                      new LobbiItems("Jacob3", "", "Smith", "", Color.YELLOW, 3),
+                      new LobbiItems("Jacob4", "", "Smith", "", Color.YELLOW, 4)
+              );
+  */
     public Lobbi(Stage stage) {
 
         this.stage = stage;
         Node node = stage.getScene().getFocusOwner();
-        while (node.getParent()!=null)
-        {
-            node=node.getParent();
+        while (node.getParent() != null) {
+            node = node.getParent();
 
         }
         panel = (BorderPane) node;
@@ -33,18 +45,34 @@ public class Lobbi {
     }
 
     public void lobbi() {
-        TableView tableView = new TableView();
-        TableColumn<String, Object> tableColumnHost = new TableColumn("Хост");
-        TableColumn<String, Object> tableColumnEnemy = new TableColumn("Соперник");
-        TableColumn<Circle, Object> tableColumnStatus = new TableColumn("Статус");
+        tableView = new TableView();
+        TableColumn tableColumnHost = new TableColumn("Хост");
+        TableColumn tableColumnEnemy = new TableColumn("Соперник");
+        TableColumn tableColumnStatus = new TableColumn("Статус");
         tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-        tableView.getColumns().addAll(tableColumnHost,tableColumnEnemy,tableColumnStatus);
+        tableColumnHost.setCellValueFactory(new PropertyValueFactory<LobbiItems, String>("name"));
+        tableColumnEnemy.setCellValueFactory(new PropertyValueFactory<LobbiItems, String>("secondName"));
+        tableColumnStatus.setCellValueFactory(new PropertyValueFactory<LobbiItems, Circle>("statusCircle"));
+        tableView.getColumns().addAll(tableColumnHost, tableColumnEnemy, tableColumnStatus);
 
         BorderPane pane = new BorderPane();
 
         Button buttonExit = new Button("Выход");
         Button buttonJoin = new Button("Подключится");
         Button buttonCreate = new Button("Создать");
+
+        buttonCreate.setOnAction(event -> {
+            mainApp.client.send("команда создания");
+        });
+        buttonExit.setOnAction(event -> {
+            mainApp.client.stop();
+            mainApp.menuGame();
+        });
+        buttonJoin.setOnAction(event -> {
+            if(tableView.getSelectionModel().getSelectedIndex()==-1)
+                return;
+           //
+        });
         pane.setCenter(buttonCreate);
         pane.setLeft(buttonExit);
         pane.setRight(buttonJoin);
@@ -57,7 +85,7 @@ public class Lobbi {
 
 
     public void updateRooms() {
-
+        tableView.setItems(mainApp.data);
     }
 
     public void removeLobbi(int lobbi) {
@@ -66,5 +94,12 @@ public class Lobbi {
 
     public void freeLobbi(int lobbi) {
 
+    }
+    public void createLobbi()
+    {
+
+    }
+    public void setMainApp(MainApp mainApp) {
+        this.mainApp = mainApp;
     }
 }

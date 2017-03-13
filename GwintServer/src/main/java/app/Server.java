@@ -14,13 +14,12 @@ public class Server {
     private static CopyOnWriteArraySet<Session> sessions = new CopyOnWriteArraySet<Session>();
 
 
-
     @OnOpen
     public void onOpen(Session session) {
         System.out.println("[open] " + session);
         sessions.add(session);
         session.getAsyncRemote().sendText(
-                String.valueOf(main.rootConfig.checkCommands(session.getId() + "|Connection").get("message")+"|InfoUsers")
+                String.valueOf(main.rootConfig.checkCommands(session.getId() + "|Connection").get("message") + "|InfoUsers")
         );
     }
 
@@ -32,7 +31,7 @@ public class Server {
 //
         message = session.getId() + "|" + message;
         HashMap map = main.rootConfig.checkCommands(message);
-        if (map==null) return;
+        if (map == null) return;
         if (map.get("id").equals("all")) {
             for (Session s : sessions)
                 if (!session.equals(s)) s.getAsyncRemote().sendText((String) map.get("message"));
@@ -46,10 +45,11 @@ public class Server {
     @OnClose
     public void onClose(Session session) {
         sessions.remove(session);
+        String message = (String) main.rootConfig.checkCommands(session.getId() + "|Disconnection").get("message");
         System.out.println("[close] " + session);
         for (Session s : sessions)
             s.getAsyncRemote().sendText(
-                    String.valueOf(main.rootConfig.checkCommands(session.getId() + "|Disconnection").get("message"))
+                    message
             );
     }
 

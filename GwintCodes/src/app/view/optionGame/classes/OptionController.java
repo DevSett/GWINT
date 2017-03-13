@@ -41,7 +41,6 @@ public class OptionController {
         for (int index = 0; index < screenResolution.SIZEX.length; index++) {
             if (index != boxSize.getSelectionModel().getSelectedIndex())
                 continue;
-            System.out.println(screenResolution.DEL[index]);
             return screenResolution.DEL[index];
         }
         return 1;

@@ -15,7 +15,7 @@ public class Client {
     public void onOpen(Session session) {
         System.out.println("Open");
         this.session = session;
-        session.getAsyncRemote().sendText("Nickname|KillSett1");
+        session.getAsyncRemote().sendText("Nickname|"+MainApp.nickname);
     }
 
     @OnMessage

@@ -3,6 +3,8 @@ package app.webNetwork.config;
 
 import app.MainApp;
 import app.StatusMainWindow;
+import app.view.lobbiGame.classes.LobbiItems;
+import javafx.scene.paint.Color;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,54 +42,84 @@ public class RootConfig {
             }
             case CommandGwent.INFO_USERS: {
                 HashMap mapConfigLobbi = configLobbi.parseText((String) arrayMessage[0]);
-                Object[] objectsLobbiCreated = (Object[]) mapConfigLobbi.get("createdLobbi");
-                Object[] objectsLobbiConnected = (Object[]) mapConfigLobbi.get("connectedLobbi");
-                if(objectsLobbiCreated!=null)
-                for (Object objectCreat : objectsLobbiCreated) {
-                    mainApp.listCreatedLobbi.add(objectCreat);
-                }
-                if (objectsLobbiConnected!=null)
-                for (Object objectConn : objectsLobbiConnected) {
-                    mainApp.listConnectedLobbi.add(objectConn);
-                }
+                HashMap[] objectsLobbiCreated = (HashMap[]) mapConfigLobbi.get("createdLobbi");
+                HashMap[] objectsLobbiConnected = (HashMap[]) mapConfigLobbi.get("connectedLobbi");
+                if (objectsLobbiCreated != null)
+                    for (HashMap objectCreat : objectsLobbiCreated) {
+                        mainApp.data.addAll(
+                                new LobbiItems(
+                                        (String) objectCreat.get("nickname"),
+                                        (String) objectCreat.get("idF"),
+                                        "",
+                                        "",
+                                        Color.GREEN,
+                                        HelpClass.toInt(objectCreat.get("lobbiCreate")))
+                        );
+                    }
+                if (objectsLobbiConnected != null)
+                    for (HashMap objectConn : objectsLobbiConnected) {
+                        mainApp.data.forEach(l ->
+                        {
+                            if (l.id == HelpClass.toInt(objectConn.get("lobbiConnection"))) {
+                                l.setSecondName((String) objectConn.get("nickname"));
+                                l.idSecondName = (String) objectConn.get("idS");
+                            }
+                        });
+                    }
 
                 lobbiUpdate();
 
             }
             case CommandGwent.DISCONNECTED: {
                 int lobbi;
-                if (mainApp.status.equals(StatusMainWindow.LOBBI)) {
-                    if ((lobbi = configLobbi.checksCreateLobbi(arrayMessage[0])) != -1) {
-                        mainApp.lobbiRooms.removeLobbi(lobbi);
-                        mainApp.listCreatedLobbi.remove(lobbi);
-                    }
-                    if ((lobbi = configLobbi.checksConnectedLobbi(arrayMessage[0])) != -1) {
-                        mainApp.lobbiRooms.freeLobbi(lobbi);
-                        mainApp.listConnectedLobbi.remove(lobbi);
-                    }
+                if ((lobbi = configLobbi.checksCreateLobbi(arrayMessage[0])) != -1) {
+                    int finalLobbi = lobbi;
+                    mainApp.data.forEach(t ->
+                    {
+                        if (t.id == finalLobbi) mainApp.data.remove(t);
+                    });
                 }
+                String name;
+                if ((name = configLobbi.getNickName(arrayMessage[0])) != null) {
+                    mainApp.data.forEach(t ->
+                    {
+                        if (t.idSecondName.equals(arrayMessage[0])) {
+                            t.setSecondName("");
+                            t.idSecondName = "";
+                        }
+                    });
+                }
+                lobbiUpdate();
             }
             case CommandGwent.STEP: {
             }
             case CommandGwent.CREATE_LOBBI: {
-
-                mainApp.listCreatedLobbi.add(arrayMessage[0]);
-
+                mainApp.data.add(new LobbiItems(configLobbi.getNickName(arrayMessage[2]), (String) arrayMessage[2], "", "", Color.GREEN, HelpClass.toInt(arrayMessage[0])));
                 lobbiUpdate();
             }
             case CommandGwent.CONNECTED_LOBBI: {
-                mainApp.listConnectedLobbi.add(arrayMessage[0]);
-
+                mainApp.data.forEach(t -> {
+                    if (t.id == HelpClass.toInt(arrayMessage[0])) {
+                        t.setSecondName((String) configLobbi.getNickName(arrayMessage[2]));
+                        t.idSecondName = (String) arrayMessage[2];
+                    }
+                });
                 lobbiUpdate();
             }
             case CommandGwent.DISCONNECTED_LOBBI: {
-                mainApp.listConnectedLobbi.remove(arrayMessage[0]);
-
+                mainApp.data.forEach(t -> {
+                    if (t.idSecondName == arrayMessage[0]) {
+                        t.setSecondName("");
+                        t.idSecondName = (String) "";
+                    }
+                });
                 lobbiUpdate();
             }
             case CommandGwent.REMOVE_LOBBI: {
-                mainApp.listCreatedLobbi.remove(arrayMessage[0]);
-
+                mainApp.data.forEach(t ->
+                {
+                    if (t.idName.equals(arrayMessage[0])) mainApp.data.remove(t);
+                });
                 lobbiUpdate();
             }
             case CommandGwent.START_GAME: {
@@ -116,4 +148,6 @@ public class RootConfig {
     public void setMainApp(MainApp mainApp) {
         this.mainApp = mainApp;
     }
+
+    
 }

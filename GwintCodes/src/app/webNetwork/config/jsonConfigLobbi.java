@@ -116,8 +116,8 @@ class jsonConfigLobbi {
                 array = (JSONArray) parser.parse(read);
             }
 
-            map.put("createdLobbi", checkCreateLobbi());
-            map.put("connectedLobbi", checkConnectedLobbi());
+            map.put("connectedLobbi", checkConnectionsLobbi());
+            map.put("createdLobbi", checkCreatedLobbi());
             return map;
         } catch (ParseException e) {
             e.printStackTrace();
@@ -125,24 +125,47 @@ class jsonConfigLobbi {
         return null;
     }
 
-    private Object[] checkConnectedLobbi() {
+    private HashMap[] checkCreatedLobbi() {
         ArrayList list = new ArrayList();
+        ArrayList list2 = new ArrayList();
+        ArrayList list3 = new ArrayList();
         for (int index = 0; index < array.size(); index++) {
             JSONObject obs = (JSONObject) array.get(index);
-            if (!obs.get("lobbiCreate").toString().equals("-1"))
+            if (!obs.get("lobbiCreate").toString().equals("-1")) {
                 list.add(obs.get("lobbiCreate"));
+                list2.add(obs.get("nickname"));
+                list3.add(obs.get("id"));
+            }
         }
-        return list.toArray();
+        HashMap[] maps = new HashMap[list.size()];
+        for (int index = 0; index < maps.length; index++) {
+            maps[index] = new HashMap();
+            maps[index].put("lobbiCreate", list.get(index));
+            maps[index].put("nickname", list2.get(index));
+            maps[index].put("idF",list3.get(index));
+        }
+        return maps;
     }
 
-    private Object[] checkCreateLobbi() {
+    private HashMap[] checkConnectionsLobbi() {
         ArrayList list = new ArrayList();
+        ArrayList list2 = new ArrayList();
+        ArrayList list3 = new ArrayList();
         for (int index = 0; index < array.size(); index++) {
             JSONObject obs = (JSONObject) array.get(index);
             if (!obs.get("lobbiConnection").toString().equals("-1"))
                 list.add(obs.get("lobbiConnection"));
+                list2.add(obs.get("nickname"));
+                list3.add(obs.get("id"));
         }
-        return list.toArray();
+        HashMap[] maps = new HashMap[list.size()];
+        for (int index = 0; index < maps.length; index++) {
+            maps[index] = new HashMap();
+            maps[index].put("lobbiConnection", list.get(index));
+            maps[index].put("nickname", list2.get(index));
+            maps[index].put("idS",list3.get(index));
+        }
+        return maps;
     }
 
     public int checksCreateLobbi(Object o) {
@@ -156,15 +179,16 @@ class jsonConfigLobbi {
         return -1;
     }
 
-    public int checksConnectedLobbi(Object o) {
 
+
+    public String getNickName(Object o) {
         for (int index = 0; index < array.size(); index++) {
             JSONObject obs = (JSONObject) array.get(index);
             if (obs.get("id").equals(o)) {
-                return HelpClass.toInt(obs.get("lobbiConnection"));
+                return (String) obs.get("nickname");
             }
         }
-        return -1;
+        return null;
     }
 }
 

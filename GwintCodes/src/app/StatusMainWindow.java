@@ -6,7 +6,7 @@ package app;
 public class StatusMainWindow {
 /*    private boolean option = false;
     private boolean mainMenu = false;
-    private boolean client = false;
+    private boolean startClient = false;
     private boolean game = false;
     private boolean single = false;*/
 
@@ -21,7 +21,7 @@ public class StatusMainWindow {
 /*    private void allFalse() {
         option = false;
         mainMenu = false;
-        client = false;
+        startClient = false;
         game = false;
         single = false;
     }*/
@@ -45,7 +45,7 @@ public class StatusMainWindow {
                 break;
             }
             case LOBBI: {
-//                client = true;
+//                startClient = true;
                 status=LOBBI;
                 break;
             }

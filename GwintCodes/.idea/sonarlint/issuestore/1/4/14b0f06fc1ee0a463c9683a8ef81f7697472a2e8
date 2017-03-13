@@ -1,0 +1,25 @@
+
+=squid:S1068"(Remove this unused "menu" private field.(î·öÁ
+Esquid:S1444"0Make this "public static rootConfig" field final(ëŸïÂ
+Esquid:S1444"0Make this "public static fullscreen" field final(ñÓé
+=squid:S1444")Make this "public static del" field final(’û¬}
+Csquid:S1444".Make this "public static nickname" field final(’¨½
+Msquid:S1213"8Move this variable to comply with Java Code Conventions.(ÍËÄë
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(Ùûé¿øÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(“ÖÃúÿÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(‹şµ”úÿÿÿÿ
+]squid:HiddenFieldCheck"8Rename "menu" which hides the field declared at line 31.(ÚÊ¼Éùÿÿÿÿ
+~"squid:ClassVariableVisibilityCheck"RMake status a static final constant or non-public and provide accessors if needed.(û²æ¹
+‚"squid:ClassVariableVisibilityCheck"VMake lobbiRooms a static final constant or non-public and provide accessors if needed.(æ±ıû
+|"squid:ClassVariableVisibilityCheck"PMake data a static final constant or non-public and provide accessors if needed.(‰šİ
+‚"squid:ClassVariableVisibilityCheck"VMake rootConfig a static final constant or non-public and provide accessors if needed.(ëŸïÂ
+‚"squid:ClassVariableVisibilityCheck"VMake fullscreen a static final constant or non-public and provide accessors if needed.(ñÓé
+z"squid:ClassVariableVisibilityCheck"OMake del a static final constant or non-public and provide accessors if needed.(’û¬}
+€"squid:ClassVariableVisibilityCheck"TMake nickname a static final constant or non-public and provide accessors if needed.(’¨½
+~"squid:ClassVariableVisibilityCheck"RMake client a static final constant or non-public and provide accessors if needed.(ÍËÄë
+Osquid:S2209"5Change this instance-reference to a static reference.(Ùûé¿øÿÿÿÿ
+[squid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+:squid:S1166"%Either log or rethrow this exception.(ï­£Ä
+osquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(Î±ó‚úÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

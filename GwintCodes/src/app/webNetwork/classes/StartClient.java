@@ -40,7 +40,14 @@ public class StartClient {
             e.printStackTrace();
         }
     }
-
+    public void stop()
+    {
+        try {
+            session.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public boolean isAlive() {
         if (session == null)
             return false;

@@ -66,8 +66,10 @@ class jsonConfigLobbi {
 
     protected boolean remove(String id) {
         boolean check = findId(id);
+        System.out.println("до: " + getJson());
         if (check) {
             array.remove(indexFind(id));
+            System.out.println("после: " + getJson());
             return true;
         }
         return false;
@@ -85,8 +87,7 @@ class jsonConfigLobbi {
     }
 
     protected String getJson() {
-        System.out.println("json:" + array.toJSONString());
-
+        System.out.println("Отправляет: " + array.toJSONString());
         return array.toJSONString();
     }
 

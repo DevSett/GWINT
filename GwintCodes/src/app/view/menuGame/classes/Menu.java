@@ -162,7 +162,7 @@ public class Menu {
     }
 
     private void actionAcceptButton() {
-        mainApp.client(fieldIp.getText(), fieldPort.getText(), fieldName.getText(),stage);
+        mainApp.startClient(fieldIp.getText(), fieldPort.getText(), fieldName.getText(),stage);
     }
 
 
