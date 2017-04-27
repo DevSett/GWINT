@@ -1,47 +1,0 @@
-
-N"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(è–³‰
-psquid:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(€°é¥ıÿÿÿÿ
-Gsquid:S1199"-Extract this nested code block into a method.(Ù¸Í÷ÿÿÿÿÿ
-Bsquid:S1199"-Extract this nested code block into a method.(¦²Üß
-Gsquid:S1199"-Extract this nested code block into a method.(¿ÛËëùÿÿÿÿ
-Bsquid:S1199"-Extract this nested code block into a method.(Óõ–Ë
-Gsquid:S1199"-Extract this nested code block into a method.(ò¦ºØúÿÿÿÿ
-Gsquid:S1199"-Extract this nested code block into a method.(ëø­øÿÿÿÿ
-Bsquid:S1199"-Extract this nested code block into a method.(´¸€—
-Bsquid:S1199"-Extract this nested code block into a method.(»Ù
-Gsquid:S1199"-Extract this nested code block into a method.(ÄŞ Ÿûÿÿÿÿ
-]squid:S1871"HThis case's code block is the same as the block for the case on line 40.(Óõ–Ë
-bsquid:S1871"HThis case's code block is the same as the block for the case on line 40.(ÄŞ Ÿûÿÿÿÿ
-Usquid:S1213";Move this constructor to comply with Java Code Conventions.(£îƒûÿÿÿÿ
-e
-squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(Ù¸Í÷ÿÿÿÿÿ
-`
-squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(¦²Üß
-e
-squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(¿ÛËëùÿÿÿÿ
-`
-squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(Óõ–Ë
-e
-squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(ò¦ºØúÿÿÿÿ
-e
-squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(ëø­øÿÿÿÿ
-`
-squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(´¸€—
-`
-squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(»Ù
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(á¿“¥
-‡squid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÆğË˜øÿÿÿÿ
-g
-squid:S134"NRefactor this code to not nest more than 3 if/for/while/switch/try statements.(Ëµ¼³şÿÿÿÿ
-=squid:S1481"(Remove this unused "map" local variable.(ÿÎ™Ä
-lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(ÆğË˜øÿÿÿÿ
-Dsquid:S00108")Either remove or fill this block of code.(Ù¸Í÷ÿÿÿÿÿ
-?squid:S00108")Either remove or fill this block of code.(Óõ–Ë
-Msquid:S1854"8Remove this useless assignment to local variable "name".(ÜÃÄõ
-Lsquid:S1854"7Remove this useless assignment to local variable "map".(ÿÎ™Ä
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(šÃöãùÿÿÿÿ
-squid:S1151"jReduce this switch case number of lines from 28 to at most 5, for example by extracting code into methods.(¦²Üß
-„squid:S1151"jReduce this switch case number of lines from 21 to at most 5, for example by extracting code into methods.(¿ÛËëùÿÿÿÿ
-ƒsquid:S1151"iReduce this switch case number of lines from 9 to at most 5, for example by extracting code into methods.(ëø­øÿÿÿÿ
-~squid:S1151"iReduce this switch case number of lines from 9 to at most 5, for example by extracting code into methods.(´¸€—
-~squid:S1151"iReduce this switch case number of lines from 7 to at most 5, for example by extracting code into methods.(»Ù

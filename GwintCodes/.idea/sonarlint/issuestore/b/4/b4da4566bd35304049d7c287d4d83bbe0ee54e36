@@ -1,0 +1,4 @@
+
+ksquid:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(ÿ°™•
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(Žüîßùÿÿÿÿ
+Gsquid:S1199"-Extract this nested code block into a method.(¯ºœ×üÿÿÿÿ

@@ -1,5 +1,0 @@
-
-"squid:ClassVariableVisibilityCheck"NMake id a static final constant or non-public and provide accessors if needed.(ÍéÌ‘øÿÿÿÿ
-ƒ"squid:ClassVariableVisibilityCheck"RMake idName a static final constant or non-public and provide accessors if needed.(è¿Ç“úÿÿÿÿ
-„"squid:ClassVariableVisibilityCheck"XMake idSecondName a static final constant or non-public and provide accessors if needed.(ý²Çù
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ŒÉäÛùÿÿÿÿ

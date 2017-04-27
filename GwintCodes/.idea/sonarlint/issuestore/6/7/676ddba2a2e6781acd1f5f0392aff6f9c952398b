@@ -1,18 +1,0 @@
-
-fsquid:S1192"LDefine a constant instead of duplicating this literal "lobbiCreate" 6 times.(¸„ç·øÿÿÿÿ
-csquid:S1192"IDefine a constant instead of duplicating this literal "nickname" 7 times.(Åİ şÿÿÿÿÿ
-esquid:S1192"PDefine a constant instead of duplicating this literal "lobbiConnection" 5 times.(º’ÎŸ
-‚squid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ù¾Ìó
-O
-squid:S106";Replace this usage of System.out or System.err by a logger.(áë‹Ä
-bsquid:S1132"HMove the "-1" string literal on the left side of this string comparison.(ş¤Äğüÿÿÿÿ
-]squid:S1132"HMove the "-1" string literal on the left side of this string comparison.(İ‰© 
-„squid:S2681"oOnly the first line of this 2-line block will be executed conditionally. The rest will execute unconditionally.(œ¶î
->squid:S1481")Remove this unused "base" local variable.(Æ¥¾Ø
-csquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(³¥‹Î
-Esquid:S1172"+Remove this unused method parameter "args".(İÈÃøûÿÿÿÿ
-Msquid:S1854"8Remove this useless assignment to local variable "base".(Æ¥¾Ø
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(šÃöãùÿÿÿÿ
-jsquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(Şë…
-jsquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(÷Âõ®
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

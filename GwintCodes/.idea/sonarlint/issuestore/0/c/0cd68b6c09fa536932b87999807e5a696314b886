@@ -1,0 +1,9 @@
+
+zsquid:S1450"YRemove the "singlePlay" field and declare it as a local variable in the relevant methods.(Ñø­úúÿÿÿÿ8ù×Ë¸+
+Hsquid:S1602",Remove useless curly braces around statement(—ôÙ©8ù×Ë¸+
+osquid:S1450"SRemove the "vBox" field and declare it as a local variable in the relevant methods.(êÅ‚‰8ù×Ë¸+
+Msquid:S1602",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8ù×Ë¸+
+ysquid:S1450"XRemove the "multyPlay" field and declare it as a local variable in the relevant methods.(ŒºÜçøÿÿÿÿ8ù×Ë¸+
+osquid:S1450"SRemove the "exit" field and declare it as a local variable in the relevant methods.(¬°”é8ù×Ë¸+
+Msquid:S1602",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8ù×Ë¸+
+wsquid:S1192"VDefine a constant instead of duplicating this literal "-fx-background-size: " 3 times.(Ÿ´—üÿÿÿÿ8ù×Ë¸+

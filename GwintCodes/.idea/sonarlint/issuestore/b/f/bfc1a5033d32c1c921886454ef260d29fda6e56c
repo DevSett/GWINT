@@ -1,0 +1,7 @@
+
+U
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÂäÎJ8‹´ÙÑº+
+psquid:S1132"OMove the "SECONDARY" string literal on the left side of this string comparison.(ÇÝˆãùÿÿÿÿ8é”Í€¹+
+|squid:S1450"[Remove the "frendlyLider" field and declare it as a local variable in the relevant methods.(¤½æ¨üÿÿÿÿ8é”Í€¹+
+usquid:S1450"YRemove the "enemyLider" field and declare it as a local variable in the relevant methods.(ç¨ž‚8é”Í€¹+
+Jsquid:S1068")Remove this unused "stage" private field.(‹ðÑœýÿÿÿÿ8é”Í€¹+

@@ -1,9 +1,10 @@
 
-jsquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(÷Âõ®
-jsquid:S00122"TAt most one statement is allowed per line, but 2 statements were found on this line.(Şë…
-O
-squid:S106";Replace this usage of System.out or System.err by a logger.(áë‹Ä
-csquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(³¥‹Î
-Msquid:S1854"8Remove this useless assignment to local variable "base".(Æ¥¾Ø
-Esquid:S1172"+Remove this unused method parameter "args".(İÈÃøûÿÿÿÿ
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(ÄĞÕ­8µ£ÉÓ¸+
 >squid:S1481")Remove this unused "base" local variable.(Æ¥¾Ø
+[
+squid:S106";Replace this usage of System.out or System.err by a logger.(œ¼¥Öøÿÿÿÿ8µ£ÉÓ¸+
+V
+squid:S106";Replace this usage of System.out or System.err by a logger.(ğªÂâ8µ£ÉÓ¸+
+Esquid:S1172"+Remove this unused method parameter "args".(İÈÃøûÿÿÿÿ
+Msquid:S1854"8Remove this useless assignment to local variable "base".(Æ¥¾Ø

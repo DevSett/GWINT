@@ -1,40 +1,26 @@
 
-Bsquid:S1199"-Extract this nested code block into a method.(äğıË
-Gsquid:S1199"-Extract this nested code block into a method.(ïùÌ¢ÿÿÿÿÿ
+Bsquid:S1199"-Extract this nested code block into a method.(½•Û·
+]squid:S1871"HThis case's code block is the same as the block for the case on line 91.(”™õ¯
+^squid:S1871"IThis case's code block is the same as the block for the case on line 110.(±‹Û‚
+Gsquid:S1199"-Extract this nested code block into a method.(àÔÛ¬şÿÿÿÿ
+Bsquid:S1199"-Extract this nested code block into a method.(”™õ¯
 e
 squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(äóÎıÿÿÿÿ
-~squid:S1151"iReduce this switch case number of lines from 6 to at most 5, for example by extracting code into methods.(”™õ¯
-Gsquid:S1199"-Extract this nested code block into a method.(äóÎıÿÿÿÿ
-Bsquid:S1199"-Extract this nested code block into a method.(½•Û·
-csquid:S1871"IThis case's code block is the same as the block for the case on line 110.(äóÎıÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‚Ëå
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º°âİ
-ƒsquid:S1151"iReduce this switch case number of lines from 9 to at most 5, for example by extracting code into methods.(àÔÛ¬şÿÿÿÿ
-]squid:S1192"HDefine a constant instead of duplicating this literal "message" 8 times.(•®¿¯
+Gsquid:S1199"-Extract this nested code block into a method.(ïùÌ¢ÿÿÿÿÿ
+Gsquid:S1199"-Extract this nested code block into a method.(ÂßñÁùÿÿÿÿ
 Bsquid:S1199"-Extract this nested code block into a method.(Óõ–Ë
+Gsquid:S1199"-Extract this nested code block into a method.(ÎÕÿÿÿÿÿ
+Bsquid:S1199"-Extract this nested code block into a method.(±‹Û‚
+Bsquid:S1199"-Extract this nested code block into a method.(úš”÷
 `
 squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(äğıË
-Usquid:S1213";Move this constructor to comply with Java Code Conventions.(£îƒûÿÿÿÿ
-Bsquid:S1199"-Extract this nested code block into a method.(óåëˆ
-Asquid:S1199"-Extract this nested code block into a method.(Ã„´?
-ƒsquid:S1151"iReduce this switch case number of lines from 6 to at most 5, for example by extracting code into methods.(ÎÕÿÿÿÿÿ
-]squid:S1871"HThis case's code block is the same as the block for the case on line 91.(”™õ¯
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŞÇš¦şÿÿÿÿ
-„squid:S1151"jReduce this switch case number of lines from 10 to at most 5, for example by extracting code into methods.(ïùÌ¢ÿÿÿÿÿ
-~squid:S1151"iReduce this switch case number of lines from 6 to at most 5, for example by extracting code into methods.(½•Û·
-‡squid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÆğË˜øÿÿÿÿ
-Bsquid:S1199"-Extract this nested code block into a method.(úš”÷
-Gsquid:S1199"-Extract this nested code block into a method.(àÔÛ¬şÿÿÿÿ
+Bsquid:S1199"-Extract this nested code block into a method.(äğıË
+]squid:S1192"HDefine a constant instead of duplicating this literal "message" 8 times.(•®¿¯
 e
 squid:S128"LEnd this switch case with an unconditional break, return or throw statement.(ÂßñÁùÿÿÿÿ
-Gsquid:S1199"-Extract this nested code block into a method.(ÎÕÿÿÿÿÿ
-^squid:S1871"IThis case's code block is the same as the block for the case on line 110.(±‹Û‚
-Bsquid:S1199"-Extract this nested code block into a method.(”™õ¯
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éÿĞŠÿÿÿÿÿ
-N"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(è–³‰
+Bsquid:S1199"-Extract this nested code block into a method.(óåëˆ
 ^squid:S1871"IThis case's code block is the same as the block for the case on line 110.(äğıË
-Bsquid:S1199"-Extract this nested code block into a method.(±‹Û‚
-Gsquid:S1199"-Extract this nested code block into a method.(ÂßñÁùÿÿÿÿ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º°âİ
-~squid:S1151"iReduce this switch case number of lines from 6 to at most 5, for example by extracting code into methods.(úš”÷
-}squid:S1151"iReduce this switch case number of lines from 9 to at most 5, for example by extracting code into methods.(Ã„´?
+‡squid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(ÆğË˜øÿÿÿÿ
+csquid:S1871"IThis case's code block is the same as the block for the case on line 110.(äóÎıÿÿÿÿ
+Gsquid:S1199"-Extract this nested code block into a method.(äóÎıÿÿÿÿ
+Asquid:S1199"-Extract this nested code block into a method.(Ã„´?

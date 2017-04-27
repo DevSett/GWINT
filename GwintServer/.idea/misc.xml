@@ -54,4 +54,9 @@
   <component name="SvnConfiguration">
     <configuration>C:\Users\kills\AppData\Roaming\Subversion</configuration>
   </component>
+  <component name="WebSocketProjectComponent">
+    <option name="server" value="false" />
+    <option name="client" value="false" />
+    <option name="showResources" value="false" />
+  </component>
 </project>

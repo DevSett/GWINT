@@ -1,13 +1,0 @@
-
-psquid:S1192"VDefine a constant instead of duplicating this literal "-fx-background-size: " 3 times.(æÄŠ²ÿÿÿÿÿ
-ssquid:S1450"YRemove the "singlePlay" field and declare it as a local variable in the relevant methods.(Ñø­úúÿÿÿÿ
-rsquid:S1450"XRemove the "multyPlay" field and declare it as a local variable in the relevant methods.(ŒºÜçøÿÿÿÿ
-hsquid:S1450"SRemove the "exit" field and declare it as a local variable in the relevant methods.(¬°”é
-hsquid:S1450"SRemove the "vBox" field and declare it as a local variable in the relevant methods.(êÅ‚‰
-Xsquid:HiddenFieldCheck"8Rename "exit" which hides the field declared at line 21.(ûç…¯
-]squid:HiddenFieldCheck"8Rename "vBox" which hides the field declared at line 22.(Ý”ÂÞüÿÿÿÿ
-?squid:S00108")Either remove or fill this block of code.(’ÓÅ¬
-Asquid:S1602",Remove useless curly braces around statement(—ôÙ©
-Fsquid:S1602",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
-Fsquid:S1602",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(³¼é„ùÿÿÿÿ
