@@ -24,6 +24,15 @@ public class Menu {
     private TextField fieldPort;
     private TextField fieldName;
 
+    public Menu(Stage stage) {
+        this.stage = stage;
+        stage.setMaxHeight(1080 / MainApp.getSingleton().getDel());
+        stage.setMaxWidth(1920 / MainApp.getSingleton().getDel());
+        stage.setFullScreen(MainApp.getSingleton().isFullscreen());
+        stage.setResizable(false);
+        stage.getIcons().add(stage.getIcons().get(0));
+        mainPane();
+    }
     public Menu(Image image) {
         this.stage = new Stage();
         stage.setMaxHeight(1080 / MainApp.getSingleton().getDel());
@@ -33,7 +42,6 @@ public class Menu {
         stage.getIcons().add(image);
         mainPane();
     }
-
     private void mainPane() {
         pane = new BorderPane();
         pane.setPrefSize(stage.getMaxWidth(), stage.getMaxHeight());
@@ -68,18 +76,18 @@ public class Menu {
 
         singlePlay = singleButton();
         singlePlay.setId("single-button");
-        singlePlay.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
-                " " + 100d / MainApp.getSingleton().getDel() + ";");
+//        singlePlay.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
+//                " " + 100d / MainApp.getSingleton().getDel() + ";");
 
         multyPlay = multyButton();
         multyPlay.setId("multy-button");
-        multyPlay.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
-                " " + 100d / MainApp.getSingleton().getDel() + ";");
+//        multyPlay.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
+//                " " + 100d / MainApp.getSingleton().getDel() + ";");
 
         exit = exitButton();
         exit.setId("exit-button");
-        exit.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
-                " " + 50d / MainApp.getSingleton().getDel() + ";");
+//        exit.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
+//                " " + 50d / MainApp.getSingleton().getDel() + ";");
 
         vBox = new VBox(10);
         vBox.getChildren().addAll(singlePlay, multyPlay, exit);
@@ -89,14 +97,14 @@ public class Menu {
     }
 
     private Button exitButton() {
-        Button exit = new Button("Выход");
+        Button exit = new Button();
         exit.setPrefSize(500d / MainApp.getSingleton().getDel(), 50d / MainApp.getSingleton().getDel());
         exit.setOnAction(event -> stage.close());
         return exit;
     }
 
     private Button multyButton() {
-        Button multy = new Button("Сетевая игра");
+        Button multy = new Button();
         multy.setPrefSize(500d / MainApp.getSingleton().getDel(), 100d / MainApp.getSingleton().getDel());
         multy.setOnAction(event -> {
             actionMultyButton();
@@ -119,11 +127,11 @@ public class Menu {
         hBox2.getChildren().addAll(backMultyButton, acceptMultyButton);
 
 
-        fieldIp = new TextField();
+        fieldIp = new TextField("localhost");
         fieldIp.setPromptText("Введите ip адресс");
-        fieldPort = new TextField();
+        fieldPort = new TextField("7896");
         fieldPort.setPromptText("Введите порт");
-        fieldName = new TextField();
+        fieldName = new TextField("killsett");
         fieldName.setPromptText("Введите ваш никнейм");
 
 
@@ -169,7 +177,7 @@ public class Menu {
 
 
     private Button singleButton() {
-        Button single = new Button("Одиночная");
+        Button single = new Button();
         single.setPrefSize(500d / MainApp.getSingleton().getDel(), 100d / MainApp.getSingleton().getDel());
         single.setOnAction(event -> {
             MainApp.getSingleton().setStage(stage);

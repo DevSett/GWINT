@@ -7,3 +7,67 @@ Reason:
 2017-04-20 17:23:54 INFO  Client:21 - Open new session: 7f32eaf6-285f-43e7-8b51-1988c19653e4
 2017-04-20 17:24:00 INFO  Client:36 - Close session: 7f32eaf6-285f-43e7-8b51-1988c19653e4
 Reason: 
+2017-05-03 19:16:52 INFO  Client:21 - Open new session: c7150655-e170-4f09-b998-eeae3b673dea
+2017-05-03 19:17:05 INFO  Client:36 - Close session: c7150655-e170-4f09-b998-eeae3b673dea
+Reason: 
+2017-05-03 19:17:14 INFO  Client:21 - Open new session: b9d671c5-c1c0-448d-8e4e-3c4f265ad52e
+2017-05-03 19:17:20 INFO  Client:36 - Close session: b9d671c5-c1c0-448d-8e4e-3c4f265ad52e
+Reason: 
+2017-05-03 19:27:55 INFO  Client:21 - Open new session: 894fd282-a402-4d57-9b3c-06386b6ddc3c
+2017-05-03 19:27:56 INFO  Client:36 - Close session: 894fd282-a402-4d57-9b3c-06386b6ddc3c
+Reason: 
+2017-05-03 19:31:34 INFO  Client:21 - Open new session: ed1cbc9b-7e86-48ad-97ff-a0bafdbf7e91
+2017-05-03 19:31:36 INFO  Client:21 - Open new session: e9cafc7d-682a-4c81-8c17-44ec5e25d788
+2017-05-03 19:31:38 INFO  Client:21 - Open new session: 7f824e70-fc3c-4df1-b6d3-f4175af54462
+2017-05-03 19:32:07 INFO  Client:21 - Open new session: b3c89887-59b8-4b16-b7e6-caa65949939a
+2017-05-03 19:32:11 INFO  Client:36 - Close session: b3c89887-59b8-4b16-b7e6-caa65949939a
+Reason: 
+2017-05-03 19:42:01 ERROR StartClient:30 - start DE
+javax.websocket.DeploymentException: Connection failed.
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientSocket._connect(GrizzlyClientSocket.java:427)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientSocket.access$000(GrizzlyClientSocket.java:103)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientSocket$1.call(GrizzlyClientSocket.java:234)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientSocket$1.call(GrizzlyClientSocket.java:230)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientSocket.connect(GrizzlyClientSocket.java:248)
+	at org.glassfish.tyrus.container.grizzly.client.GrizzlyClientContainer.openClientSocket(GrizzlyClientContainer.java:95)
+	at org.glassfish.tyrus.client.ClientManager$3$1.run(ClientManager.java:668)
+	at org.glassfish.tyrus.client.ClientManager$3.run(ClientManager.java:717)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.glassfish.tyrus.client.ClientManager$SameThreadExecutorService.execute(ClientManager.java:871)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:112)
+	at org.glassfish.tyrus.client.ClientManager.connectToServer(ClientManager.java:516)
+	at org.glassfish.tyrus.client.ClientManager.connectToServer(ClientManager.java:322)
+	at app.classes.webNetwork.StartClient.start(StartClient.java:27)
+	at app.classes.MainApp.lambda$startClient$0(MainApp.java:110)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.ConnectException: В соединении отказано
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler.onConnectedAsync(TCPNIOConnectorHandler.java:210)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnectorHandler$1.connected(TCPNIOConnectorHandler.java:158)
+	at org.glassfish.grizzly.nio.transport.TCPNIOConnection.onConnect(TCPNIOConnection.java:258)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:517)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.executeIoEvent(WorkerThreadIOStrategy.java:103)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.executeIoEvent(AbstractIOStrategy.java:89)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeyEvents(SelectorRunner.java:415)
+	at org.glassfish.grizzly.nio.SelectorRunner.iterateKeys(SelectorRunner.java:384)
+	at org.glassfish.grizzly.nio.SelectorRunner.doSelect(SelectorRunner.java:348)
+	at org.glassfish.grizzly.nio.SelectorRunner.run(SelectorRunner.java:279)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:591)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:571)
+	... 1 more
+2017-05-03 19:44:00 INFO  Client:21 - Open new session: fa168b74-e2b5-44a0-b2be-ea36bb72b49d
+2017-05-03 19:44:04 INFO  Client:36 - Close session: fa168b74-e2b5-44a0-b2be-ea36bb72b49d
+Reason: 
+2017-05-03 19:44:07 INFO  Client:21 - Open new session: 0d395d9d-7e2b-4240-86ba-eaabd5291fd8
+2017-05-03 19:44:10 INFO  Client:36 - Close session: 0d395d9d-7e2b-4240-86ba-eaabd5291fd8
+Reason: 
+2017-05-03 19:51:21 INFO  Client:21 - Open new session: d82d1e41-6958-4283-9a5f-ea36d6cf3b0a
+2017-05-03 19:51:23 INFO  Client:36 - Close session: d82d1e41-6958-4283-9a5f-ea36d6cf3b0a
+Reason: 
+2017-05-03 19:51:31 INFO  Client:21 - Open new session: 8d02367c-c040-4073-9be8-7f25cb36bf7a
+2017-05-03 19:51:42 INFO  Client:36 - Close session: 8d02367c-c040-4073-9be8-7f25cb36bf7a
+Reason: 

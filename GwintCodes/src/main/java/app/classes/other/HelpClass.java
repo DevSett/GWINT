@@ -1,6 +1,9 @@
 package app.classes.other;
 
+import app.classes.MainApp;
 import app.classes.rulesGaming.Card;
+import app.classes.view.gamingTable.GamingCard;
+import app.classes.view.gamingTable.GamingTable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +17,11 @@ public class HelpClass {
     public static int StringToInt(Object object) {
         return Integer.valueOf((String) object);
     }
-    public static int LongToInt(Object object){
+
+    public static int LongToInt(Object object) {
         return Math.toIntExact((Long) object);
     }
+
     public static List<Integer> random(int size) {
         List<Integer> numbers = new ArrayList<>(size);
         int index = 0;
@@ -29,7 +34,36 @@ public class HelpClass {
         }
         return numbers;
     }
-    public static Card copyCard(Card card){
-        return new Card(card.getId(),card.getDamage(),card.getDescription(),card.getRare(),card.getColor(),card.getType());
+
+    public static Card copyCard(Card card) {
+        return new Card(
+                card.getId(),
+                card.getDamage(),
+                card.getDescription(),
+                card.getRare(),
+                card.getColor(),
+                card.getType(),
+                card.getForm()
+        );
+    }
+
+    public static GamingCard copyGamingCard(GamingCard card) {
+        return new GamingCard(
+                card.getCard(),
+                card.getSizeX() * MainApp.getSingleton().getDel(),
+                card.getSizeY() * MainApp.getSingleton().getDel(),
+                card.isAnimation(),
+                GamingTable.countCard++
+        );
+    }
+
+    public static GamingCard copyGamingCard(GamingCard card, boolean animation) {
+        return new GamingCard(
+                card.getCard(),
+                card.getSizeX() * MainApp.getSingleton().getDel(),
+                card.getSizeY() * MainApp.getSingleton().getDel(),
+                animation,
+                GamingTable.countCard++
+        );
     }
 }

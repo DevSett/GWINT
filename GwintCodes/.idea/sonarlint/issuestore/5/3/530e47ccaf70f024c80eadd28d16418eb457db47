@@ -1,7 +1,0 @@
-
-msquid:S1192"LDefine a constant instead of duplicating this literal "lobbiCreate" 6 times.(¸„ç·øÿÿÿÿ8©ö¤Ë¸+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8©ö¤Ë¸+
-lsquid:S1192"PDefine a constant instead of duplicating this literal "lobbiConnection" 5 times.(º’ÎŸ8©ö¤Ë¸+
-[
-squid:S106";Replace this usage of System.out or System.err by a logger.(“×·ôþÿÿÿÿ8âèÞÑ¸+
-jsquid:S1192"IDefine a constant instead of duplicating this literal "nickname" 7 times.(ÅÝ þÿÿÿÿÿ8©ö¤Ë¸+

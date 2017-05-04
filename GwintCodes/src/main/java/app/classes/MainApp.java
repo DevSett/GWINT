@@ -86,21 +86,25 @@ public class MainApp extends Application {
         setDel(del);
         setFullscreen(selected);
 
-        menuGame();
-
+        menuGame(stage.getIcons().get(0));
     }
 
     public void playGameTable() {
         logic.initGamingTable(stage);
     }
 
-    public void menuGame() {
-        menu = new Menu(stage.getIcons().get(0));
+    public void menuGame(Stage stage) {
+        menu = new Menu(stage);
 
         getStatus().set(StatusMainWindow.MAINMENU);
 
     }
+    public void menuGame(Image image) {
+        menu = new Menu(image);
 
+        getStatus().set(StatusMainWindow.MAINMENU);
+
+    }
     public StartClient client;
 
     public void startClient(String fieldIp, String fieldPort, String fieldName, Stage stage) {

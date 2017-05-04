@@ -65,12 +65,12 @@ public class Lobbi {
         });
         buttonExit.setOnAction(event -> {
             MainApp.getSingleton().client.stop();
-            MainApp.getSingleton().menuGame();
+            MainApp.getSingleton().menuGame(stage);
         });
         buttonJoin.setOnAction(event -> {
-            if(tableView.getSelectionModel().getSelectedIndex()==-1)
+            if (tableView.getSelectionModel().getSelectedIndex() == -1)
                 return;
-           //
+            //
         });
         pane.setCenter(buttonCreate);
         pane.setLeft(buttonExit);
@@ -94,8 +94,8 @@ public class Lobbi {
     public void freeLobbi(int lobbi) {
 
     }
-    public void createLobbi()
-    {
+
+    public void createLobbi() {
 
     }
 }

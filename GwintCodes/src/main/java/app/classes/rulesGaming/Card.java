@@ -5,20 +5,22 @@ package app.classes.rulesGaming;
  */
 public class Card {
 
-    private int id;
-    private int damage;
+    private Integer id;
+    private Integer damage;
     private String description;
     private CardRare rare;
     private CardColor color;
-    private TypeCard typeCard;
+    private CardType type;
+    private CardForm form;
 
-    public Card(int id, int damage, String description, CardRare rare, CardColor color, TypeCard typeCard) {
+    public Card(int id, int damage, String description, CardRare rare, CardColor color, CardType typeCard, CardForm cardForm) {
         this.id = id;
         this.damage = damage;
         this.description = description;
         this.rare = rare;
         this.color = color;
-        this.typeCard = typeCard;
+        this.type = typeCard;
+        this.form = cardForm;
     }
 
     public int getId() {
@@ -29,7 +31,7 @@ public class Card {
         this.id = id;
     }
 
-    public int getDamage() {
+    public Integer getDamage() {
         return damage;
     }
 
@@ -61,18 +63,25 @@ public class Card {
         this.color = color;
     }
 
-    public TypeCard getType() {
-        return typeCard;
+    public CardType getType() {
+        return type;
     }
 
-    public void setType(TypeCard typeCard) {
-        this.typeCard = typeCard;
+    public void setType(CardType type) {
+        this.type = type;
+    }
+
+    public CardForm getForm() {
+        return form;
+    }
+
+    public void setForm(CardForm form) {
+        this.form = form;
     }
 
     @Override
     public String toString() {
-        return "id: " + getId() + " damage: " + getDamage() + " description: " + getDescription() + " rare: " + getRare().get() + " color: " + getColor().get();
+        return "id: " + getId() + " damage: " + getDamage() + " description: " + getDescription() + " rare: " + getRare() + " color: " + getColor();
     }
-
 
 }

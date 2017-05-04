@@ -1,7 +1,0 @@
-
-[squid:S1118":Add a private constructor to hide the implicit public one.(¶Ôžïýÿÿÿÿ8ûÍ‰Ïº+
-[
-squid:S106";Replace this usage of System.out or System.err by a logger.(ÀêÂØøÿÿÿÿ8ãý¶Ïº+
-V
-squid:S106";Replace this usage of System.out or System.err by a logger.(í …Ž8ãý¶Ïº+
-Gsquid:S1075"&Remove this hard-coded path-delimiter.(‹–žðûÿÿÿÿ8‚¬°Ïº+

@@ -2,43 +2,50 @@
   "cards":[
     {
       "id": 0,
-      "damage": 10,
+      "damage": 0,
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":1
+      "type":1,
+      "form":0
     },
     {
       "id": 1,
-      "damage": 10,
+      "damage": 12,
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
+
     },
     {
       "id": 2,
-      "damage": 10,
+      "damage": 14,
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
+
     },
     {
       "id": 3,
-      "damage": 10,
+      "damage": 16,
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 4,
-      "damage": 10,
+      "damage": 18,
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 5,
@@ -46,7 +53,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 6,
@@ -54,7 +62,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 7,
@@ -62,7 +71,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 8,
@@ -70,7 +80,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 9,
@@ -78,7 +89,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 10,
@@ -86,7 +98,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 11,
@@ -94,7 +107,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 12,
@@ -102,7 +116,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 13,
@@ -110,7 +125,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 14,
@@ -118,7 +134,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 15,
@@ -126,7 +143,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 16,
@@ -134,7 +152,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 17,
@@ -142,7 +161,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 18,
@@ -150,7 +170,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 19,
@@ -158,7 +179,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 20,
@@ -166,7 +188,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 21,
@@ -174,7 +197,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 22,
@@ -182,7 +206,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 23,
@@ -190,7 +215,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 24,
@@ -198,7 +224,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 25,
@@ -206,7 +233,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 26,
@@ -214,7 +242,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 27,
@@ -222,7 +251,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 28,
@@ -230,7 +260,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 29,
@@ -238,7 +269,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 30,
@@ -246,7 +278,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 31,
@@ -254,7 +287,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 32,
@@ -262,7 +296,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 33,
@@ -270,7 +305,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 34,
@@ -278,7 +314,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 35,
@@ -286,7 +323,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 36,
@@ -294,7 +332,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 37,
@@ -302,7 +341,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 38,
@@ -310,7 +350,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 39,
@@ -318,7 +359,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 40,
@@ -326,7 +368,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 41,
@@ -334,7 +377,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 42,
@@ -342,7 +386,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 43,
@@ -350,7 +395,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 44,
@@ -358,7 +404,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 45,
@@ -366,7 +413,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 46,
@@ -374,7 +422,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 47,
@@ -382,7 +431,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 48,
@@ -390,7 +440,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 49,
@@ -398,7 +449,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     },
     {
       "id": 50,
@@ -406,7 +458,8 @@
       "description": "Пони",
       "rare": 0,
       "color": 1,
-      "type":0
+      "type":0,
+      "form":0
     }
 
   ]

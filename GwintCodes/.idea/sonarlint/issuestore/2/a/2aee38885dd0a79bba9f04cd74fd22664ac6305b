@@ -1,4 +1,4 @@
 
-äsquid:S1319"vThe type of the "gamingCards" object should be an interface such as "List" rather than the implementation "ArrayList".(ÆÈÔh
 >squid:S1068")Remove this unused "sizeY" private field.(ìåÒì
+äsquid:S1319"vThe type of the "gamingCards" object should be an interface such as "List" rather than the implementation "ArrayList".(ÆÈÔh
 >squid:S1068")Remove this unused "sizeX" private field.(—µÙ‚

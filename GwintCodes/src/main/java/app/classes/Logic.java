@@ -2,6 +2,7 @@ package app.classes;
 
 import app.classes.other.HelpClass;
 import app.classes.rulesGaming.*;
+import app.classes.view.gamingTable.GamingCard;
 import app.classes.view.gamingTable.GamingTable;
 import javafx.stage.Stage;
 import org.json.simple.JSONArray;
@@ -25,7 +26,7 @@ public class Logic {
     }
 
     public void initGamingTable(Stage stage) {
-        gamingTable = new GamingTable(stage);
+        gamingTable = new GamingTable(stage, this);
         initElGamingTable();
     }
 
@@ -40,6 +41,7 @@ public class Logic {
                 HelpClass.copyCard(cards.getListCard().get(0)),
                 cardsHend
         );
+        System.out.println(cards.getListCard().get(0).getType());
     }
 
     public Cards getCards() {
@@ -63,8 +65,24 @@ public class Logic {
             Integer rare = HelpClass.LongToInt(jsonEl.get("rare"));
             Integer color = HelpClass.LongToInt(jsonEl.get("color"));
             Integer type = HelpClass.LongToInt(jsonEl.get("type"));
-            cards.getListCard().add(new Card(id, damage, description, new CardRare(rare), new CardColor(color), new TypeCard(type)));
+            Integer form = HelpClass.LongToInt(jsonEl.get("form"));
+
+
+            cards.getListCard().add(
+                    new Card(
+                            id,
+                            damage,
+                            description,
+                            CardRare.values()[rare],
+                            CardColor.values()[color],
+                            CardType.values()[type],
+                            CardForm.values()[form]
+                    )
+            );
         }
     }
 
+    public void actionOnCard(GamingCard card) {
+
+    }
 }
