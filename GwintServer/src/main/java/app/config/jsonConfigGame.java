@@ -11,16 +11,16 @@ import java.io.IOException;
 class jsonConfigGame {
     private JSONArray array;
 
-    protected static void main(String[] args) throws IOException, ParseException {
+    public static void main(String[] args) throws IOException, ParseException {
         jsonConfigGame base = new jsonConfigGame();
     }
 
-    protected jsonConfigGame() {
+    public jsonConfigGame() {
         array = new JSONArray();
     }
 
 
-    protected boolean add(String id1, String id2
+    public boolean add(String id1, String id2
                           /*int life, int strong1, int strong2, int strong3,
                           int lifeWall1, int lifeWall2, int lifeWall3,
                           int idCardsHand[], int idCardsTrash[], int idCardsPack[]*/) {
@@ -67,7 +67,7 @@ class jsonConfigGame {
 
     }
 
- /*   protected boolean update(String id, String nickName,
+ /*   public boolean update(String id, String nickName,
                            int life, int strong1, int strong2, int strong3, int lifeWall1, int lifeWall2, int lifeWall3,
                            int idCardsHand[], int idCardsTrash[], int idCardsPack[]) throws IOException {
         boolean checkIs = findId(id);
@@ -100,7 +100,7 @@ class jsonConfigGame {
         }
     }*/
 
-    protected boolean findId(String id) {
+    public boolean findId(String id) {
         for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
             JSONObject obs = (JSONObject) array.get(indexParseJs);
             if (id.equals(obs.get("id1"))) return true;
@@ -110,7 +110,7 @@ class jsonConfigGame {
         return false;
     }
 
-    protected String findIdEnemy(String id) {
+    public String findIdEnemy(String id) {
         for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
             JSONObject obs = (JSONObject) array.get(indexParseJs);
             if (id.equals(obs.get("id1"))) return (String) obs.get("id2");
@@ -119,7 +119,7 @@ class jsonConfigGame {
         return null;
     }
 
-    protected boolean remove(String id) {
+    public boolean remove(String id) {
         boolean check = findId(id);
         if (check) {
             array.remove(indexFind(id));
@@ -128,7 +128,7 @@ class jsonConfigGame {
         return false;
     }
 
-    protected int indexFind(String id) {
+    public int indexFind(String id) {
         boolean checkIs = findId(id);
         if (checkIs) {
             for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
@@ -139,7 +139,7 @@ class jsonConfigGame {
         return -1;
     }
 
-    protected String getJson() {
+    public String getJson() {
         return array.toJSONString();
     }
 }

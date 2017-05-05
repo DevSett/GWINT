@@ -13,15 +13,15 @@ import java.io.IOException;
 class jsonConfigLobbi {
     private JSONArray array;
 
-    protected jsonConfigLobbi() {
+    public jsonConfigLobbi() {
         array = new JSONArray();
     }
 
-    protected static void main(String[] args) throws IOException, ParseException {
+    public static void main(String[] args) throws IOException, ParseException {
         jsonConfigLobbi base = new jsonConfigLobbi();
     }
 
-    protected boolean add(String id, String nickName, int lobbiCreate, int lobbiConnection) {
+    public boolean add(String id, String nickName, int lobbiCreate, int lobbiConnection) {
         boolean checkRep = findId(id);
         if (!checkRep) {
             JSONObject obs = new JSONObject();
@@ -38,7 +38,7 @@ class jsonConfigLobbi {
         }
     }
 
-    protected boolean update(String id, int lobbiCreate, int lobbiConnection) {
+    public boolean update(String id, int lobbiCreate, int lobbiConnection) {
         boolean checkIs = findId(id);
         if (checkIs) {
             for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
@@ -56,7 +56,7 @@ class jsonConfigLobbi {
 
     }
 
-    protected boolean findId(String id) {
+    public boolean findId(String id) {
         for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
             JSONObject obs = (JSONObject) array.get(indexParseJs);
             if (id.equals(obs.get("id"))) return true;
@@ -64,18 +64,18 @@ class jsonConfigLobbi {
         return false;
     }
 
-    protected boolean remove(String id) {
+    public boolean remove(String id) {
         boolean check = findId(id);
-        System.out.println("до: " + getJson());
+        System.out.println("до json: " + getJson());
         if (check) {
             array.remove(indexFind(id));
-            System.out.println("после: " + getJson());
+            System.out.println("после json: " + getJson());
             return true;
         }
         return false;
     }
 
-    protected int indexFind(String id) {
+    public int indexFind(String id) {
         boolean checkIs = findId(id);
         if (checkIs) {
             for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
@@ -86,8 +86,7 @@ class jsonConfigLobbi {
         return -1;
     }
 
-    protected String getJson() {
-        System.out.println("Отправляет: " + array.toJSONString());
+    public String getJson() {
         return array.toJSONString();
     }
 

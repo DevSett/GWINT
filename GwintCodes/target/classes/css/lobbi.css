@@ -1,16 +1,15 @@
 .table-view .column-header-background .label {
     -fx-background-color: transparent;
-    -fx-text-fill: white;
-    -fx-background-color: rgba(0, 100, 100, 0.5);
-    -fx-background-radius: 10;
+    -fx-text-fill: black;
+    -fx-background-color: rgba(255,255,255,0.5);
+    /*-fx-background-radius: 10;*/
 }
 
 .table-view .column-header {
     -fx-background-color: transparent;
 }
 .table-view {
-    -fx-background-color: rgba(0, 100, 100, 0.5);
-    -fx-background-radius: 10;
+    -fx-background-color: rgba(100, 100, 100, 0.5);
     -fx-text-fill: white;
 }
 .table-view .table-cell{
@@ -19,15 +18,13 @@
 }
 
 .table-row-cell {
-    -fx-background-color: rgba(0, 100, 100, 0.5);
-    -fx-background-radius: 10;
+    -fx-background-color: rgba(100, 100, 100, 0.5);
     -fx-text-alignment: center;
 }
 .table-view .column-header-background{
-    -fx-background-color: rgba(0, 100, 100, 0.5);
+    -fx-background-color: rgba(100, 100, 100, 0.5);
 }
 .button{
-    -fx-background-color: rgba(0, 100, 100, 0.5);
-    -fx-background-radius: 10;
+    -fx-background-color: rgba(100, 100, 100, 0.5);
     -fx-text-fill: white;
 }

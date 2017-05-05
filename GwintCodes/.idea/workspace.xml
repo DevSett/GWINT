@@ -6,106 +6,66 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/TimelineCard.java" line="48" />
     <bookmark url="file://$PROJECT_DIR$/src/main/resources/cards.json" line="38" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java" line="20" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" line="83" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" line="82" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardForm.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/021d86b460c800028b44db6800139ef0d1e25f4c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/177d2d65d71260d5b6a46c53ae7a409f880be88e" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c8552149c05911624eb6bfa48a3151f2278deb5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/21027185462b2bfc4d8e6e924885775ddd6aca45" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c6d1393b9aa8fbf30c005de3d5bb9d4d81edfa8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/32bb483849d1b12d36471d14f815db7c24ce3f89" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/367d9fec5a696bd630afb6eee4f20b38fd8af61b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/371f8158ec71cb7e368b4f92ca88df8a5f0c4835" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/476997983059ad89b0eea0df60164f3ce089d0e1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a87b6b13c90ab64a8b14b6d586854fbeac006a8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/530e47ccaf70f024c80eadd28d16418eb457db47" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54416ee74946c48310597cf912cd9cec3cfc235d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54b675ea2cbbcec402971ced2ed6557ba1871bed" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6d460a62b7189e071ef907516319923dba093e43" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/0/7005336bb170191c8e20dd7dab54bd882cfe5600" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7db59b3e5ac6f2f010592eb0cddceab891786cc0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/93739b2d73e6dd5c8b949b77fc37bac05a34081d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bc5632d9719189248e5365b454a833a6753a8d3f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bfc1a5033d32c1c921886454ef260d29fda6e56c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c23521b1a2a6aea1b8132684379c9bfdf6f67d68" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccc4c64cc2e1296a92c6232e11b7fb3527d7db2b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf91dbaa13ee9800b1b92b69885831c04c22fdc5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e3a19603d48dd731502ba35e7c1560379c4b7c4c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e75fce038ef8804848555da34bade03b7479cb21" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f88f45de41b19de5c83b170a90c506166b1f505c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9da5cc3b2ed6e2b35e7cb656189e1b03bd06202" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fbeef6dad0cc6c6b5a436548a2b95aefa5ae2ad0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/AnimationCard.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/rulesGaming/TypeCard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/AnimationCard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/AnimationCardTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/CardsHand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CARD$LIDER$FRENDLY.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$FORCE_COUNTER$FRENDLY.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$GAME$FRENDLY.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$LIFE$FRENDLY.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$TRASH$FRENDLY.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/TypeCard.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/AnimationCardTest.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/TimelineCard.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CardsHand.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CardsBox.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2aee38885dd0a79bba9f04cd74fd22664ac6305b" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2aee38885dd0a79bba9f04cd74fd22664ac6305b" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b1b9fa1847030748f44376fe805cddc30b7ab17" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b1b9fa1847030748f44376fe805cddc30b7ab17" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b07def81e5bd7b6b675183deb3fccea326044ca" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b07def81e5bd7b6b675183deb3fccea326044ca" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b35f83570e2950e29f3dbf8d3d6e74855cfd809" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b35f83570e2950e29f3dbf8d3d6e74855cfd809" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88f962ddea63d5c584940d829175d8d5d94cf8b6" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88f962ddea63d5c584940d829175d8d5d94cf8b6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8ae8e74df471fe27467be98c69f12200d2c25015" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8ae8e74df471fe27467be98c69f12200d2c25015" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/Logic.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/Logic.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jfoenix_jfoenix_1_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/classes/other/Messager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/StatusWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../GwintServer/src/main/java/app/dsa.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/app/classes/StatusMainWindow.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/Logic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/app/classes/StatusMainWindow.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/app/classes/Logic.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Logic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/MainApp.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/MainApp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/other/HelpClass.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/other/HelpClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/rulesGaming/Card.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/rulesGaming/Card.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/rulesGaming/CardColor.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/rulesGaming/CardColor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/rulesGaming/CardRare.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/rulesGaming/CardRare.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingCard.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingCard.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingTable.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingTable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/lobbiGame/classes/Lobbi.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/lobbiGame/classes/Lobbi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/lobbiGame/classes/LobbiItems.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/lobbiGame/classes/LobbiItems.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/menuGame/classes/Menu.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/menuGame/classes/Menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CARD$LIDER$ENEMY.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CARD$LIDER$ENEMY.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CARD$LIDER.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CARD$LIDER.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CARD.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CARD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CARDS_IN_HEND.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CARDS_IN_HEND.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CIRCLE_SICE.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$CIRCLE_SICE.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$FORCE_COUNTER$ENEMY.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$FORCE_COUNTER$ENEMY.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$FORCE_COUNTER.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$FORCE_COUNTER.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$GAME$ENEMY.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$GAME$ENEMY.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$GAME.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$GAME.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$LIFE$ENEMY.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$LIFE$ENEMY.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$LIFE.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$LIFE.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$TRASH$ENEMY.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$TRASH$ENEMY.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$TRASH.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING$TRASH.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$PADDING.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD$GAME.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD$GAME.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD$IN_HEND.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD$IN_HEND.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD$LIDER.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD$LIDER.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD$TRASH.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD$TRASH.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARD.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARDS_IN_HEND.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/optionGame/classes/ScreenResolution$SIZE$CARDS_IN_HEND.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/menuGame/classes/test.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/menuGame/classes/test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/Client.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/Client.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/StartClient.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/StartClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/config/CommandGwent.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/config/CommandGwent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/config/RootConfig.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/config/RootConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/target/classes/app/Server.class" afterPath="$PROJECT_DIR$/../GwintServer/target/classes/app/Server.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/CommandGwent.class" afterPath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/CommandGwent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/HelpClass.class" afterPath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/HelpClass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/RootConfig.class" afterPath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/RootConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/jsonConfigGame.class" afterPath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/jsonConfigGame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/jsonConfigLobbi.class" afterPath="$PROJECT_DIR$/../GwintServer/target/classes/app/config/jsonConfigLobbi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/target/classes/app/main.class" afterPath="$PROJECT_DIR$/../GwintServer/target/classes/app/main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GwintCodes.iml" afterPath="$PROJECT_DIR$/GwintCodes.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_file.log" afterPath="$PROJECT_DIR$/log_file.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/Logic.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/Logic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/MainApp.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/MainApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/Card.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/Card.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardColor.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardColor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardRare.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardRare.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/LobbiItems.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/LobbiItems.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/optionGame/classes/ScreenResolution.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/optionGame/classes/ScreenResolution.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/cards.json" afterPath="$PROJECT_DIR$/src/main/resources/cards.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/test.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/StartClient.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/StartClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/CommandGwent.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/CommandGwent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/JsonConfigLobbi.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/JsonConfigLobbi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/css/button.css" afterPath="$PROJECT_DIR$/src/main/resources/css/button.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cards.json" afterPath="$PROJECT_DIR$/target/classes/cards.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/css/lobbi.css" afterPath="$PROJECT_DIR$/src/main/resources/css/lobbi.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/css/button.css" afterPath="$PROJECT_DIR$/target/classes/css/button.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/css/lobbi.css" afterPath="$PROJECT_DIR$/target/classes/css/lobbi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/.idea/compiler.xml" afterPath="$PROJECT_DIR$/../GwintServer/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GwintServer/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/GwintServer.iml" afterPath="$PROJECT_DIR$/../GwintServer/GwintServer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/pom.xml" afterPath="$PROJECT_DIR$/../GwintServer/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/src/main/java/app/Server.java" afterPath="$PROJECT_DIR$/../GwintServer/src/main/java/app/Server.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/src/main/java/app/config/CommandGwent.java" afterPath="$PROJECT_DIR$/../GwintServer/src/main/java/app/config/CommandGwent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/src/main/java/app/config/RootConfig.java" afterPath="$PROJECT_DIR$/../GwintServer/src/main/java/app/config/RootConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/src/main/java/app/config/jsonConfigGame.java" afterPath="$PROJECT_DIR$/../GwintServer/src/main/java/app/config/jsonConfigGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/src/main/java/app/config/jsonConfigLobbi.java" afterPath="$PROJECT_DIR$/../GwintServer/src/main/java/app/config/jsonConfigLobbi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/src/main/java/app/main.java" afterPath="$PROJECT_DIR$/../GwintServer/src/main/java/app/main.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -121,6 +81,9 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/GwintCodes$copyPast.coverage" NAME="copyPast Coverage Results" MODIFIED="1493204202835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>app.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/GwintCodes$MainApp.coverage" NAME="MainApp Coverage Results" MODIFIED="1493899690756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>.*</FILTER>
     </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -170,60 +133,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GamingTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="88" column="36" lean-forward="true" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Logic.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/Logic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="81" column="9" lean-forward="true" selection-start-line="80" selection-start-column="14" selection-end-line="81" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1505#1506#0" expanded="false" />
-                <element signature="e#1533#1534#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OptionController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/optionGame/classes/OptionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="31" column="59" lean-forward="false" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Lobbi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="66" column="36" lean-forward="false" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#3087#3088#0" expanded="false" />
-                <element signature="e#3150#3151#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="459">
+              <caret line="91" column="53" lean-forward="true" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -231,29 +146,49 @@
       <file leaf-file-name="StartClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/StartClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="780">
+              <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
+              <folding>
+                <element signature="e#1575#1576#0" expanded="true" />
+                <element signature="e#1633#1634#0" expanded="true" />
+                <element signature="e#1668#1669#0" expanded="true" />
+                <element signature="e#1729#1730#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandGwent.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/CommandGwent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java">
+      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="99">
+              <caret line="124" column="22" lean-forward="true" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
+              <folding>
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamingCard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java">
+      <file leaf-file-name="Messager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/Messager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="388">
+              <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+              <folding>
+                <element signature="method#showPopupMessage#2;class#Messager#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -261,38 +196,57 @@
       <file leaf-file-name="LobbiItems.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/LobbiItems.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="84">
+              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#834#835#0" expanded="false" />
-                <element signature="e#877#878#0" expanded="false" />
-                <element signature="e#916#917#0" expanded="false" />
-                <element signature="e#951#952#0" expanded="false" />
-                <element signature="e#1007#1008#0" expanded="false" />
-                <element signature="e#1055#1056#0" expanded="false" />
-                <element signature="e#1087#1088#0" expanded="false" />
-                <element signature="e#1120#1121#0" expanded="false" />
-                <element signature="e#1164#1165#0" expanded="false" />
-                <element signature="e#1191#1192#0" expanded="false" />
-                <element signature="e#1231#1232#0" expanded="false" />
-                <element signature="e#1266#1267#0" expanded="false" />
-                <element signature="e#1303#1304#0" expanded="false" />
-                <element signature="e#1342#1343#0" expanded="false" />
-                <element signature="e#1392#1393#0" expanded="false" />
-                <element signature="e#1425#1426#0" expanded="false" />
-                <element signature="e#1477#1478#0" expanded="false" />
-                <element signature="e#1524#1525#0" expanded="false" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#994#995#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimelineCard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/TimelineCard.java">
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="468">
+              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+              <folding>
+                <element signature="e#2381#2382#0" expanded="true" />
+                <element signature="e#2411#2412#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/MainApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="55" column="72" lean-forward="false" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
+              <folding>
+                <element signature="e#2973#2974#0" expanded="true" />
+                <element signature="e#3001#3002#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1195">
+              <caret line="152" column="88" lean-forward="false" selection-start-line="152" selection-start-column="88" selection-end-line="152" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -328,7 +282,13 @@
       <find>{</find>
       <find>class</find>
       <find>toStr</find>
+      <find>CreateLobbi</find>
+      <find>protected</find>
+      <find>System</find>
     </findStrings>
+    <replaceStrings>
+      <replace>public</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/test</dir>
     </dirStrings>
@@ -352,57 +312,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/app/webNetwork/config/jsonConfigLobbi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/webNetwork/classes/StartClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/webNetwork/config/CommandGwent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/webNetwork/classes/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/webNetwork/config/RootConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/MainApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/menuGame/classes/Menu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/lobbiGame/classes/Lobbi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/copyPast.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/gamingTable/CardsHand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/gamingTable/mainGa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/optionGame/classes/resolution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/optionGame/classes/OptionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/gamingTable/AnimationCard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/optionGame/classes/ScreenResolution.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/gamingTable/GamingCard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/webNetwork/StartClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/webNetwork/config/HelpClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/view/gamingTable/GamingTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/other/HelpClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/mip/bgpu/app/classes/StatusMainWindow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/StatusMainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/Cards.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/Rules.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/JsonConfigLobbi.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/TypeCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CardsHand.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/AnimationCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/AnimationCardTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/css/button.css" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardRare.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardColor.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/optionGame/classes/ScreenResolution.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CardsBox.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/Card.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardType.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/TimelineCard.java" />
         <option value="$PROJECT_DIR$/src/main/resources/cards.json" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/MainApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/optionGame/classes/OptionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Shapes3DViewer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/log_file.log" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/StatusMainWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/StatusWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/Logic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/other/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/lobbi.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/button.css" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/LobbiItems.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Logic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/StatusWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/SplashScreenLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/AbstractJavaFxApplicationSupport.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/main.css" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/other/SystemInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/other/MDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/JsonConfigLobbi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/other/Messager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/StartClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/CommandGwent.java" />
       </list>
     </option>
   </component>
@@ -543,9 +503,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -591,6 +550,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fxml" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -698,6 +683,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webNetwork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webNetwork" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -766,7 +815,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gamingTable" />
+              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -796,7 +845,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rulesGaming" />
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -832,6 +885,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -845,7 +899,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GwintServer" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaIntl/factory" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -870,17 +924,18 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/images/gamingTable/cards" />
+      <recent name="$PROJECT_DIR$/src/main/java/app/classes/other" />
       <recent name="$PROJECT_DIR$/src/main/resources/css" />
-      <recent name="$PROJECT_DIR$/src/app/view/gamingTable/images/cards" />
-      <recent name="$PROJECT_DIR$/src/app/images" />
-      <recent name="$PROJECT_DIR$/src/app/view/gamingTable/images" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/gamingTable/cards" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app.classes.other" />
+      <recent name="app.classes" />
       <recent name="app.webNetwork.classes" />
       <recent name="app.webNetwork.config" />
       <recent name="app.rulesGaming" />
-      <recent name="main.view.gamingTable" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="app.webNetwork.config" />
@@ -920,14 +975,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="copyPast" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="app.classes.*" />
+          <option name="PATTERN" value="app.classes.view.menuGame.classes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="app.copyPast" />
+      <option name="MAIN_CLASS_NAME" value="app.classes.view.menuGame.classes.test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -940,14 +995,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="mainGa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Shapes3DViewer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="app.classes.view.gamingTable.*" />
+          <option name="PATTERN" value="app.classes.webNetwork.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="app.view.gamingTable.mainGa" />
+      <option name="MAIN_CLASS_NAME" value="app.classes.webNetwork.Shapes3DViewer" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -960,14 +1015,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Logic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="app.classes.*" />
+          <option name="PATTERN" value="app.classes.other.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="app.classes.Logic" />
+      <option name="MAIN_CLASS_NAME" value="app.classes.other.test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -980,14 +1035,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="app.classes.rulesGaming.*" />
+          <option name="PATTERN" value="app.classes.webNetwork.config.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="app.classes.rulesGaming.main" />
+      <option name="MAIN_CLASS_NAME" value="app.classes.webNetwork.config.test" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1413,18 +1468,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="Application.MainApp" />
-      <item index="2" class="java.lang.String" itemvalue="Application.copyPast" />
-      <item index="3" class="java.lang.String" itemvalue="Application.mainGa" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Logic" />
-      <item index="5" class="java.lang.String" itemvalue="Application.main" />
+      <item index="2" class="java.lang.String" itemvalue="Application.test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Shapes3DViewer" />
+      <item index="4" class="java.lang.String" itemvalue="Application.test (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Application.test (2)" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.MainApp" />
-        <item index="1" class="java.lang.String" itemvalue="Application.main" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Logic" />
-        <item index="3" class="java.lang.String" itemvalue="Application.mainGa" />
-        <item index="4" class="java.lang.String" itemvalue="Application.copyPast" />
+        <item index="1" class="java.lang.String" itemvalue="Application.test (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.test (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Shapes3DViewer" />
+        <item index="4" class="java.lang.String" itemvalue="Application.test" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1489,7 +1544,10 @@
       <workItem from="1493706564997" duration="40419000" />
       <workItem from="1493807978029" duration="753000" />
       <workItem from="1493862991813" duration="8000" />
-      <workItem from="1493867638274" duration="797000" />
+      <workItem from="1493867638274" duration="17741000" />
+      <workItem from="1493946446671" duration="15837000" />
+      <workItem from="1493978704243" duration="3276000" />
+      <workItem from="1493982827593" duration="6796000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1484886881893</created>
@@ -1579,7 +1637,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204762000" />
+    <option name="totallyTimeSpent" value="247615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="901" extended-state="6" />
@@ -1591,42 +1649,42 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UML Diagrams" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.27284428" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3979461" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3979461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31193838" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32862645" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1984536" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.19768934" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32862645" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26190478" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" x="1041" y="224" width="355" height="604" />
       <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.4944" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Websocket Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31193838" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="87" y="100" width="1404" height="704" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5056" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
-      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1658,8 +1716,22 @@
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java</url>
+          <line>66</line>
+          <properties class="app.classes.webNetwork.Client" method="getSession">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="52" />
+      <option name="time" value="54" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1668,124 +1740,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/layout/Pane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="123" column="12" lean-forward="false" selection-start-line="123" selection-start-column="11" selection-end-line="123" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/layout/HBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="229" column="11" lean-forward="false" selection-start-line="229" selection-start-column="11" selection-end-line="229" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/gamingTable/mainGa.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/view/optionGame/classes/resolution.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/copyPast.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/webNetwork/config/HelpClass.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="57" column="45" lean-forward="false" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/JsonConfigLobbi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="179" column="23" lean-forward="false" selection-start-line="179" selection-start-column="23" selection-end-line="179" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/AnimationCard.java" />
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/animation/Animation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="107" column="23" lean-forward="false" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/StatusMainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/test.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/gamingTable.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/button.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/lobbi.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/input/MouseButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/Rules.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/Cards.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/beans/value/WritableObjectValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/event/EventTarget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/event/MouseEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -1825,13 +1779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="191" column="8" lean-forward="false" selection-start-line="191" selection-start-column="8" selection-end-line="191" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1891,13 +1838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/cards.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardColor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1906,54 +1846,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="89" column="5" lean-forward="false" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1505#1506#0" expanded="false" />
-            <element signature="e#1533#1534#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="66" column="36" lean-forward="false" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3087#3088#0" expanded="false" />
-            <element signature="e#3150#3151#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/StartClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -1962,31 +1854,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/LobbiItems.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="372">
+          <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/option.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Shapes3DViewer.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="59" column="11" lean-forward="false" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/cards.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/gamingTable.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_file.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="117" column="107" lean-forward="false" selection-start-line="117" selection-start-column="107" selection-end-line="117" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/TimelineCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#877#878#0" expanded="false" />
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#951#952#0" expanded="false" />
-            <element signature="e#1007#1008#0" expanded="false" />
-            <element signature="e#1055#1056#0" expanded="false" />
-            <element signature="e#1087#1088#0" expanded="false" />
-            <element signature="e#1120#1121#0" expanded="false" />
-            <element signature="e#1164#1165#0" expanded="false" />
-            <element signature="e#1191#1192#0" expanded="false" />
-            <element signature="e#1231#1232#0" expanded="false" />
-            <element signature="e#1266#1267#0" expanded="false" />
-            <element signature="e#1303#1304#0" expanded="false" />
-            <element signature="e#1342#1343#0" expanded="false" />
-            <element signature="e#1392#1393#0" expanded="false" />
-            <element signature="e#1425#1426#0" expanded="false" />
-            <element signature="e#1477#1478#0" expanded="false" />
-            <element signature="e#1524#1525#0" expanded="false" />
+            <element signature="e#3284#3285#0" expanded="false" />
+            <element signature="e#3315#3316#0" expanded="false" />
+            <element signature="e#3350#3351#0" expanded="false" />
+            <element signature="e#3381#3382#0" expanded="false" />
+            <element signature="e#3418#3419#0" expanded="false" />
+            <element signature="e#3449#3450#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/lobbi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="67" lean-forward="false" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#396#397#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Logic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logo.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/SplashScreenLoader.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/AbstractJavaFxApplicationSupport.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4875">
+          <caret line="325" column="37" lean-forward="false" selection-start-line="325" selection-start-column="37" selection-end-line="325" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/SystemInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/ResultConverter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/MDialog.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/StatusWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1998,26 +1994,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/TimelineCard.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/JsonConfigLobbi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="1359">
+          <caret line="185" column="18" lean-forward="false" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="88" column="36" lean-forward="true" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
+        <state relative-caret-position="251">
+          <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/Logic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="81" column="9" lean-forward="true" selection-start-line="80" selection-start-column="14" selection-end-line="81" selection-end-column="9" />
+        <state relative-caret-position="468">
+          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding>
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2411#2412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="55" column="72" lean-forward="false" selection-start-line="55" selection-start-column="72" selection-end-line="55" selection-end-column="72" />
+          <folding>
+            <element signature="e#2973#2974#0" expanded="true" />
+            <element signature="e#3001#3002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/LobbiItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="124" column="22" lean-forward="true" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
+          <folding>
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1195">
+          <caret line="152" column="88" lean-forward="false" selection-start-line="152" selection-start-column="88" selection-end-line="152" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/Messager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding>
+            <element signature="method#showPopupMessage#2;class#Messager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="91" column="53" lean-forward="true" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/StartClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="66" column="54" lean-forward="false" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
+          <folding>
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1633#1634#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1729#1730#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/CommandGwent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding />
         </state>
       </provider>

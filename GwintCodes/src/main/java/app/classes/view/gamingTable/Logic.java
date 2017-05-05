@@ -1,9 +1,8 @@
-package app.classes;
+package app.classes.view.gamingTable;
 
+import app.classes.MainApp;
 import app.classes.other.HelpClass;
 import app.classes.rulesGaming.*;
-import app.classes.view.gamingTable.GamingCard;
-import app.classes.view.gamingTable.GamingTable;
 import javafx.stage.Stage;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -84,5 +83,9 @@ public class Logic {
 
     public void actionOnCard(GamingCard card) {
 
+    }
+
+    public void backToMenu() {
+        MainApp.getSingleton().menuGame(MainApp.getSingleton().getStage());
     }
 }

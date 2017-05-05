@@ -3,7 +3,6 @@ package app.classes.view.gamingTable;
  * Created by kills on 06.02.2017.
  */
 
-import app.classes.Logic;
 import app.classes.MainApp;
 import app.classes.rulesGaming.Card;
 import app.classes.rulesGaming.Cards;

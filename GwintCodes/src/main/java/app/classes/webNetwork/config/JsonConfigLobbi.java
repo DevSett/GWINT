@@ -92,7 +92,6 @@ class JsonConfigLobbi {
 
     protected String getJson() {
         out.println("json:" + array.toJSONString());
-        logger.info("getJson: " + array.toJSONString());
         return array.toJSONString();
     }
 
@@ -172,11 +171,11 @@ class JsonConfigLobbi {
         return maps;
     }
 
-    public int checksCreateLobbi(Object o) {
+    public int checksCreateLobbi(Object id) {
 
         for (int index = 0; index < array.size(); index++) {
             JSONObject obs = (JSONObject) array.get(index);
-            if (obs.get("id").equals(o)) {
+            if (obs.get("id").equals(id)) {
                 return HelpClass.StringToInt(obs.get("lobbiCreate"));
             }
         }
@@ -184,15 +183,18 @@ class JsonConfigLobbi {
     }
 
 
-    public String getNickName(Object o) {
+    public String getNickName(Object id) {
         for (int index = 0; index < array.size(); index++) {
             JSONObject obs = (JSONObject) array.get(index);
-            if (obs.get("id").equals(o)) {
+            if (obs.get("id").equals(id)) {
                 return (String) obs.get("nickname");
             }
         }
         return null;
     }
+
+
 }
+
 
 

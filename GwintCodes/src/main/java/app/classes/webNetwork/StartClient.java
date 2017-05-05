@@ -1,5 +1,6 @@
 package app.classes.webNetwork;
 
+import app.classes.webNetwork.config.CommandGwent;
 import org.apache.log4j.Logger;
 
 import javax.websocket.ContainerProvider;
@@ -20,15 +21,12 @@ public class StartClient {
         url = "ws://" + fieldIp + ":" + fieldPort + "/ws/gwent";
     }
 
-    public void start() {
+    public void start() throws DeploymentException {
         WebSocketContainer container = ContainerProvider
                 .getWebSocketContainer();
         try {
             session = container.connectToServer(Client.class,
                     URI.create(url));
-        } catch (DeploymentException e) {
-            logger.error("start DE", e);
-            e.printStackTrace();
         } catch (IOException e) {
             logger.error("start IO", e);
             e.printStackTrace();
@@ -57,4 +55,15 @@ public class StartClient {
     }
 
 
+    public void CreateLobbi() {
+        send(CommandGwent.CREATE_LOBBI.toString());
+    }
+
+    public void RemoveLobbi() {
+        send(CommandGwent.REMOVE_LOBBI.toString());
+    }
+
+    public void ConnecteLobbi() {
+        send(CommandGwent.CONNECTED_LOBBI.toString());
+    }
 }

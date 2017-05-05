@@ -1,5 +1,8 @@
 package app.classes;
 
+import app.classes.other.Messager;
+import app.classes.view.StatusWindow;
+import app.classes.view.gamingTable.Logic;
 import app.classes.view.lobbiGame.classes.Lobbi;
 import app.classes.view.lobbiGame.classes.LobbiItems;
 import app.classes.view.menuGame.classes.Menu;
@@ -7,7 +10,7 @@ import app.classes.view.optionGame.classes.OptionController;
 import app.classes.webNetwork.StartClient;
 import app.classes.webNetwork.config.RootConfig;
 import javafx.application.Application;
-import javafx.beans.property.SimpleListProperty;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,6 +20,7 @@ import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import org.json.simple.parser.ParseException;
 
+import javax.websocket.DeploymentException;
 import java.io.IOException;
 
 public class MainApp extends Application {
@@ -24,10 +28,10 @@ public class MainApp extends Application {
 
     private Logger logger = Logger.getLogger(MainApp.class);
 
-    private StatusMainWindow status = new StatusMainWindow(StatusMainWindow.UNCNOWN);
+    private StatusWindow status = StatusWindow.UNCNOWN;
 
 
-    public ObservableList<LobbiItems> data = new SimpleListProperty<>();
+    public ObservableList<LobbiItems> data = FXCollections.observableArrayList();
 
     private Stage stage;
     private Menu menu;
@@ -43,6 +47,20 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException, ParseException {
+
+        Thread thread = new Thread(() -> {
+            int i;
+            try {
+                while ((i = System.in.read()) != 100) {
+                    if (i == 97) {
+                        System.out.println(rootConfig.getConfigLobbi());
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        thread.start();
         logic = new Logic();
         setSingleton(this);
         stage = primaryStage;
@@ -74,7 +92,8 @@ public class MainApp extends Application {
         stage.setAlwaysOnTop(true);
         stage.show();
 
-        getStatus().set(StatusMainWindow.OPTION);
+        status = StatusWindow.OPTION;
+
     }
 
     public static void main(String[] args) {
@@ -96,23 +115,41 @@ public class MainApp extends Application {
     public void menuGame(Stage stage) {
         menu = new Menu(stage);
 
-        getStatus().set(StatusMainWindow.MAINMENU);
+        status = StatusWindow.MAIN_MENU;
 
     }
+
+    public void menuGame() {
+        menu = new Menu(stage);
+
+        status = StatusWindow.MAIN_MENU;
+
+    }
+
     public void menuGame(Image image) {
         menu = new Menu(image);
 
-        getStatus().set(StatusMainWindow.MAINMENU);
+        status = StatusWindow.MAIN_MENU;
 
     }
+
     public StartClient client;
 
     public void startClient(String fieldIp, String fieldPort, String fieldName, Stage stage) {
+        status = StatusWindow.LOBBI;
+
         this.stage = stage;
         setNickname(fieldName);
         Thread threadClient = new Thread(() -> {
             client = new StartClient(fieldIp, fieldPort);
-            client.start();
+            try {
+                client.start();
+
+            } catch (DeploymentException e) {
+                logger.error("Error DE :" + e);
+                e.printStackTrace();
+                new Messager(stage).showPopupMessage("Ошибка подключения к серверу!", 0, 2);
+            }
         });
         threadClient.start();
 
@@ -126,11 +163,12 @@ public class MainApp extends Application {
         }
         //
         if (client.isAlive()) lobbi();
+        else status = StatusWindow.MAIN_MENU;
     }
 
     public void lobbi() {
+        status = StatusWindow.LOBBI;
         setLobbiRooms(new Lobbi(stage));
-        getStatus().set(StatusMainWindow.LOBBI);
     }
 
     public static MainApp getSingleton() {
@@ -181,11 +219,11 @@ public class MainApp extends Application {
         this.lobbiRooms = lobbiRooms;
     }
 
-    public StatusMainWindow getStatus() {
+    public StatusWindow getStatus() {
         return status;
     }
 
-    public void setStatus(StatusMainWindow status) {
+    public void setStatus(StatusWindow status) {
         this.status = status;
     }
 
@@ -204,4 +242,6 @@ public class MainApp extends Application {
     public void setLogic(Logic logic) {
         this.logic = logic;
     }
+
+
 }

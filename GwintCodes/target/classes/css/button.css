@@ -1,49 +1,50 @@
+
+
+
 #multy-button {
     -fx-background-image: url("../images/menuGame/multyButton.png");
-    -fx-background-size: contain;
-    -fx-background-repeat: stretch;
-    -fx-background-position: center center;
-    -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
+
 }
 
 #multy-button:pressed {
     -fx-background-image: url("../images/menuGame/multyButtonPressed.png");
-    -fx-background-size: contain;
-    -fx-background-repeat: stretch;
-    -fx-background-position: center center;
-    -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
+
 }
 
 #single-button {
     -fx-background-image: url("../images/menuGame/singleButton.png");
-    -fx-background-size: contain;
-    -fx-background-repeat: stretch;
-    -fx-background-position: center center;
-    -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
 }
 
 #single-button:pressed {
     -fx-background-image: url("../images/menuGame/singleButtonPressed.png");
-    -fx-background-size: contain;
-    -fx-background-repeat: stretch;
-    -fx-background-position: center center;
-    -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
 }
 
 #exit-button {
     -fx-background-image: url("../images/menuGame/exitButton.png");
-    -fx-background-size: contain;
-    -fx-background-repeat: stretch;
-    -fx-background-position: center center;
-    -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
+
 }
 
 #exit-button:pressed {
     -fx-background-image: url("../images/menuGame/exitButtonPressed.png");
+
+}
+
+#exit-button:pressed, #single-button:pressed, #multy-button:pressed{
     -fx-background-size: contain;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
     -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
 }
 
+#multy-button:hover, #exit-button:hover, #single-button:hover{
+    -fx-effect: dropshadow(three-pass-box, yellow, 0, 0.5, 0, 0);
+}
 
+#single-button, #exit-button, #multy-button{
+    -fx-background-size: contain;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}

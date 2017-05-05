@@ -28,5 +28,6 @@
     <orderEntry type="library" name="Maven: org.glassfish.grizzly:grizzly-http:2.3.25" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.tyrus.bundles:tyrus-standalone-client-jdk:1.9" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: com.jfoenix:jfoenix:1.4.0" level="project" />
   </component>
 </module>

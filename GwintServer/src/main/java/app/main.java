@@ -14,7 +14,7 @@ import java.util.Map;
 
 
 public class main {
-static RootConfig rootConfig = new RootConfig();
+    static RootConfig rootConfig = new RootConfig();
 
     public static void main(String[] args) throws DeploymentException,
             IOException {
@@ -23,7 +23,16 @@ static RootConfig rootConfig = new RootConfig();
                 Server.class);
         try {
             server.start();
-            System.in.read();
+            //d
+            int i = -1;
+            while ((i = System.in.read()) != 100) {
+                //a
+                if (i == 97) {
+                    System.out.println(rootConfig.getConfigLobbi());
+                }
+            }
+            ;
+
         } finally {
             server.stop();
         }

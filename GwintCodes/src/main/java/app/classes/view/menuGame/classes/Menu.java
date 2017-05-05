@@ -1,13 +1,16 @@
 package app.classes.view.menuGame.classes;
 
 import app.classes.MainApp;
+import com.jfoenix.controls.JFXTextField;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+
+import java.util.Random;
 
 /**
  * Created by kills on 01.03.2017.
@@ -20,9 +23,9 @@ public class Menu {
     private Button multyPlay;
     private Button exit;
     private VBox vBox;
-    private TextField fieldIp;
-    private TextField fieldPort;
-    private TextField fieldName;
+    private JFXTextField fieldIp;
+    private JFXTextField fieldPort;
+    private JFXTextField fieldName;
 
     public Menu(Stage stage) {
         this.stage = stage;
@@ -33,6 +36,7 @@ public class Menu {
         stage.getIcons().add(stage.getIcons().get(0));
         mainPane();
     }
+
     public Menu(Image image) {
         this.stage = new Stage();
         stage.setMaxHeight(1080 / MainApp.getSingleton().getDel());
@@ -42,6 +46,7 @@ public class Menu {
         stage.getIcons().add(image);
         mainPane();
     }
+
     private void mainPane() {
         pane = new BorderPane();
         pane.setPrefSize(stage.getMaxWidth(), stage.getMaxHeight());
@@ -89,11 +94,12 @@ public class Menu {
 //        exit.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
 //                " " + 50d / MainApp.getSingleton().getDel() + ";");
 
+
         vBox = new VBox(10);
         vBox.getChildren().addAll(singlePlay, multyPlay, exit);
         vBox.setAlignment(Pos.CENTER);
-
         pane.setCenter(vBox);
+
     }
 
     private Button exitButton() {
@@ -120,19 +126,36 @@ public class Menu {
         HBox hBox = new HBox(30);
         HBox hBox2 = new HBox(30);
         HBox hBox3 = new HBox(30);
+
         Button acceptMultyButton = buttonAccept();
         Button backMultyButton = buttonBack();
+        //ждут отрисовки книпоки
 
         hBox2.setAlignment(Pos.CENTER);
         hBox2.getChildren().addAll(backMultyButton, acceptMultyButton);
 
 
-        fieldIp = new TextField("localhost");
+        fieldIp = new JFXTextField("localhost");
         fieldIp.setPromptText("Введите ip адресс");
-        fieldPort = new TextField("7896");
+        fieldIp.setUnFocusColor(Color.WHITESMOKE);
+        fieldIp.setFocusColor(Color.WHITE);
+        fieldIp.setLabelFloat(true);
+        fieldIp.setStyle("-fx-text-fill: whitesmoke; -fx-effect: dropshadow(three-pass-box, black, 10, 0.7, 0, 0); -fx-background-color: rgba(0, 100, 100, 0.2);");
+
+        fieldPort = new JFXTextField("7896");
         fieldPort.setPromptText("Введите порт");
-        fieldName = new TextField("killsett");
+        fieldPort.setUnFocusColor(Color.WHITESMOKE);
+        fieldPort.setFocusColor(Color.WHITE);
+        fieldPort.setLabelFloat(true);
+        fieldPort.setStyle("-fx-text-fill: whitesmoke; -fx-effect: dropshadow(three-pass-box, black, 10, 0.7, 0, 0); -fx-background-color: rgba(0, 100, 100, 0.2);");
+
+
+        fieldName = new JFXTextField("killsett" + (new Random().nextInt(1000) + 10) / 10);
         fieldName.setPromptText("Введите ваш никнейм");
+        fieldName.setUnFocusColor(Color.WHITESMOKE);
+        fieldName.setFocusColor(Color.WHITE);
+        fieldName.setLabelFloat(true);
+        fieldName.setStyle("-fx-text-fill: whitesmoke; -fx-effect: dropshadow(three-pass-box, black, 10, 0.7, 0, 0); -fx-background-color: rgba(0, 100, 100, 0.2);");
 
 
         hBox3.getChildren().addAll(fieldName);

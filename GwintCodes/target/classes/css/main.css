@@ -1,0 +1,448 @@
+.menu-button {
+    -fx-background-color: #fff;
+    -fx-border-color: #333;
+    -fx-background-insets: 0,1,4,5;
+    -fx-border-radius: 9,8,5,4;
+    -fx-background-radius: 9,8,5,4;
+    -fx-font-size: 16 px;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+    -fx-padding: 3 30 3 30;
+}
+
+.exit-button {
+    /*-fx-background-image: url("/icons/exit.png");*/
+    -fx-padding: 4 10 4 10;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.home-button {
+    /*-fx-background-image: url("/icons/home.png");*/
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.system-button {
+    /*-fx-background-image: url("/icons/system.png");*/
+    -fx-padding: 4 10 4 10;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.help-button {
+    -fx-padding: 4 10 4 10;
+}
+
+.f-button {
+    -fx-background-color: #fff;
+    -fx-border-color: #333;
+    -fx-background-insets: 0,1,4,5;
+    -fx-border-radius: 9,8,5,4;
+    -fx-background-radius: 9,8,5,4;
+    -fx-font-size: 14 px;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+    -fx-padding: 3 30 3 30;
+}
+
+.m-pane {
+    -fx-background-insets: 7;
+    -fx-border-insets: 7;
+    -fx-border-color: #0e1c75;
+    -fx-border-width: 1;
+    -fx-border-radius: 15 15 15 15;
+    /*-fx-min-height: 150px;*/
+}
+
+.f-button:hover {
+    -fx-background-color: #f4f5f8;
+}
+
+.f-button:pressed {
+    -fx-effect: dropshadow( three-pass-box , #0e1c75 , 5, 0.7 , 0 , 0 );
+    -fx-background-color: #e4eafb;
+}
+
+.menu-button:hover {
+    -fx-effect: dropshadow( three-pass-box , #0e1c75 , 5, 0.7 , 0 , 0 );
+    -fx-background-color: #e4eafb;
+}
+.menu-button:pressed {
+    -fx-effect: dropshadow( three-pass-box , #0e1c75 , 5, 0.7 , 0 , 0 );
+    -fx-background-color: #e4eafb;
+}
+.menu-button:selected {
+    -fx-effect: dropshadow( three-pass-box ,  #d71728, 5, 0.7 , 0 , 0 );
+    -fx-background-color: #ffe6ed;
+}
+
+.exit-button:hover {
+    -fx-effect: dropshadow( three-pass-box ,  #d71728, 5, 0.7 , 0 , 0 );
+    -fx-background-color: #ffe6ed;
+}
+
+.b-info-button {
+    -fx-max-height: 55px;
+    -fx-min-height: 55px;
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-font-size: 24 px;
+}
+
+#form {
+    -fx-background-color: #9FC3F5;
+}
+#cancel {
+    -fx-background-color: #F9A19F;
+}
+#cancel:hover {
+    -fx-effect: dropshadow( three-pass-box ,  #d71728, 5, 0.7 , 0 , 0 );
+    /*-fx-background-color: #ffe6ed;*/
+}
+
+.scroll-button {
+    -fx-max-height: 40px;
+    -fx-min-height: 40px;
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-font-size: 24 px;
+}
+
+.scroll-label {
+    -fx-max-height: 40px;
+    -fx-min-height: 40px;
+    -fx-font-size: 24 px;
+    -fx-text-fill: #0F4188;
+}
+
+.button-box {
+    /*-fx-background-image: url("/icons/MIP_I.png");*/
+    -fx-background-size: 25px 25px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left center;
+}
+
+.top-button-border-pane {
+    -fx-border-color: #0F4188;
+    -fx-border-width: 2 0;
+}
+
+.main-pane {
+    -fx-background-color: white;
+}
+
+.label-pane {
+    -fx-background-color: #F4F5F8;
+    /*-fx-background-insets: 10 0 0 0;*/
+}
+
+.menu-info-pane {
+     -fx-background-color: #F4F5F8;
+     -fx-border-color: #0F4188;
+     -fx-border-width: 0 0 1.5 0;
+     -fx-min-height: 24px;
+     -fx-max-height: 24px;
+ }
+
+.menu-info-pane .label{
+    -fx-text-fill: #3b9d9a;
+}
+
+.select-pane {
+    -fx-background-color: white;
+    -fx-border-color: #C22924;
+    -fx-border-width: 0 0 1.5 0;
+    /*-fx-vbar-policy: false;*/
+    -fx-fit-to-width: true;
+}
+
+.food-pane {
+    -fx-background-color: white;
+    -fx-border-color: #0F4188;
+    -fx-border-width: 0.5;
+    -fx-background-radius: 5 0 5 0;
+    -fx-border-radius: 5 0 5 0;
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-max-height: 60px;
+    -fx-min-height: 60px;
+    -fx-font-size: 16 px;
+    -fx-text-fill: #201B18;
+}
+
+.food-pane .price-label{
+    -fx-font-size: 14 px;
+    -fx-text-fill: #0F4188;
+}
+
+.info-back {
+    -fx-background-color: rgba(10,10,10,0.6);
+}
+
+.info-back-white {
+    -fx-background-color: rgba(255,255,255,0.6);
+}
+
+.info-content {
+    -fx-min-width: 550;
+    -fx-max-width: 550;
+    -fx-max-height: 200;
+    -fx-min-height: 200;
+    -fx-background-color: white;
+    -fx-background-radius: 17;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.9), 10, 0, 0, 0);
+}
+
+.info-content .info-view {
+    -fx-min-width: 200px;
+    /*-fx-max-width: 242px;*/
+    -fx-min-height: 50px;
+    /*-fx-max-height: 182px;*/
+    -fx-border-color: #0F4188;
+    -fx-border-width: 2;
+}
+.info-content .image-view {
+    -fx-padding: 2;
+    -fx-background-radius: 10;
+}
+
+.info-button-pane {
+    -fx-max-height: 50;
+    -fx-min-height: 50;
+    -fx-background-radius: 0 0 15 15;
+}
+
+.info-head {
+    -fx-max-height: 40;
+    -fx-min-height: 40;
+    -fx-background-radius: 15 15 0 0;
+}
+
+.info-head .label {
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+}
+
+#info-button-ok {
+    -fx-background-color: #649FF4;
+}
+
+#info-button-error {
+    -fx-background-color: #F97471;
+}
+
+#info-ok {
+    -fx-background-color: #0F4188;
+}
+
+#info-error {
+    -fx-background-color: #C22924;
+}
+
+#info-content-label {
+    -fx-text-fill: #0F4188;
+    -fx-font-size: 22px;
+}
+
+#error-content-label {
+    -fx-text-fill: #C22924;
+    -fx-font-size: 20px;
+}
+
+#info-progress-message {
+ -fx-progress-color: #0F4188;
+}
+
+#info-progress-error {
+    -fx-progress-color: #C22924;
+}
+
+.info-button {
+    -fx-max-height: 45px;
+    -fx-min-height: 45px;
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-font-size: 24 px;
+    -fx-padding: 1px;
+}
+
+.info-label-pane {
+    -fx-min-width: 170px;
+    -fx-max-width: 170px;
+    -fx-border-color: #0F4188;
+    -fx-border-width: 0 0.5 0 0;
+}
+
+.little-label {
+    -fx-text-fill: #201B18;
+    -fx-font-size: 12;
+}
+
+.big-label {
+    -fx-text-fill: #0F4188;
+    -fx-font-size: 24;
+}
+
+.big-label-balance {
+    -fx-text-fill: #5b27d2;
+    -fx-font-size: 20;
+}
+
+.little-label-balance {
+    -fx-text-fill: black;
+    -fx-font-size: 12;
+}
+
+.big-label-sum {
+    -fx-text-fill: #3b9d9a;
+    -fx-font-size: 24;
+}
+
+.list-position {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-text-fill: black;
+}
+
+.list-position-button {
+    -fx-border-color: black;
+    -fx-border-width: 0.5 0 0.5 1;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-text-fill: black;
+    -fx-background-color: #ffe6ed;
+}
+
+.list-request-button {
+    -fx-border-color: black;
+    -fx-border-width: 0.5 0 0.5 1;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-text-fill: black;
+    /*-fx-background-image: url("../icons/printer.png");*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-image-insets: 0 5 0 0;
+    -fx-background-color: #e4eafb;
+}
+
+.my-list-view{
+    -fx-border-color:derive(gray,80%);
+    -fx-focus-color: white;
+    -fx-accent: white;
+    -fx-background-color: #F4F5F8;
+}
+/* The main scrollbar CSS class of ListView */
+.my-list-view .scroll-bar:horizontal ,
+.my-list-view  .scroll-bar:vertical{
+    -fx-background-color:transparent;
+    -fx-font-size: 40px;
+}
+
+
+
+/* The increment and decrement button CSS class of scrollbar */
+.my-list-view .increment-button ,.my-list-view .decrement-button {
+    -fx-background-color:transparent;
+}
+/* The main scrollbar **track** CSS class  */
+.my-list-view .scroll-bar:horizontal .track ,
+.my-list-view .scroll-bar:vertical .track{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-background-radius: 0em;
+    -fx-width: 30px;
+}
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.my-list-view .scroll-bar:horizontal .thumb,
+.my-list-view .scroll-bar:vertical .thumb {
+    -fx-background-color:  #f4f5f8;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0em;
+    -fx-border-color: black;
+}
+/* ------------------------------------------------------------------------------------- */
+/** EVENT CSS **/
+/* ------------------------------------------------------------------------------------- */
+/* The main scrollbar **track** CSS class on event of "hover" and "pressed" */
+.my-list-view .scroll-bar:horizontal:hover .track ,
+.my-list-view .scroll-bar:horizontal:pressed .track ,
+.my-list-view .scroll-bar:vertical:hover .track,
+.my-list-view .scroll-bar:vertical:pressed .track {
+    -fx-background-color: derive(white,20%);
+    -fx-border-color: black;
+    -fx-opacity: 0.2;
+    -fx-background-radius: 0em;
+}
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+.my-list-view .scroll-bar .thumb:hover,
+.my-list-view .scroll-bar .thumb:pressed{
+    -fx-background-color: #e4eafb;
+}
+
+.my-list-view .increment-button:hover ,.my-list-view .decrement-button:hover {
+    -fx-background-color:transparent;
+    -fx-border-color:derive(black,90%);
+    -fx-padding:10px;
+}
+
+.report-item-pane {
+    -fx-min-width: 500;
+    -fx-max-width: 500;
+    -fx-font-size: 18;
+}
+
+.report-button-pane {
+    -fx-min-width: 460;
+    -fx-max-width: 460;
+    -fx-font-size: 18;
+}
+
+/*.date-picker-popup  {*/
+    /*-fx-font-size: 20;*/
+/*}*/
+
+/*.date-picker-popup > .month-year-pane {*/
+    /*-fx-font-size: 16;*/
+/*}*/
+
+/*.date-picker-popup > * > .spinner > .button {*/
+    /*-fx-font-size: 30;*/
+/*}*/
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 1 0 1 0;
+    -fx-border-color: black;
+    -fx-table-header-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: black;
+    -fx-border-insets: 0 3 3 0;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.tree-cell {
+    -fx-font-size: 18px ;
+}
