@@ -7,7 +7,7 @@ import app.classes.view.lobbiGame.classes.Lobbi;
 import app.classes.view.lobbiGame.classes.LobbiItems;
 import app.classes.view.menuGame.classes.Menu;
 import app.classes.view.optionGame.classes.OptionController;
-import app.classes.webNetwork.StartClient;
+import app.classes.webNetwork.ControlClient;
 import app.classes.webNetwork.config.RootConfig;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -133,7 +133,7 @@ public class MainApp extends Application {
 
     }
 
-    public StartClient client;
+    public ControlClient client;
 
     public void startClient(String fieldIp, String fieldPort, String fieldName, Stage stage) {
         status = StatusWindow.LOBBI;
@@ -141,7 +141,7 @@ public class MainApp extends Application {
         this.stage = stage;
         setNickname(fieldName);
         Thread threadClient = new Thread(() -> {
-            client = new StartClient(fieldIp, fieldPort);
+            client = new ControlClient(fieldIp, fieldPort);
             try {
                 client.start();
 

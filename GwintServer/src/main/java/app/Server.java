@@ -60,9 +60,10 @@ public class Server {
 
     @OnClose
     public void onClose(Session session) {
-        sessions.remove(session);
-        String message = (String) main.rootConfig.checkCommands(session.getId() + "|Disconnection").get("message");
         System.out.println("[close] " + session);
+        String message = (String) main.rootConfig.checkCommands(session.getId() + "|Disconnection").get("message");
+        System.out.println("(O_O) Oтправляет об отключении(message) => " + message);
+        sessions.remove(session);
         for (Session s : sessions)
             s.getAsyncRemote().sendText(
                     message

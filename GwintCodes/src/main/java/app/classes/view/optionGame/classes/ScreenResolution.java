@@ -110,8 +110,8 @@ public final class ScreenResolution {
         }
 
         public static final class CIRCLE_SICE {
-            public static final Integer LEFT = 67;
-            public static final Integer TOP = 468;
+            public static final Integer LEFT = 63;
+            public static final Integer TOP = 410;
 
             private CIRCLE_SICE() {/* do not use */ }
 
@@ -143,13 +143,13 @@ public final class ScreenResolution {
 
         public static final class FORCE_COUNTER {
 
-            public static final Integer RIGHT = 282;
+            public static final Integer RIGHT = 278;
 
             private FORCE_COUNTER() {/* do not use */ }
 
             public static final class FRIENDLY {
                 public static final Integer TOP = 520;
-                public static final Integer BOTTOM = 525;
+                public static final Integer BOTTOM = 518;
 
                 private FRIENDLY() {/* do not use */ }
 
@@ -157,7 +157,7 @@ public final class ScreenResolution {
             }
 
             public static final class ENEMY {
-                public static final Integer TOP = 395;
+                public static final Integer TOP = 380;
                 public static final Integer BOTTOM = 645;
 
                 private ENEMY() {/* do not use */ }
@@ -168,7 +168,7 @@ public final class ScreenResolution {
 
         public static final class LIFE {
             public static final Integer RIGHT_FIRST = 100;
-            public static final Integer RIGHT_SECONT = 160;
+            public static final Integer RIGHT_SECOND = 160;
 
             private LIFE() {/* do not use */ }
 

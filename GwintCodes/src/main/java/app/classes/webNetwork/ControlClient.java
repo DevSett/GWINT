@@ -1,5 +1,6 @@
 package app.classes.webNetwork;
 
+import app.classes.MainApp;
 import app.classes.webNetwork.config.CommandGwent;
 import org.apache.log4j.Logger;
 
@@ -11,13 +12,13 @@ import java.io.IOException;
 import java.net.URI;
 
 
-public class StartClient {
+public class ControlClient {
 
-    private Logger logger = Logger.getLogger(StartClient.class);
+    private Logger logger = Logger.getLogger(ControlClient.class);
     private String url;
     private Session session;
 
-    public StartClient(String fieldIp, String fieldPort) {
+    public ControlClient(String fieldIp, String fieldPort) {
         url = "ws://" + fieldIp + ":" + fieldPort + "/ws/gwent";
     }
 
@@ -59,11 +60,21 @@ public class StartClient {
         send(CommandGwent.CREATE_LOBBI.toString());
     }
 
-    public void RemoveLobbi() {
+    public void removeLobbi() {
         send(CommandGwent.REMOVE_LOBBI.toString());
+        MainApp.getSingleton().getRootConfig().removeLobbi();
     }
 
-    public void ConnecteLobbi() {
-        send(CommandGwent.CONNECTED_LOBBI.toString());
+    public void ConnecteLobbi(int id) {
+        send(CommandGwent.CONNECTED_LOBBI.toString() + "|" + id);
+    }
+
+    public void disconnectedLobbi() {
+        send(CommandGwent.DISCONNECTED_LOBBI.toString());
+        MainApp.getSingleton().getRootConfig().disconnectedLobbi();
+    }
+
+    public void startGame() {
+        send(CommandGwent.START_GAME.toString());
     }
 }

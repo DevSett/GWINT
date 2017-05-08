@@ -9,6 +9,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
@@ -82,14 +83,20 @@ public class Lobbi {
         button.setText("Подключится");
         button.setOnAction(event -> {
             int selectionIndex = tableView.getSelectionModel().getSelectedIndex();
-            if (selectionIndex == -1)
+            if (selectionIndex == -1) {
+                new Messager(stage).showPopupMessage("Выберете лобби или создайте!", Messager.ERROR, 2, false);
                 return;
+            }
             if (tableView.getItems().get(selectionIndex).getIdName().equals(MainApp.getSingleton().getRootConfig().getId())) {
                 new Messager(stage).showPopupMessage("Невозможно подключится к себе", Messager.ERROR, 2, false);
                 return;
             }
-            if (tableView.getItems().get(selectionIndex).getIdSecondName().isEmpty()){
-                MainApp.getSingleton().client.ConnecteLobbi();
+            if (tableView.getItems().get(selectionIndex).getIdSecondName().isEmpty()) {
+                MainApp.getSingleton().client.ConnecteLobbi(tableView.getItems().get(selectionIndex).getId());
+                new Messager(stage).showPopupMessage("Подключение", Messager.INFO, 2, true);
+            } else {
+                new Messager(stage).showPopupMessage("Лобби занято!", Messager.ERROR, 2, false);
+                return;
             }
         });
         return button;
@@ -112,8 +119,29 @@ public class Lobbi {
         return button;
     }
 
+    private Button buttonDisconnect2(Button button) {
+        button.setText("Отключится");
+        button.setOnAction(event -> {
+            actionDisconnectLobbi();
+            new Messager(stage).showPopupMessage("Отключение", Messager.INFO, 2, true);
+        });
+        return button;
+    }
+
+    private void actionDisconnectLobbi() {
+        MainApp.getSingleton().client.disconnectedLobbi();
+        for (LobbiItems lobbiItems : tableView.getItems()) {
+            if (lobbiItems.getIdSecondName().equals(MainApp.getSingleton().getRootConfig().getId())) {
+                lobbiItems.setSecondName("");
+                lobbiItems.setIdSecondName("");
+                lobbiItems.setColor(Color.GREEN);
+            }
+        }
+        animatedDeletedLobbi();
+    }
+
     private void actionDisconnect() {
-        MainApp.getSingleton().client.RemoveLobbi();
+        MainApp.getSingleton().client.removeLobbi();
         for (LobbiItems lobbiItems : tableView.getItems()) {
             if (lobbiItems.getIdName().equals(MainApp.getSingleton().getRootConfig().getId())) {
                 tableView.getItems().remove(lobbiItems);
@@ -127,7 +155,16 @@ public class Lobbi {
     private Button buttonStart(Button button) {
         button.setText("Старт");
         button.setOnAction(event -> {
-
+            for (LobbiItems lobbiItems : tableView.getItems()) {
+                if (lobbiItems.getIdName().equals(MainApp.getSingleton().getRootConfig().getId())) {
+                    if (lobbiItems.getStatusCircle().getFill().equals(Color.GREEN)) {
+                        new Messager(stage).showPopupMessage("Лобби пустое", Messager.ERROR, 2, false);
+                    } else {
+                        MainApp.getSingleton().client.startGame();
+                        MainApp.getSingleton().getLogic().initGamingTable(stage);
+                    }
+                }
+            }
         });
         return button;
     }
@@ -149,9 +186,6 @@ public class Lobbi {
         }
     }
 
-    public void freeLobbi(int lobbi) {
-
-    }
 
     public void animateCreateLobbi() {
         Platform.runLater(() -> {
@@ -163,5 +197,24 @@ public class Lobbi {
     public void createLobbi() {
         MainApp.getSingleton().client.CreateLobbi();
 
+    }
+
+    public void animateConnectedLobbi() {
+
+        Platform.runLater(() -> {
+            buttonSecond.setVisible(false);
+            buttonDisconnect2(buttonThird);
+        });
+    }
+
+    public void animatedDeletedLobbi() {
+        Platform.runLater(() -> {
+            buttonSecond.setVisible(true);
+            buttonJoin(buttonThird);
+        });
+    }
+
+    public void startGame() {
+        MainApp.getSingleton().getLogic().initGamingTable(stage);
     }
 }

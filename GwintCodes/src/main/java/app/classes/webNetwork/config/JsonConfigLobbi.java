@@ -194,6 +194,35 @@ class JsonConfigLobbi {
     }
 
 
+    public void removeLobbi(String id) {
+        for (int index = 0; index < array.size(); index++) {
+            JSONObject obs = (JSONObject) array.get(index);
+            if (obs.get("id").equals(id)) {
+                for (int index2 = 0; index2 < array.size(); index2++) {
+                    JSONObject obs2 = (JSONObject) array.get(index2);
+                    if (!obs.equals(obs2))
+                        if (obs.get("lobbiCreate").equals(obs2.get("lobbiConnection"))) {
+                            obs2.replace("lobbiConnection", -1);
+                        }
+                }
+                obs.replace("lobbiCreate", -1);
+                obs.replace("lobbiConnection", -1);
+            }
+        }
+    }
+
+    public void disconnectedLobbi(String id) {
+        for (int index = 0; index < array.size(); index++) {
+            JSONObject obs = (JSONObject) array.get(index);
+            if (obs.get("id").equals(id)) {
+                obs.replace("lobbiConnection", -1);
+            }
+        }
+    }
+
+    public void clear() {
+        array.clear();
+    }
 }
 
 

@@ -5,6 +5,6 @@ package app.config;
  */
 public class HelpClass {
     public static int toInt(Object object) {
-        return Integer.valueOf((String) object);
+        return Integer.valueOf(String.valueOf(object));
     }
 }

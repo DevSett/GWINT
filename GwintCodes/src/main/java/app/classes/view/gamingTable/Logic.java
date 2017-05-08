@@ -11,6 +11,7 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by killsett on 27.04.17.
@@ -31,16 +32,17 @@ public class Logic {
 
     public void initElGamingTable() {
         gamingTable.clear();
+        List<Integer> list = HelpClass.random(11);
+
         Cards cardsHend = new Cards();
-        for (int i = 1; i < 12; i++) {
-            cardsHend.getListCard().add(HelpClass.copyCard(cards.getListCard().get(i)));
+        for (int i = 0; i < list.size(); i++) {
+            cardsHend.getListCard().add(HelpClass.copyCard(cards.getListCard().get(list.get(i))));
         }
         gamingTable.drawingMainElementsGamingTable(
                 HelpClass.copyCard(cards.getListCard().get(0)),
                 HelpClass.copyCard(cards.getListCard().get(0)),
                 cardsHend
         );
-        System.out.println(cards.getListCard().get(0).getType());
     }
 
     public Cards getCards() {

@@ -8,10 +8,6 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.Map;
 
-/**
- * Created by kills on 25.02.2017.
- */
-
 
 public class main {
     static RootConfig rootConfig = new RootConfig();
@@ -29,6 +25,10 @@ public class main {
                 //a
                 if (i == 97) {
                     System.out.println(rootConfig.getConfigLobbi());
+                }
+                //b
+                if (i == 98) {
+                    System.out.println(rootConfig.getConfigGame());
                 }
             }
             ;

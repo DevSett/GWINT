@@ -20,7 +20,9 @@ public enum CommandGwent {
     INFO_USERS("InfoUsers"),
     DISCONNECTED("Disconnected"),
     ID_USER("IdUser"),
-    SUCCESS_CREATE_LOBBI("SuccessCreateLobbi");
+    SUCCESS_CREATE_LOBBI("SuccessCreateLobbi"),
+    SUCCESS_CONNECTED_LOBBI("SuccessConnectedLobbi"),
+    ERROR_CONNECTED_LOBBI("ErrorConnectedLobbi");
 
     private String string;
 

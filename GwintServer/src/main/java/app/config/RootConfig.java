@@ -47,9 +47,9 @@ public class RootConfig {
                         (String) arrayMessage[2]
                 );
                 map.put("id", "all-each2");
-                map.put("message",message);
-                map.put("message-1", arrayMessage[0]+ "|IdUser");
-                map.put("message-2", getConfigLobbi()+"|InfoUsers");
+                map.put("message", message);
+                map.put("message-1", arrayMessage[0] + "|IdUser");
+                map.put("message-2", getConfigLobbi() + "|InfoUsers");
                 return map;
 
             }
@@ -61,14 +61,21 @@ public class RootConfig {
                 return map;
             }
             case CONNECTED_LOBBI: {
+                if (configLobbi.checkLobbi(HelpClass.toInt(arrayMessage[2]))) {
+                    map.put("id", arrayMessage[0]);
+                    map.put("message", arrayMessage[2] + "|" + CommandGwent.ERROR_CONNECTED_LOBBI);
+                    return map;
+                }
 
                 updateLobbi(
                         (String) arrayMessage[0],
                         -1,
                         HelpClass.toInt(arrayMessage[2])
                 );
-                map.put("id", "all");
+
+                map.put("id", "all-each");
                 map.put("message", message);
+                map.put("message-2", arrayMessage[2] + "|" + CommandGwent.SUCCESS_CONNECTED_LOBBI);
                 return map;
             }
             case CREATE_LOBBI: {
@@ -78,13 +85,16 @@ public class RootConfig {
                         idCreateLobbi);
                 map.put("id", "all-each");
                 map.put("message", message + "|" + idCreateLobbi);
-                map.put("message-2", idCreateLobbi++ +"|"+CommandGwent.SUCCESS_CREATE_LOBBI);
+                map.put("message-2", idCreateLobbi++ + "|" + CommandGwent.SUCCESS_CREATE_LOBBI);
                 return map;
             }
 
             case START_GAME: {
-                configGame.add((String) arrayMessage[0], (String) arrayMessage[2]);
-                return null;
+                configGame.add((String) arrayMessage[0], configLobbi.getConnectedLobbi(arrayMessage[0]));
+                ;
+                map.put("id",configLobbi.getConnectedLobbi(arrayMessage[0]));
+                map.put("message",message);
+                return map;
             }
             case STEP: {
                 map.put("id", configGame.findIdEnemy((String) arrayMessage[0]));
@@ -123,7 +133,8 @@ public class RootConfig {
 //                return CommandGwent.readyToLobbi(arrayMessage);
             }
             default:
-                System.out.println("(O_O)!uncnown command!(O_O)");
+                System.out.println("(O_O)!uncnown command!(O_O) ==> " + commandGwent);
+
         }
         return null;
     }
@@ -151,10 +162,10 @@ public class RootConfig {
         configLobbi.remove(id);
     }
 
-    private void updateLobbi(String id, int lobbiCo, int lobbiCr) {
+    private void updateLobbi(String id, int lobbiCreate, int lobbiConnection) {
         configLobbi.update(
                 id,
-                lobbiCo,
-                lobbiCr);
+                lobbiCreate,
+                lobbiConnection);
     }
 }

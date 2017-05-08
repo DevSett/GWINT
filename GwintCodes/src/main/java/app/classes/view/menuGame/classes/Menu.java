@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 
 import java.util.Random;
 
+
 /**
  * Created by kills on 01.03.2017.
  */
@@ -44,6 +45,7 @@ public class Menu {
         stage.setFullScreen(MainApp.getSingleton().isFullscreen());
         stage.setResizable(false);
         stage.getIcons().add(image);
+
         mainPane();
     }
 
@@ -95,7 +97,7 @@ public class Menu {
 //                " " + 50d / MainApp.getSingleton().getDel() + ";");
 
 
-        vBox = new VBox(10);
+        vBox = new VBox(20);
         vBox.getChildren().addAll(singlePlay, multyPlay, exit);
         vBox.setAlignment(Pos.CENTER);
         pane.setCenter(vBox);
@@ -111,6 +113,7 @@ public class Menu {
 
     private Button multyButton() {
         Button multy = new Button();
+
         multy.setPrefSize(500d / MainApp.getSingleton().getDel(), 100d / MainApp.getSingleton().getDel());
         multy.setOnAction(event -> {
             actionMultyButton();

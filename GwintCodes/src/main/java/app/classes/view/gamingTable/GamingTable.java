@@ -8,9 +8,14 @@ import app.classes.rulesGaming.Card;
 import app.classes.rulesGaming.Cards;
 import app.classes.view.optionGame.classes.ScreenResolution;
 import javafx.application.Platform;
+import javafx.geometry.Pos;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Paint;
+import javafx.scene.shape.Circle;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
@@ -57,6 +62,70 @@ public class GamingTable extends AnchorPane {
     public void drawingMainElementsGamingTable(Card idFrendlyLider, Card idEnemyLider, Cards cards) {
 
 
+        Font font = null;
+
+        font = Font.loadFont(
+                getClass().getResource("/fonts/Intro.otf").toExternalForm(),
+                50 / MainApp.getSingleton().getDel()
+        );
+
+        Font font2 = null;
+
+        font2 = Font.loadFont(
+                getClass().getResource("/fonts/Intro.otf").toExternalForm(),
+                15 / MainApp.getSingleton().getDel()
+        );
+
+        String damage = "0";
+        String damage2 = "0";
+        Label forceCounterFrendly = new Label(damage);
+        forceCounterFrendly.setStyle("-fx-text-fill: whitesmoke;");
+        forceCounterFrendly.setFont(font);
+        AnchorPane.setRightAnchor(forceCounterFrendly, ScreenResolution.PADDING.FORCE_COUNTER.RIGHT / MainApp.getSingleton().getDel());
+        AnchorPane.setBottomAnchor(forceCounterFrendly, ScreenResolution.PADDING.FORCE_COUNTER.FRIENDLY.BOTTOM / MainApp.getSingleton().getDel());
+
+        Label forceCounterEnemy = new Label(damage2);
+        forceCounterEnemy.setStyle("-fx-text-fill: whitesmoke");
+        forceCounterEnemy.setFont(font);
+        AnchorPane.setRightAnchor(forceCounterEnemy, ScreenResolution.PADDING.FORCE_COUNTER.RIGHT / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(forceCounterEnemy, ScreenResolution.PADDING.FORCE_COUNTER.ENEMY.TOP / MainApp.getSingleton().getDel());
+
+        Circle heartFrendlyFirst = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
+        AnchorPane.setRightAnchor(heartFrendlyFirst, ScreenResolution.PADDING.LIFE.RIGHT_FIRST / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(heartFrendlyFirst, ScreenResolution.PADDING.LIFE.FRIENDLY.TOP / MainApp.getSingleton().getDel());
+
+        Circle heartFrendlySecond = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
+
+        AnchorPane.setRightAnchor(heartFrendlySecond, ScreenResolution.PADDING.LIFE.RIGHT_SECOND / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(heartFrendlySecond, ScreenResolution.PADDING.LIFE.FRIENDLY.TOP / MainApp.getSingleton().getDel());
+
+        Circle heartEnemyFirst = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
+
+        AnchorPane.setRightAnchor(heartEnemyFirst, ScreenResolution.PADDING.LIFE.RIGHT_FIRST / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(heartEnemyFirst, ScreenResolution.PADDING.LIFE.ENEMY.TOP / MainApp.getSingleton().getDel());
+
+        Circle heartEnemySecond = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
+
+        AnchorPane.setRightAnchor(heartEnemySecond, ScreenResolution.PADDING.LIFE.RIGHT_SECOND / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(heartEnemySecond, ScreenResolution.PADDING.LIFE.ENEMY.TOP / MainApp.getSingleton().getDel());
+
+
+        VBox vBox = new VBox(1);
+        vBox.setAlignment(Pos.CENTER);
+        Label label = new Label("Сдаться");
+        label.setFont(font2);
+        label.setAlignment(Pos.CENTER);
+        label.setStyle("-fx-text-fill: darkred;");
+        CustomButton customButton = new CustomButton();
+        customButton.setPrefSize(110/MainApp.getSingleton().getDel(), 110/ MainApp.getSingleton().getDel());
+
+        vBox.getChildren().add(label);
+        vBox.getChildren().add(customButton);
+
+        AnchorPane.setLeftAnchor(vBox, ScreenResolution.PADDING.CIRCLE_SICE.LEFT / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(vBox, ScreenResolution.PADDING.CIRCLE_SICE.TOP / MainApp.getSingleton().getDel());
+
+
         GamingCard enemyLider = drawCard(
                 idEnemyLider,
                 ScreenResolution.SIZE.CARD.LIDER.WIDTH,
@@ -66,7 +135,6 @@ public class GamingTable extends AnchorPane {
                 ScreenResolution.PADDING.CARD.LIDER.ENEMY.TOP,
                 null
         );
-
 
         GamingCard friendlyLider = drawCard(
                 idFrendlyLider,
@@ -89,8 +157,20 @@ public class GamingTable extends AnchorPane {
                 }
             });
         }
-        this.getChildren().addAll(enemyLider, friendlyLider, cardsHand);
-        this.getChildren().addAll(fieldsForGame);
+        Platform.runLater(() -> this.getChildren().addAll(
+                enemyLider,
+                friendlyLider,
+                cardsHand,
+                forceCounterEnemy,
+                forceCounterFrendly,
+                heartEnemySecond,
+                heartEnemyFirst,
+                heartFrendlyFirst,
+                heartFrendlySecond,
+                vBox
+        ));
+        Platform.runLater(() -> this.getChildren().addAll(fieldsForGame));
+
     }
 
     public void moveToGame(GamingCard card) {
@@ -265,7 +345,7 @@ public class GamingTable extends AnchorPane {
     }
 
     public void clear() {
-        this.getChildren().clear();
+        Platform.runLater(() -> this.getChildren().clear());
     }
 
 

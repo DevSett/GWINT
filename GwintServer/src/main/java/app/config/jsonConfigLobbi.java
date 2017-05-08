@@ -100,6 +100,32 @@ class jsonConfigLobbi {
         }
         return false;
     }
+
+    public boolean checkLobbi(int i) {
+        for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
+            JSONObject obs = (JSONObject) array.get(indexParseJs);
+            if (i == HelpClass.toInt(obs.get("lobbiConnection")) && HelpClass.toInt(obs.get("lobbiCreate")) != i) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public String getConnectedLobbi(Object id) {
+        for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
+            JSONObject obs = (JSONObject) array.get(indexParseJs);
+            if (id.equals(obs.get("id"))) {
+                for (int indexParseJs2 = 0; indexParseJs2 < array.size(); indexParseJs2++) {
+                    JSONObject obs2 = (JSONObject) array.get(indexParseJs2);
+                    if (!obs.equals(obs2))
+                        if (obs2.get("lobbiConnection").equals(obs.get("lobbiCreate"))) {
+                            return (String) obs2.get("id");
+                        }
+                }
+            }
+        }
+        return null;
+    }
 }
 
 

@@ -42,6 +42,7 @@ public class Client {
     public void onClose(Session session, CloseReason closeReason) {
         out.println("Close");
         Platform.runLater(() -> {
+            MainApp.getSingleton().getRootConfig().clearJson();
             if (MainApp.getSingleton().getStatus().equals(StatusWindow.LOBBI)) {
                 new Messager(MainApp.getSingleton().getStage()).showPopupMessage("Сервер не доступен!", 0, 2);
                 MainApp.getSingleton().data.clear();

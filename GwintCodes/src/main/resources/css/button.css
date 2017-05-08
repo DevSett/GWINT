@@ -1,6 +1,4 @@
 
-
-
 #multy-button {
     -fx-background-image: url("../images/menuGame/multyButton.png");
 
@@ -29,18 +27,22 @@
 
 }
 
-#exit-button:pressed, #single-button:pressed, #multy-button:pressed{
+#exit-button:pressed, #single-button:pressed, #multy-button:pressed {
     -fx-background-size: contain;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
     -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
 }
 
-#multy-button:hover, #exit-button:hover, #single-button:hover{
-    -fx-effect: dropshadow(three-pass-box, yellow, 0, 0.5, 0, 0);
+#multy-button:hover, #exit-button:hover, #single-button:hover {
+    -fx-border-color: rgba(83, 42, 19, 0.5);
+    -fx-border-width: 2px;
+    -fx-border-insets: -5px;
+    -fx-border-radius: 10;
 }
 
-#single-button, #exit-button, #multy-button{
+
+#single-button, #exit-button, #multy-button {
     -fx-background-size: contain;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
@@ -48,3 +50,4 @@
     -fx-border-color: transparent;
     -fx-background-color: transparent;
 }
+
