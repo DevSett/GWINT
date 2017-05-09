@@ -143,7 +143,7 @@ public final class ScreenResolution {
 
         public static final class FORCE_COUNTER {
 
-            public static final Integer RIGHT = 278;
+            public static final Integer RIGHT = 270;
 
             private FORCE_COUNTER() {/* do not use */ }
 

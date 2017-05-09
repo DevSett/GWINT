@@ -133,7 +133,8 @@ class jsonConfigGame {
         if (checkIs) {
             for (int indexParseJs = 0; indexParseJs < array.size(); indexParseJs++) {
                 JSONObject obs = (JSONObject) array.get(indexParseJs);
-                if (obs.get("id").equals(id)) return indexParseJs;
+                if (obs.get("id1").equals(id)) return indexParseJs;
+                if (obs.get("id2").equals(id)) return indexParseJs;
             }
         }
         return -1;

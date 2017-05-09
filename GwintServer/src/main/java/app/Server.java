@@ -7,6 +7,7 @@ import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 import java.util.HashMap;
+import java.util.Random;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 @ServerEndpoint("/gwent")
@@ -39,20 +40,35 @@ public class Server {
                 if (!session.equals(s)) {
                     s.getAsyncRemote().sendText((String) map.get("message"));
                 }
-        } else if (map.get("id").equals("all-each")) {
+            return;
+        }
+        if (map.get("id").equals("all-each")) {
             for (Session s : sessions)
                 if (!session.equals(s)) s.getAsyncRemote().sendText((String) map.get("message"));
                 else s.getAsyncRemote().sendText((String) map.get("message-2"));
-        } else if (map.get("id").equals("all-each2")) {
+            return;
+        }
+        if (map.get("id").equals("all-each2")) {
             for (Session s : sessions)
                 if (!session.equals(s)) s.getAsyncRemote().sendText((String) map.get("message"));
                 else {
                     s.getAsyncRemote().sendText((String) map.get("message-1"));
                     s.getAsyncRemote().sendText((String) map.get("message-2"));
                 }
-        } else {
+            return;
+        }
+        if (map.get("id").equals("first")) {
             for (Session s : sessions) {
-                if (s.getId().equals(map.get("id"))) s.getAsyncRemote().sendText((String) map.get("message"));
+                if (s.getId().equals(map.get("id-1"))) s.getAsyncRemote().sendText((String) map.get("message"));
+            }
+            return;
+        }
+        boolean firsted = new Random().nextBoolean();
+
+        if (map.get("id").equals("double")) {
+            for (Session s : sessions) {
+                if (s.getId().equals(map.get("id-1"))) s.getAsyncRemote().sendText(message + "|" + firsted);
+                if (s.getId().equals(map.get("id-2"))) s.getAsyncRemote().sendText(message + "|" + !firsted);
             }
         }
     }

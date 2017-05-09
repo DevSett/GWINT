@@ -2,14 +2,18 @@ package app.classes;
 
 import app.classes.other.Messager;
 import app.classes.view.StatusWindow;
+import app.classes.view.gamingTable.GamingCard;
+import app.classes.view.gamingTable.GamingTable;
 import app.classes.view.gamingTable.Logic;
 import app.classes.view.lobbiGame.classes.Lobbi;
 import app.classes.view.lobbiGame.classes.LobbiItems;
 import app.classes.view.menuGame.classes.Menu;
 import app.classes.view.optionGame.classes.OptionController;
+import app.classes.view.optionGame.classes.ScreenResolution;
 import app.classes.webNetwork.ControlClient;
 import app.classes.webNetwork.config.RootConfig;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
@@ -22,6 +26,7 @@ import org.json.simple.parser.ParseException;
 
 import javax.websocket.DeploymentException;
 import java.io.IOException;
+import java.util.Random;
 
 public class MainApp extends Application {
 
@@ -51,9 +56,38 @@ public class MainApp extends Application {
         Thread thread = new Thread(() -> {
             int i;
             try {
+                //A B C D E F G H I K L M N O P Q R S T V X Y Z
                 while ((i = System.in.read()) != 100) {
                     if (i == 97) {
                         System.out.println(rootConfig.getConfigLobbi());
+                    }
+                    if (i == 98) {
+                        MainApp.getSingleton().getLogic().step();
+                    }
+                    if (i == 99) {
+                        MainApp.getSingleton().getLogic().stepEnemy();
+                    }
+                    if (i == 101) {
+                        Platform.runLater(() -> {
+                            MainApp.getSingleton().getLogic().actionOnCard(new GamingCard(
+                                    MainApp.getSingleton().getLogic().getCards().getListCard().get(new Random().nextInt(10) + 1),
+                                    ScreenResolution.SIZE.CARD.IN_HEND.WIDTH,
+                                    ScreenResolution.SIZE.CARD.IN_HEND.HEIGHT,
+                                    true,
+                                    GamingTable.countCard++
+                            ), false);
+                        });
+                    }
+                    if (i==102){
+                        Platform.runLater(() -> {
+                            MainApp.getSingleton().getLogic().actionOnCard(new GamingCard(
+                                    MainApp.getSingleton().getLogic().getCards().getListCard().get(new Random().nextInt(10) + 1),
+                                    ScreenResolution.SIZE.CARD.IN_HEND.WIDTH,
+                                    ScreenResolution.SIZE.CARD.IN_HEND.HEIGHT,
+                                    true,
+                                    GamingTable.countCard++
+                            ), true);
+                        });
                     }
                 }
             } catch (IOException e) {
@@ -78,7 +112,7 @@ public class MainApp extends Application {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/fxml/option.fxml"));
 
-        AnchorPane anchorPane = (AnchorPane) loader.load();
+        AnchorPane anchorPane = loader.load();
 
         OptionController opt = loader.getController();
         Image image = new Image(getClass().getResource("/images/gamingTable/tableTimes.png").toExternalForm());

@@ -124,8 +124,12 @@ public class RootConfig {
                 }
                 lobbiUpdate();
                 break;
-
             case STEP: {
+                Platform.runLater(() -> {
+                    MainApp.getSingleton().getLogic().step(arrayMessage[2], arrayMessage[3]);
+                });
+
+                MainApp.getSingleton().getLogic().step();
                 break;
             }
             case CREATE_LOBBI:
@@ -177,6 +181,14 @@ public class RootConfig {
                         lobbiItems.setSecondName("");
                         lobbiItems.setColor(Color.GREEN);
                     }
+                    if (MainApp.getSingleton().getStatus() == StatusWindow.MULTI) {
+                        if (configLobbi.checkConnection(getId())) {
+                            MainApp.getSingleton().getLogic().getGamingTable().alert(
+                                    "Соперник отключился!",
+                                    event -> MainApp.getSingleton().getLogic().backMenu(),
+                                    null);
+                        }
+                    }
                 });
 
                 configLobbi.remove(String.valueOf(arrayMessage[0]));
@@ -188,6 +200,7 @@ public class RootConfig {
                     if (t.getIdName().equals(arrayMessage[0])) Platform.runLater(() -> {
                         if (getId().equals(t.getIdSecondName())) {
                             configLobbi.update(getId(), -1, -1);
+
                         }
                         configLobbi.update(t.getIdName(), -1, -1);
                         MainApp.getSingleton().data.remove(t);
@@ -210,6 +223,9 @@ public class RootConfig {
                 break;
             case START_GAME:
                 MainApp.getSingleton().getLobbiRooms().startGame();
+                System.out.println(arrayMessage[2]);
+                if (arrayMessage[2].equals("true")) MainApp.getSingleton().getLogic().step();
+                else MainApp.getSingleton().getLogic().stepEnemy();
                 break;
             case ERROR_CONNECTED_LOBBI:
                 break;

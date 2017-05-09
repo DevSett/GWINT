@@ -223,6 +223,22 @@ class JsonConfigLobbi {
     public void clear() {
         array.clear();
     }
+
+    public boolean checkConnection(String id) {
+        for (int index = 0; index < array.size(); index++) {
+            JSONObject obs = (JSONObject) array.get(index);
+            if (obs.get("id").equals(id)) {
+                for (int index2 = 0; index2 < array.size(); index2++) {
+                    JSONObject obs2 = (JSONObject) array.get(index2);
+                    if (!obs2.equals(obs))
+                        if (obs2.get("lobbiConnection").equals(obs.get("lobbiConnection"))) {
+                            return true;
+                        }
+                }
+            }
+        }
+        return false;
+    }
 }
 
 

@@ -161,7 +161,6 @@ public class Lobbi {
                         new Messager(stage).showPopupMessage("Лобби пустое", Messager.ERROR, 2, false);
                     } else {
                         MainApp.getSingleton().client.startGame();
-                        MainApp.getSingleton().getLogic().initGamingTable(stage);
                     }
                 }
             }
@@ -208,10 +207,11 @@ public class Lobbi {
     }
 
     public void animatedDeletedLobbi() {
-        Platform.runLater(() -> {
-            buttonSecond.setVisible(true);
-            buttonJoin(buttonThird);
-        });
+        if (!buttonThird.getText().equals("Старт"))
+            Platform.runLater(() -> {
+                buttonSecond.setVisible(true);
+                buttonJoin(buttonThird);
+            });
     }
 
     public void startGame() {

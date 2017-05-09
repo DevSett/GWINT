@@ -4,14 +4,19 @@ package app.classes.view.gamingTable;
  */
 
 import app.classes.MainApp;
+import app.classes.other.HelpClass;
 import app.classes.rulesGaming.Card;
+import app.classes.rulesGaming.CardForm;
 import app.classes.rulesGaming.Cards;
 import app.classes.view.optionGame.classes.ScreenResolution;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
@@ -29,9 +34,19 @@ public class GamingTable extends AnchorPane {
     private CardsBox cardsHand;
     public static Long countCard = 0l;
     private Logic logic;
+    private GamingCard friendlyLider;
+    private GamingCard enemyLider;
+    private Stage stage;
+    private Label forceCounterEnemy;
+    private Label forceCounterFrendly;
+    private Circle heartFrendlyFirst;
+    private Circle heartFrendlySecond;
+    private Circle heartEnemyFirst;
+    private Circle heartEnemySecond;
 
     public GamingTable(Stage stage, Logic logic) {
         super();
+        this.stage = stage;
         this.logic = logic;
         getChildren().clear();
         setPrefSize(stage.getWidth(), stage.getHeight());
@@ -58,53 +73,65 @@ public class GamingTable extends AnchorPane {
 
     }
 
+    public Stage getStage() {
+        return stage;
+    }
+
+    public Circle getHeartFrendlyFirst() {
+        return heartFrendlyFirst;
+    }
+
+    public Circle getHeartFrendlySecond() {
+        return heartFrendlySecond;
+    }
+
+    public Circle getHeartEnemyFirst() {
+        return heartEnemyFirst;
+    }
+
+    public Circle getHeartEnemySecond() {
+        return heartEnemySecond;
+    }
 
     public void drawingMainElementsGamingTable(Card idFrendlyLider, Card idEnemyLider, Cards cards) {
 
 
         Font font = null;
 
-        font = Font.loadFont(
-                getClass().getResource("/fonts/Intro.otf").toExternalForm(),
-                50 / MainApp.getSingleton().getDel()
-        );
+        font = HelpClass.getFont(50 / MainApp.getSingleton().getDel());
+
 
         Font font2 = null;
 
-        font2 = Font.loadFont(
-                getClass().getResource("/fonts/Intro.otf").toExternalForm(),
-                15 / MainApp.getSingleton().getDel()
-        );
+        font2 = HelpClass.getFont(15 / MainApp.getSingleton().getDel());
 
-        String damage = "0";
-        String damage2 = "0";
-        Label forceCounterFrendly = new Label(damage);
+        forceCounterFrendly = new Label("00");
         forceCounterFrendly.setStyle("-fx-text-fill: whitesmoke;");
         forceCounterFrendly.setFont(font);
         AnchorPane.setRightAnchor(forceCounterFrendly, ScreenResolution.PADDING.FORCE_COUNTER.RIGHT / MainApp.getSingleton().getDel());
         AnchorPane.setBottomAnchor(forceCounterFrendly, ScreenResolution.PADDING.FORCE_COUNTER.FRIENDLY.BOTTOM / MainApp.getSingleton().getDel());
 
-        Label forceCounterEnemy = new Label(damage2);
+        forceCounterEnemy = new Label("00");
         forceCounterEnemy.setStyle("-fx-text-fill: whitesmoke");
         forceCounterEnemy.setFont(font);
         AnchorPane.setRightAnchor(forceCounterEnemy, ScreenResolution.PADDING.FORCE_COUNTER.RIGHT / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(forceCounterEnemy, ScreenResolution.PADDING.FORCE_COUNTER.ENEMY.TOP / MainApp.getSingleton().getDel());
 
-        Circle heartFrendlyFirst = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
+        heartFrendlyFirst = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
         AnchorPane.setRightAnchor(heartFrendlyFirst, ScreenResolution.PADDING.LIFE.RIGHT_FIRST / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(heartFrendlyFirst, ScreenResolution.PADDING.LIFE.FRIENDLY.TOP / MainApp.getSingleton().getDel());
 
-        Circle heartFrendlySecond = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
+        heartFrendlySecond = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
 
         AnchorPane.setRightAnchor(heartFrendlySecond, ScreenResolution.PADDING.LIFE.RIGHT_SECOND / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(heartFrendlySecond, ScreenResolution.PADDING.LIFE.FRIENDLY.TOP / MainApp.getSingleton().getDel());
 
-        Circle heartEnemyFirst = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
+        heartEnemyFirst = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
 
         AnchorPane.setRightAnchor(heartEnemyFirst, ScreenResolution.PADDING.LIFE.RIGHT_FIRST / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(heartEnemyFirst, ScreenResolution.PADDING.LIFE.ENEMY.TOP / MainApp.getSingleton().getDel());
 
-        Circle heartEnemySecond = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
+        heartEnemySecond = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
 
         AnchorPane.setRightAnchor(heartEnemySecond, ScreenResolution.PADDING.LIFE.RIGHT_SECOND / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(heartEnemySecond, ScreenResolution.PADDING.LIFE.ENEMY.TOP / MainApp.getSingleton().getDel());
@@ -116,8 +143,8 @@ public class GamingTable extends AnchorPane {
         label.setFont(font2);
         label.setAlignment(Pos.CENTER);
         label.setStyle("-fx-text-fill: darkred;");
-        CustomButton customButton = new CustomButton();
-        customButton.setPrefSize(110/MainApp.getSingleton().getDel(), 110/ MainApp.getSingleton().getDel());
+        CustomButton customButton = new CustomButton(logic.surrender());
+        customButton.setPrefSize(110 / MainApp.getSingleton().getDel(), 110 / MainApp.getSingleton().getDel());
 
         vBox.getChildren().add(label);
         vBox.getChildren().add(customButton);
@@ -126,7 +153,7 @@ public class GamingTable extends AnchorPane {
         AnchorPane.setTopAnchor(vBox, ScreenResolution.PADDING.CIRCLE_SICE.TOP / MainApp.getSingleton().getDel());
 
 
-        GamingCard enemyLider = drawCard(
+        enemyLider = drawCard(
                 idEnemyLider,
                 ScreenResolution.SIZE.CARD.LIDER.WIDTH,
                 ScreenResolution.SIZE.CARD.LIDER.HEIGHT,
@@ -136,7 +163,7 @@ public class GamingTable extends AnchorPane {
                 null
         );
 
-        GamingCard friendlyLider = drawCard(
+        friendlyLider = drawCard(
                 idFrendlyLider,
                 ScreenResolution.SIZE.CARD.LIDER.WIDTH,
                 ScreenResolution.SIZE.CARD.LIDER.HEIGHT,
@@ -150,13 +177,6 @@ public class GamingTable extends AnchorPane {
         cardsHand = drawCardsInHend(cards.getListCard());
         fieldsForGame = drawBoxInGame();
 
-        for (GamingCard card : cardsHand.getArrays()) {
-            card.setOnMouseClicked(event -> {
-                if (event.getButton().equals(MouseButton.PRIMARY)) {
-                    logic.actionOnCard(card);
-                }
-            });
-        }
         Platform.runLater(() -> this.getChildren().addAll(
                 enemyLider,
                 friendlyLider,
@@ -173,15 +193,40 @@ public class GamingTable extends AnchorPane {
 
     }
 
-    public void moveToGame(GamingCard card) {
-        if (fieldsForGame[4].getArrays().length < 3)
-            fieldsForGame[4].add(card);
-        else if (fieldsForGame[5].getArrays().length < 3) fieldsForGame[5].add(card);
-        else return;
+    public boolean moveToGame(GamingCard card, boolean isFrendly, CardForm cardForm) {
+        //fr 0 1  2 3  4 5
+        //en 6 7  8 9  10 11
+        int fr = 0;
+        if (!isFrendly) fr = 6;
+        switch (cardForm) {
+            case ONE_STONE:
+                if (moveToGame(card, fr)) return false;
+                break;
+            case TWO_STONE:
+                if (moveToGame(card, fr + 2)) return false;
+                break;
+            case THIRD_STONE:
+                if (moveToGame(card, fr + 4)) return false;
+                break;
+        }
+        if (isFrendly) {
+            forceCounterFrendly.setText((Integer.valueOf(forceCounterFrendly.getText()) + card.getCard().getDamage()) + "");
+        } else {
+            forceCounterEnemy.setText((Integer.valueOf(forceCounterEnemy.getText()) + card.getCard().getDamage()) + "");
+
+        }
+        return true;
+    }
+
+    public boolean moveToGame(GamingCard card, int fr) {
+        if (fieldsForGame[fr].getArrays().length < 3) fieldsForGame[fr].add(card);
+        else if (fieldsForGame[fr + 1].getArrays().length < 3) fieldsForGame[fr + 1].add(card);
+        else return true;
         cardsHand.remove(card);
-        card.setOnMouseClicked(event1 -> {
-//                removeFromGame(card.getIdn());
+        card.setOnMouseClicked(event -> {
+
         });
+        return false;
     }
 
     public void removeFromGame(GamingCard gamingCard) {
@@ -203,7 +248,7 @@ public class GamingTable extends AnchorPane {
         Arrays.asList(fieldsForGame).forEach(cardsBox -> {
             if (cardsBox.getItems().size() != 0)
                 for (GamingCard card : cardsBox.getItems()) {
-                    if (card.getIdn().equals(gamingCard)) {
+                    if (card.identificator().equals(gamingCard)) {
                         Platform.runLater(() -> cardsBox.remove(card));
                     }
                 }
@@ -277,6 +322,33 @@ public class GamingTable extends AnchorPane {
         return cardsHand;
     }
 
+    public void alert(String alertT, EventHandler<ActionEvent> eventOnFinished, EventHandler<MouseEvent> eventOnClicked) {
+        Alert alert = null;
+
+        if (alert == null) {
+            alert = new Alert(alertT, 0.7);
+            Alert finalAlert = alert;
+            Platform.runLater(() -> getChildren().add(finalAlert));
+        } else {
+            alert.setText(alertT);
+        }
+        if (eventOnFinished != null) {
+            Alert finalAlert1 = alert;
+            alert.getTimeline().setOnFinished(event -> {
+                finalAlert1.setVisible(false);
+                eventOnFinished.handle(event);
+            });
+        }
+        if (eventOnClicked != null) {
+            Alert finalAlert2 = alert;
+            alert.setOnMouseClicked(event -> {
+                finalAlert2.getOnMouseClicked().handle(event);
+                eventOnClicked.handle(event);
+            });
+        }
+        alert.animationStart();
+    }
+
 
     public CardsBox[] drawBoxInGame() {
 
@@ -301,7 +373,6 @@ public class GamingTable extends AnchorPane {
         for (int i = 0; i < 12; i++) {
             list.add(new CardsBox(-1, ScreenResolution.SIZE.CARDS_IN_HEND.HEIGHT, 0));
         }
-
         //friendly
         list.get(0).setLayoutX(ScreenResolution.PADDING.GAME.LEFT_FIRST / MainApp.getSingleton().getDel());
 //        AnchorPane.setLeftAnchor(list.get(0), ScreenResolution.PADDING.GAME.LEFT_FIRST / MainApp.getSingleton().getDel());
@@ -324,22 +395,22 @@ public class GamingTable extends AnchorPane {
 
         //enemy
         list.get(6).setLayoutX(ScreenResolution.PADDING.GAME.LEFT_FIRST / MainApp.getSingleton().getDel());
-        list.get(6).setLayoutY(ScreenResolution.PADDING.GAME.ENEMY.TOP_FIRST / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(list.get(6), ScreenResolution.PADDING.GAME.ENEMY.TOP_FIRST / MainApp.getSingleton().getDel());
 
         list.get(7).setLayoutX(ScreenResolution.PADDING.GAME.LEFT_FIRST / MainApp.getSingleton().getDel());
-        list.get(7).setLayoutY(ScreenResolution.PADDING.GAME.ENEMY.TOP_SECOND / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(list.get(7), ScreenResolution.PADDING.GAME.ENEMY.TOP_SECOND / MainApp.getSingleton().getDel());
 
         list.get(8).setLayoutX(ScreenResolution.PADDING.GAME.LEFT_SECOND / MainApp.getSingleton().getDel());
-        list.get(8).setLayoutY(ScreenResolution.PADDING.GAME.ENEMY.TOP_FIRST / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(list.get(8), ScreenResolution.PADDING.GAME.ENEMY.TOP_FIRST / MainApp.getSingleton().getDel());
 
         list.get(9).setLayoutX(ScreenResolution.PADDING.GAME.LEFT_SECOND / MainApp.getSingleton().getDel());
-        list.get(9).setLayoutY(ScreenResolution.PADDING.GAME.ENEMY.TOP_SECOND / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(list.get(9), ScreenResolution.PADDING.GAME.ENEMY.TOP_SECOND / MainApp.getSingleton().getDel());
 
         list.get(10).setLayoutX(ScreenResolution.PADDING.GAME.LEFT_THERT / MainApp.getSingleton().getDel());
-        list.get(10).setLayoutY(ScreenResolution.PADDING.GAME.ENEMY.TOP_FIRST / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(list.get(10), ScreenResolution.PADDING.GAME.ENEMY.TOP_FIRST / MainApp.getSingleton().getDel());
 
         list.get(11).setLayoutX(ScreenResolution.PADDING.GAME.LEFT_THERT / MainApp.getSingleton().getDel());
-        list.get(11).setLayoutY(ScreenResolution.PADDING.GAME.ENEMY.TOP_SECOND / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(list.get(11), ScreenResolution.PADDING.GAME.ENEMY.TOP_SECOND / MainApp.getSingleton().getDel());
 
         return list.toArray(new CardsBox[list.size()]);
     }
@@ -349,4 +420,31 @@ public class GamingTable extends AnchorPane {
     }
 
 
+    public void step(boolean is) {
+        if (is) {
+            cardsHand.getItems().forEach(gamingCard -> {
+                gamingCard.setOnMouseClicked((event) -> {
+                    if (event.getButton() == MouseButton.PRIMARY) {
+                        logic.actionOnCard(gamingCard, true);
+                        logic.stepEnemy();
+                    }
+                });
+            });
+            friendlyLider.setOnMouseClicked((event -> {
+                if (event.getButton() == MouseButton.PRIMARY) {
+                    logic.actionOnCard(friendlyLider, true);
+                    logic.stepEnemy();
+                }
+            }));
+
+        } else {
+            cardsHand.getItems().forEach(gamingCard -> {
+                gamingCard.setOnMouseClicked((event -> {
+                }));
+            });
+            friendlyLider.setOnMouseClicked(event -> {
+
+            });
+        }
+    }
 }

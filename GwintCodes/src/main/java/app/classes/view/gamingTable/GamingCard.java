@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.util.Duration;
@@ -42,7 +43,7 @@ public class GamingCard extends Region {
             animation();
     }
 
-    public Long getIdn() {
+    public Long identificator() {
         return idn;
     }
 
@@ -119,7 +120,7 @@ public class GamingCard extends Region {
         super.setHeight(value);
     }
 
-    private TimelineCard timelineCard;
+    private AnimationDescription timelineCard;
 
 
     private void animation() {
@@ -152,15 +153,14 @@ public class GamingCard extends Region {
         });
 
 
-        setOnMouseReleased(event -> {
+        addEventFilter(MouseEvent.MOUSE_CLICKED, event -> {
             if (event.getButton().equals(MouseButton.SECONDARY)) {
                 if (timelineCard != null)
                     timelineCard.setVisible(true);
                 else {
-                    timelineCard = new TimelineCard(this, 0.7);
+                    timelineCard = new AnimationDescription(this, 0.7);
                     Parent parent = getParent();
                     while (!parent.getClass().equals(GamingTable.class)) {
-                        System.out.println(parent.getClass());
                         parent = parent.getParent();
                     }
                     AnchorPane pane = ((AnchorPane) parent);

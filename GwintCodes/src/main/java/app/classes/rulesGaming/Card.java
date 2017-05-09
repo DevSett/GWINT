@@ -81,7 +81,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "id: " + getId() + " damage: " + getDamage() + " description: " + getDescription() + " rare: " + getRare() + " color: " + getColor();
+        return "" + getId() + "|" + getDamage();
     }
 
 }

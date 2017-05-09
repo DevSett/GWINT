@@ -1,6 +1,7 @@
 package app.classes.webNetwork;
 
 import app.classes.MainApp;
+import app.classes.rulesGaming.Card;
 import app.classes.webNetwork.config.CommandGwent;
 import org.apache.log4j.Logger;
 
@@ -76,5 +77,9 @@ public class ControlClient {
 
     public void startGame() {
         send(CommandGwent.START_GAME.toString());
+    }
+
+    public void step(Card card) {
+        send(CommandGwent.STEP+"|"+card.toString());
     }
 }

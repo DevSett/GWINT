@@ -4,6 +4,7 @@ import app.classes.MainApp;
 import app.classes.rulesGaming.Card;
 import app.classes.view.gamingTable.GamingCard;
 import app.classes.view.gamingTable.GamingTable;
+import javafx.scene.text.Font;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +65,13 @@ public class HelpClass {
                 card.getSizeY() * MainApp.getSingleton().getDel(),
                 animation,
                 GamingTable.countCard++
+        );
+    }
+
+    public static Font getFont(double size) {
+        return Font.loadFont(
+                HelpClass.class.getResource("/fonts/Intro.otf").toExternalForm(),
+                size
         );
     }
 }

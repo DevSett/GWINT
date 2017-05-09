@@ -2,52 +2,43 @@ package app.classes.view.gamingTable;
 
 
 import app.classes.MainApp;
-import app.classes.view.optionGame.classes.ScreenResolution;
+import app.classes.other.HelpClass;
+import com.sun.javafx.tk.FontLoader;
+import com.sun.javafx.tk.Toolkit;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
-import javafx.scene.text.Font;
 import javafx.util.Duration;
 
 
-public class TimelineCard extends Region {
+public class Alert extends Region {
     private Timeline timeline = new Timeline();
+    private Label label;
 
-    public TimelineCard(GamingCard gamingCard, double perSecondUpdate) {
+    public Alert(String alert, double perSecondUpdate) {
 
-        GamingCard tempGamingCard = new GamingCard(
-                gamingCard.getCard(),
-                ScreenResolution.SIZE.CARD.FOR_ANIMATION.WIDTH / MainApp.getSingleton().getDel(),
-                ScreenResolution.SIZE.CARD.FOR_ANIMATION.HEIGHT / MainApp.getSingleton().getDel(),
-                false, -1l
-        );
-
-        tempGamingCard.setSizeLabel(tempGamingCard.getSizeY()/9);
-        tempGamingCard.setLabelLayoutX(tempGamingCard.getSizeX()/27);
 
         Pane pane = new Pane();
         pane.setPrefWidth(1920 / MainApp.getSingleton().getDel());
         pane.setPrefHeight(1080 / MainApp.getSingleton().getDel());
         pane.setStyle("-fx-background-color: black");
 
-        tempGamingCard.setLayoutX(tempGamingCard.getSizeX() * -1);
-        tempGamingCard.setLayoutY(pane.getPrefHeight() / 2 - tempGamingCard.getPrefHeight() / 2);
 
-        Label label = new Label(tempGamingCard.getCard().getDescription());
-        label.setStyle("-fx-text-fill: whitesmoke");
-        label.setFont(new Font(30 / MainApp.getSingleton().getDel()));
+        label = new Label(alert);
+        label.setStyle("-fx-text-fill: navajowhite");
         label.setOpacity(0);
-        label.setLayoutY(tempGamingCard.getLayoutY());
+        label.setFont(HelpClass.getFont(100 / MainApp.getSingleton().getDel()));
+
+        label.setLayoutY(pane.getPrefHeight() / 2 - label.getFont().getSize());
+        FontLoader fontLoader = Toolkit.getToolkit().getFontLoader();
         label.setLayoutX(
-                tempGamingCard.getSizeX() +
-                        100 / MainApp.getSingleton().getDel() * 2
+                pane.getPrefWidth() / 2 - fontLoader.computeStringWidth(label.getText(), label.getFont()) / 2
         );
 
-
-        getChildren().addAll(pane, tempGamingCard, label);
+        getChildren().addAll(pane, label);
 
 
         timeline.getKeyFrames().clear();
@@ -55,16 +46,11 @@ public class TimelineCard extends Region {
                 new KeyFrame(
                         Duration.ZERO,
                         new KeyValue(pane.opacityProperty(), 0),
-                        new KeyValue(tempGamingCard.translateXProperty(), -1 * tempGamingCard.getSizeX()),
                         new KeyValue(label.opacityProperty(), 0)
                 ),
                 new KeyFrame(
                         Duration.seconds(perSecondUpdate),
                         new KeyValue(pane.opacityProperty(), 0.7),
-                        new KeyValue(
-                                tempGamingCard.translateXProperty(),
-                                tempGamingCard.getSizeX() + 100 / MainApp.getSingleton().getDel()
-                        ),
                         new KeyValue(label.opacityProperty(), 1)
 
                 )
@@ -98,4 +84,10 @@ public class TimelineCard extends Region {
     public Timeline getTimeline() {
         return timeline;
     }
+
+    public void setText(String text) {
+        label.setText(text);
+    }
+
+
 }
