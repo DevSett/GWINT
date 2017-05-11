@@ -80,7 +80,7 @@ public class GamingCard extends Region {
 
         label = new Label(damage);
         label.setStyle("-fx-text-fill: whitesmoke");
-        label.setLayoutX(7 / MainApp.getSingleton().getDel());
+        label.setLayoutX(12 / MainApp.getSingleton().getDel());
         label.setFont(font);
 
         getChildren().addAll(label);

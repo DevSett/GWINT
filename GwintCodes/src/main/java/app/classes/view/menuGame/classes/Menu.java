@@ -1,16 +1,14 @@
 package app.classes.view.menuGame.classes;
 
 import app.classes.MainApp;
-import com.jfoenix.controls.JFXTextField;
+import app.classes.other.HelpClass;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
-import java.util.Random;
 
 
 /**
@@ -24,9 +22,9 @@ public class Menu {
     private Button multyPlay;
     private Button exit;
     private VBox vBox;
-    private JFXTextField fieldIp;
-    private JFXTextField fieldPort;
-    private JFXTextField fieldName;
+    private TextField fieldIp;
+    private TextField fieldPort;
+    private TextField fieldName;
 
     public Menu(Stage stage) {
         this.stage = stage;
@@ -80,20 +78,14 @@ public class Menu {
         pane.getChildren().clear();
         pane.getStylesheets().add(MainApp.class.getResource("/css/button.css").toExternalForm());
 
-        singlePlay = singleButton();
-        singlePlay.setId("single-button");
-//        singlePlay.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
-//                " " + 100d / MainApp.getSingleton().getDel() + ";");
+        singlePlay = HelpClass.customButton(null, 500, 100, "single-button", event -> {
+            MainApp.getSingleton().setStage(stage);
+            MainApp.getSingleton().playGameTable();
+        });
 
-        multyPlay = multyButton();
-        multyPlay.setId("multy-button");
-//        multyPlay.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
-//                " " + 100d / MainApp.getSingleton().getDel() + ";");
+        multyPlay = HelpClass.customButton(null, 500, 100, "multy-button", event -> actionMultyButton());
 
-        exit = exitButton();
-        exit.setId("exit-button");
-//        exit.setStyle("-fx-background-size: " + 500d / MainApp.getSingleton().getDel() +
-//                " " + 50d / MainApp.getSingleton().getDel() + ";");
+        exit = HelpClass.customButton(null, 500, 50, "exit-button", event -> stage.close());
 
 
         vBox = new VBox(20);
@@ -103,22 +95,6 @@ public class Menu {
 
     }
 
-    private Button exitButton() {
-        Button exit = new Button();
-        exit.setPrefSize(500d / MainApp.getSingleton().getDel(), 50d / MainApp.getSingleton().getDel());
-        exit.setOnAction(event -> stage.close());
-        return exit;
-    }
-
-    private Button multyButton() {
-        Button multy = new Button();
-
-        multy.setPrefSize(500d / MainApp.getSingleton().getDel(), 100d / MainApp.getSingleton().getDel());
-        multy.setOnAction(event -> {
-            actionMultyButton();
-        });
-        return multy;
-    }
 
     private void actionMultyButton() {
         pane.getChildren().clear();
@@ -129,36 +105,17 @@ public class Menu {
         HBox hBox2 = new HBox(30);
         HBox hBox3 = new HBox(30);
 
-        Button acceptMultyButton = buttonAccept();
-        Button backMultyButton = buttonBack();
+        Button acceptMultyButton = HelpClass.customButton(null,500, 100, "button-accept", event -> actionAcceptButton());
+        Button backMultyButton = HelpClass.customButton(null,500, 100, "button-back", event -> actionBackButton());
         //ждут отрисовки книпоки
 
         hBox2.setAlignment(Pos.CENTER);
         hBox2.getChildren().addAll(backMultyButton, acceptMultyButton);
 
 
-        fieldIp = new JFXTextField("localhost");
-        fieldIp.setPromptText("Введите ip адресс");
-        fieldIp.setUnFocusColor(Color.WHITESMOKE);
-        fieldIp.setFocusColor(Color.WHITE);
-        fieldIp.setLabelFloat(true);
-        fieldIp.setStyle("-fx-text-fill: whitesmoke; -fx-effect: dropshadow(three-pass-box, black, 10, 0.7, 0, 0); -fx-background-color: rgba(0, 100, 100, 0.2);");
-
-        fieldPort = new JFXTextField("7896");
-        fieldPort.setPromptText("Введите порт");
-        fieldPort.setUnFocusColor(Color.WHITESMOKE);
-        fieldPort.setFocusColor(Color.WHITE);
-        fieldPort.setLabelFloat(true);
-        fieldPort.setStyle("-fx-text-fill: whitesmoke; -fx-effect: dropshadow(three-pass-box, black, 10, 0.7, 0, 0); -fx-background-color: rgba(0, 100, 100, 0.2);");
-
-
-        fieldName = new JFXTextField("killsett" + (new Random().nextInt(1000) + 10) / 10);
-        fieldName.setPromptText("Введите ваш никнейм");
-        fieldName.setUnFocusColor(Color.WHITESMOKE);
-        fieldName.setFocusColor(Color.WHITE);
-        fieldName.setLabelFloat(true);
-        fieldName.setStyle("-fx-text-fill: whitesmoke; -fx-effect: dropshadow(three-pass-box, black, 10, 0.7, 0, 0); -fx-background-color: rgba(0, 100, 100, 0.2);");
-
+        fieldIp = HelpClass.customField("Введите ip адресс", "field", 200, 40);
+        fieldPort = HelpClass.customField("Введите порт", "field", 200, 40);
+        fieldName = HelpClass.customField("Никнейм", "field", 200, 40);
 
         hBox3.getChildren().addAll(fieldName);
         hBox3.setAlignment(Pos.CENTER);
@@ -172,43 +129,14 @@ public class Menu {
         vBox.setAlignment(Pos.CENTER);
     }
 
-    private Button buttonBack() {
-        Button button = new Button("Назад");
-        button.setPrefSize(100 / MainApp.getSingleton().getDel(), 50 / MainApp.getSingleton().getDel());
-        button.setOnAction(event ->
-        {
-            actionBackButton();
-        });
-        return button;
-    }
 
     private void actionBackButton() {
         showButton();
     }
 
-    private Button buttonAccept() {
-        Button button = new Button("Принять");
-        button.setPrefSize(100 / MainApp.getSingleton().getDel(), 50 / MainApp.getSingleton().getDel());
-        button.setOnAction(event ->
-        {
-            actionAcceptButton();
-        });
-        return button;
-    }
 
     private void actionAcceptButton() {
         MainApp.getSingleton().startClient(fieldIp.getText(), fieldPort.getText(), fieldName.getText(), stage);
-    }
-
-
-    private Button singleButton() {
-        Button single = new Button();
-        single.setPrefSize(500d / MainApp.getSingleton().getDel(), 100d / MainApp.getSingleton().getDel());
-        single.setOnAction(event -> {
-            MainApp.getSingleton().setStage(stage);
-            MainApp.getSingleton().playGameTable();
-        });
-        return single;
     }
 
 }

@@ -28,7 +28,6 @@ public class CustomButton extends ProgressIndicator {
                 this.lastUpdate = time;
             }
         };
-
         if (numberChangeListener != null) progressProperty().addListener(numberChangeListener);
         addEventFilter(MouseEvent.ANY, event -> {
             if (event.getEventType() == MouseEvent.MOUSE_PRESSED) {

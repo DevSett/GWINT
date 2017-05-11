@@ -3495,3 +3495,28 @@ java.util.ConcurrentModificationException
 	at java.lang.Thread.run(Thread.java:745)
 2017-05-09 13:26:08 INFO  Client:24 - Open new session: ce4e183a-5542-4209-8a99-9dd0bd757c79
 2017-05-09 13:26:15 INFO  Client:24 - Open new session: 3e0bdf60-f976-4b33-9446-1ed20b16223e
+2017-05-11 09:44:02 ERROR MainApp:183 - Error DE :javax.websocket.DeploymentException: protocol = socket host = null
+2017-05-11 12:26:33 ERROR MainApp:183 - Error DE :javax.websocket.DeploymentException: protocol = socket host = null
+2017-05-11 12:38:13 INFO  Client:24 - Open new session: a00bbaf9-ca98-49e4-be92-54502f7dcb9f
+2017-05-11 12:39:00 INFO  Client:58 - Close session: a00bbaf9-ca98-49e4-be92-54502f7dcb9f
+Reason: Closed abnormally.
+2017-05-11 13:00:30 INFO  Client:24 - Open new session: 3c8bef50-ccad-4d90-af5f-234845ba7335
+2017-05-11 13:01:20 INFO  Client:58 - Close session: 3c8bef50-ccad-4d90-af5f-234845ba7335
+Reason: Closed abnormally.
+2017-05-11 13:01:44 INFO  Client:24 - Open new session: 8ef4abf6-9397-4db4-8f16-50eb967b2014
+2017-05-11 13:03:18 INFO  Client:24 - Open new session: f65fe60a-9e7f-4d47-a228-de72782670d7
+2017-05-11 13:05:36 INFO  Client:24 - Open new session: e409d288-c088-44dc-9045-0b930638ed2f
+2017-05-11 13:06:08 INFO  Client:24 - Open new session: dc283efe-0a31-4389-9dd2-dc589d12e73f
+2017-05-11 13:07:03 INFO  Client:24 - Open new session: c217e590-508a-4101-9ab4-a4bc63189e24
+2017-05-11 13:07:48 INFO  Client:24 - Open new session: 267e3151-adf3-4c92-bc2f-a61559f17130
+2017-05-11 13:08:15 INFO  Client:24 - Open new session: 7009154c-550d-4831-8d38-27784bdcfe92
+2017-05-11 13:10:22 INFO  Client:24 - Open new session: 10127f4c-5217-4016-8a38-36baa5473518
+2017-05-11 13:11:04 INFO  Client:24 - Open new session: 60d52ae2-a854-4943-93cc-b453a3ab2b97
+2017-05-11 13:11:44 INFO  Client:24 - Open new session: e8817c04-4a68-4de1-a967-0dfc4e3f1e1b
+2017-05-11 13:13:33 INFO  Client:24 - Open new session: 43fddd1a-63ab-4ecd-815f-adae6c30067e
+2017-05-11 13:14:19 INFO  Client:24 - Open new session: 1361ee25-b0ef-4e01-b48e-914fb5e4ac3f
+2017-05-11 13:14:54 INFO  Client:24 - Open new session: 1e46e4cc-34b9-408d-85c0-20d064f91712
+2017-05-11 13:15:53 INFO  Client:24 - Open new session: 65fd6e06-6a80-44ca-b38a-3a04335895e3
+2017-05-11 13:16:42 INFO  Client:24 - Open new session: 10c91207-e66d-4483-b14a-60f61ee01e3f
+2017-05-11 13:17:13 INFO  Client:24 - Open new session: 005bfe6e-ed73-440a-8331-ae9834f134fd
+2017-05-11 13:18:42 INFO  Client:24 - Open new session: 6bea3bd7-f284-44fa-909e-947c13c63094

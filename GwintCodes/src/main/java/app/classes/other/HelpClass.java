@@ -4,6 +4,10 @@ import app.classes.MainApp;
 import app.classes.rulesGaming.Card;
 import app.classes.view.gamingTable.GamingCard;
 import app.classes.view.gamingTable.GamingTable;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Font;
 
 import java.util.ArrayList;
@@ -28,9 +32,9 @@ public class HelpClass {
         int index = 0;
         while (index++ < size) {
 
-            int in = new Random().nextInt(50);
-            while (in == 0)
-                in = new Random().nextInt(50);
+            int in = new Random().nextInt(30);
+            while (in < 2)
+                in = new Random().nextInt(30);
             numbers.add(in);
         }
         return numbers;
@@ -73,5 +77,23 @@ public class HelpClass {
                 HelpClass.class.getResource("/fonts/Intro.otf").toExternalForm(),
                 size
         );
+    }
+
+    public static TextField customField(String promt, String id, double width, double height) {
+        TextField textField = new TextField();
+        //200 40
+        textField.setPrefSize(width / MainApp.getSingleton().getDel(), height / MainApp.getSingleton().getDel());
+        textField.setPromptText(promt);
+        textField.setId(id);
+        return textField;
+    }
+
+    public static Button customButton(Button button, double width, double height, String id, EventHandler<ActionEvent> event) {
+        if (button == null) button = new Button();
+
+        button.setPrefSize(width / MainApp.getSingleton().getDel(), height / MainApp.getSingleton().getDel());
+        button.setOnAction(event);
+        button.setId(id);
+        return button;
     }
 }

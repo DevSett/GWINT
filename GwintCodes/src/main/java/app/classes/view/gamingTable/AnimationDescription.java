@@ -26,7 +26,7 @@ public class AnimationDescription extends Region {
         );
 
         tempGamingCard.setSizeLabel(tempGamingCard.getSizeY()/9);
-        tempGamingCard.setLabelLayoutX(tempGamingCard.getSizeX()/27);
+        tempGamingCard.setLabelLayoutX(tempGamingCard.getSizeX()/12);
 
         Pane pane = new Pane();
         pane.setPrefWidth(1920 / MainApp.getSingleton().getDel());
@@ -37,6 +37,8 @@ public class AnimationDescription extends Region {
         tempGamingCard.setLayoutY(pane.getPrefHeight() / 2 - tempGamingCard.getPrefHeight() / 2);
 
         Label label = new Label(tempGamingCard.getCard().getDescription());
+
+        label.setWrapText(true);
         label.setStyle("-fx-text-fill: whitesmoke");
         label.setFont(new Font(30 / MainApp.getSingleton().getDel()));
         label.setOpacity(0);
@@ -45,6 +47,8 @@ public class AnimationDescription extends Region {
                 tempGamingCard.getSizeX() +
                         100 / MainApp.getSingleton().getDel() * 2
         );
+        label.setMaxWidth(pane.getPrefWidth()-label.getLayoutX());
+
 
 
         getChildren().addAll(pane, tempGamingCard, label);

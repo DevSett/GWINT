@@ -78,7 +78,7 @@ public class MainApp extends Application {
                             ), false);
                         });
                     }
-                    if (i==102){
+                    if (i == 102) {
                         Platform.runLater(() -> {
                             MainApp.getSingleton().getLogic().actionOnCard(new GamingCard(
                                     MainApp.getSingleton().getLogic().getCards().getListCard().get(new Random().nextInt(10) + 1),
@@ -143,7 +143,7 @@ public class MainApp extends Application {
     }
 
     public void playGameTable() {
-        logic.initGamingTable(stage);
+        logic.initGamingTable(stage, true);
     }
 
     public void menuGame(Stage stage) {

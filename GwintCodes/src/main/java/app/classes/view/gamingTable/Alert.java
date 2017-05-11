@@ -28,6 +28,7 @@ public class Alert extends Region {
 
 
         label = new Label(alert);
+        label.setWrapText(true);
         label.setStyle("-fx-text-fill: navajowhite");
         label.setOpacity(0);
         label.setFont(HelpClass.getFont(100 / MainApp.getSingleton().getDel()));

@@ -1,8 +1,10 @@
 package app.classes.view.lobbiGame.classes;
 
 import app.classes.MainApp;
+import app.classes.other.HelpClass;
 import app.classes.other.Messager;
 import javafx.application.Platform;
+import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -32,7 +34,7 @@ public class Lobbi {
         }
         panel = (BorderPane) node;
         panel.getChildren().clear();
-
+        panel.getStylesheets().add(getClass().getResource("/css/button.css").toExternalForm());
         stage.getScene().getStylesheets().add(getClass().getResource("/css/lobbi.css").toExternalForm());
         lobbi();
     }
@@ -55,33 +57,32 @@ public class Lobbi {
         tableView.getColumns().addAll(tableColumnHost, tableColumnEnemy, tableColumnStatus);
         tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
 
-        buttonFirst = buttonExit(new Button());
+        buttonFirst = buttonBack(new Button());
         buttonSecond = buttonCreate(new Button());
         buttonThird = buttonJoin(new Button());
+
 
         BorderPane pane = new BorderPane();
         pane.setCenter(buttonSecond);
         pane.setLeft(buttonFirst);
         pane.setRight(buttonThird);
-
+        pane.setPadding(new Insets(10,10,10,10));
         panel.setCenter(tableView);
         panel.setBottom(pane);
 
 
     }
 
-    private Button buttonExit(Button button) {
-        button.setText("Выход");
-        button.setOnAction(event -> {
+    public Button buttonBack(Button button) {
+        return HelpClass.customButton(button, 200, 40, "button-back", event -> {
             MainApp.getSingleton().client.stop();
             MainApp.getSingleton().menuGame(stage);
         });
-        return button;
     }
 
+
     private Button buttonJoin(Button button) {
-        button.setText("Подключится");
-        button.setOnAction(event -> {
+        return HelpClass.customButton(button, 200, 40, "button-accept", event -> {
             int selectionIndex = tableView.getSelectionModel().getSelectedIndex();
             if (selectionIndex == -1) {
                 new Messager(stage).showPopupMessage("Выберете лобби или создайте!", Messager.ERROR, 2, false);
@@ -99,33 +100,38 @@ public class Lobbi {
                 return;
             }
         });
-        return button;
     }
 
     private Button buttonCreate(Button button) {
-        button.setText("Создать");
-        button.setOnAction(event -> {
+        return HelpClass.customButton(button, 200, 40, "button-create", event -> {
             createLobbi();
             new Messager(stage).showPopupMessage("Создание и подключение к лобби", Messager.INFO, 2);
         });
-        return button;
     }
 
     private Button buttonDisconnect(Button button) {
-        button.setText("Отключится");
-        button.setOnAction(event -> {
-            actionDisconnect();
-        });
-        return button;
+        return HelpClass.customButton(button, 200, 40, "button-disconnect", event -> actionDisconnect());
     }
 
     private Button buttonDisconnect2(Button button) {
-        button.setText("Отключится");
-        button.setOnAction(event -> {
+        return HelpClass.customButton(button, 200, 40, "button-disconnect", event -> {
             actionDisconnectLobbi();
             new Messager(stage).showPopupMessage("Отключение", Messager.INFO, 2, true);
         });
-        return button;
+    }
+
+    private Button buttonStart(Button button) {
+        return HelpClass.customButton(button, 200, 40, "button-start", event -> {
+            for (LobbiItems lobbiItems : tableView.getItems()) {
+                if (lobbiItems.getIdName().equals(MainApp.getSingleton().getRootConfig().getId())) {
+                    if (lobbiItems.getStatusCircle().getFill().equals(Color.GREEN)) {
+                        new Messager(stage).showPopupMessage("Лобби пустое", Messager.ERROR, 2, false);
+                    } else {
+                        MainApp.getSingleton().client.startGame();
+                    }
+                }
+            }
+        });
     }
 
     private void actionDisconnectLobbi() {
@@ -152,21 +158,6 @@ public class Lobbi {
         buttonJoin(buttonThird);
     }
 
-    private Button buttonStart(Button button) {
-        button.setText("Старт");
-        button.setOnAction(event -> {
-            for (LobbiItems lobbiItems : tableView.getItems()) {
-                if (lobbiItems.getIdName().equals(MainApp.getSingleton().getRootConfig().getId())) {
-                    if (lobbiItems.getStatusCircle().getFill().equals(Color.GREEN)) {
-                        new Messager(stage).showPopupMessage("Лобби пустое", Messager.ERROR, 2, false);
-                    } else {
-                        MainApp.getSingleton().client.startGame();
-                    }
-                }
-            }
-        });
-        return button;
-    }
 
     public void backToMenu() {
         MainApp.getSingleton().menuGame(stage);
@@ -214,7 +205,7 @@ public class Lobbi {
             });
     }
 
-    public void startGame() {
-        MainApp.getSingleton().getLogic().initGamingTable(stage);
+    public void startGame(boolean check) {
+        MainApp.getSingleton().getLogic().initGamingTable(stage, check);
     }
 }

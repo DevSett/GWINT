@@ -18,6 +18,7 @@ import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
+import javafx.scene.paint.ImagePattern;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Font;
@@ -28,6 +29,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
+@SuppressWarnings("ALL")
 public class GamingTable extends AnchorPane {
     private final Image image = new Image(getClass().getResource("/images/gamingTable/tableTimes.png").toExternalForm());
     private CardsBox[] fieldsForGame;
@@ -117,24 +119,30 @@ public class GamingTable extends AnchorPane {
         AnchorPane.setRightAnchor(forceCounterEnemy, ScreenResolution.PADDING.FORCE_COUNTER.RIGHT / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(forceCounterEnemy, ScreenResolution.PADDING.FORCE_COUNTER.ENEMY.TOP / MainApp.getSingleton().getDel());
 
+        Image image = new Image(getClass().getResource("/images/gamingTable/hearts2.png").toExternalForm());
+        Image image2 = new Image(getClass().getResource("/images/gamingTable/hearts1.png").toExternalForm());
+
         heartFrendlyFirst = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
         AnchorPane.setRightAnchor(heartFrendlyFirst, ScreenResolution.PADDING.LIFE.RIGHT_FIRST / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(heartFrendlyFirst, ScreenResolution.PADDING.LIFE.FRIENDLY.TOP / MainApp.getSingleton().getDel());
+        heartFrendlyFirst.setFill(new ImagePattern(image));
 
         heartFrendlySecond = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
-
         AnchorPane.setRightAnchor(heartFrendlySecond, ScreenResolution.PADDING.LIFE.RIGHT_SECOND / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(heartFrendlySecond, ScreenResolution.PADDING.LIFE.FRIENDLY.TOP / MainApp.getSingleton().getDel());
+        heartFrendlySecond.setFill(new ImagePattern(image));
 
         heartEnemyFirst = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
 
         AnchorPane.setRightAnchor(heartEnemyFirst, ScreenResolution.PADDING.LIFE.RIGHT_FIRST / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(heartEnemyFirst, ScreenResolution.PADDING.LIFE.ENEMY.TOP / MainApp.getSingleton().getDel());
+        heartEnemyFirst.setFill(new ImagePattern(image2));
 
         heartEnemySecond = new Circle(25 / MainApp.getSingleton().getDel(), Paint.valueOf("#4d0000"));
 
         AnchorPane.setRightAnchor(heartEnemySecond, ScreenResolution.PADDING.LIFE.RIGHT_SECOND / MainApp.getSingleton().getDel());
         AnchorPane.setTopAnchor(heartEnemySecond, ScreenResolution.PADDING.LIFE.ENEMY.TOP / MainApp.getSingleton().getDel());
+        heartEnemySecond.setFill(new ImagePattern(image2));
 
 
         VBox vBox = new VBox(1);
@@ -145,7 +153,6 @@ public class GamingTable extends AnchorPane {
         label.setStyle("-fx-text-fill: darkred;");
         CustomButton customButton = new CustomButton(logic.surrender());
         customButton.setPrefSize(110 / MainApp.getSingleton().getDel(), 110 / MainApp.getSingleton().getDel());
-
         vBox.getChildren().add(label);
         vBox.getChildren().add(customButton);
 
@@ -324,7 +331,6 @@ public class GamingTable extends AnchorPane {
 
     public void alert(String alertT, EventHandler<ActionEvent> eventOnFinished, EventHandler<MouseEvent> eventOnClicked) {
         Alert alert = null;
-
         if (alert == null) {
             alert = new Alert(alertT, 0.7);
             Alert finalAlert = alert;

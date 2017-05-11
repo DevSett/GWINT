@@ -29,13 +29,13 @@ public class Logic {
         initCards();
     }
 
-    public void initGamingTable(Stage stage) {
+    public void initGamingTable(Stage stage, Boolean check) {
         gamingTable = new GamingTable(stage, this);
-        initElGamingTable();
+        initElGamingTable(check);
         MainApp.getSingleton().setStatus(StatusWindow.MULTI);
     }
 
-    public void initElGamingTable() {
+    public void initElGamingTable(Boolean check) {
         gamingTable.clear();
         List<Integer> list = HelpClass.random(11);
 
@@ -43,12 +43,28 @@ public class Logic {
         for (int i = 0; i < list.size(); i++) {
             cardsHend.getListCard().add(HelpClass.copyCard(cards.getListCard().get(list.get(i))));
         }
-        gamingTable.drawingMainElementsGamingTable(
-                HelpClass.copyCard(cards.getListCard().get(0)),
-                HelpClass.copyCard(cards.getListCard().get(0)),
-                cardsHend
-        );
-
+        if (check == null) {
+            gamingTable.drawingMainElementsGamingTable(
+                    HelpClass.copyCard(cards.getListCard().get(0)),
+                    HelpClass.copyCard(cards.getListCard().get(0)),
+                    cardsHend
+            );
+        } else {
+            if (check){
+                gamingTable.drawingMainElementsGamingTable(
+                        HelpClass.copyCard(cards.getListCard().get(0)),
+                        HelpClass.copyCard(cards.getListCard().get(1)),
+                        cardsHend
+                );
+            }
+            else {
+                gamingTable.drawingMainElementsGamingTable(
+                        HelpClass.copyCard(cards.getListCard().get(1)),
+                        HelpClass.copyCard(cards.getListCard().get(0)),
+                        cardsHend
+                );
+            }
+        }
     }
 
     public Cards getCards() {
@@ -170,7 +186,7 @@ public class Logic {
                     gamingTable.getHeartFrendlySecond().setOpacity(0.5);
                     gamingTable.getHeartFrendlySecond().setDisable(true);
                 }
-            //сброс карты //счетчика // новый раунд
+                //сброс карты //счетчика // новый раунд
             }
         };
         return value;

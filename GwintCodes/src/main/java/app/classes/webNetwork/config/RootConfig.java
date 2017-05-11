@@ -222,10 +222,13 @@ public class RootConfig {
                 lobbiUpdate();
                 break;
             case START_GAME:
-                MainApp.getSingleton().getLobbiRooms().startGame();
-                System.out.println(arrayMessage[2]);
-                if (arrayMessage[2].equals("true")) MainApp.getSingleton().getLogic().step();
-                else MainApp.getSingleton().getLogic().stepEnemy();
+                if (arrayMessage[2].equals("true")) {
+                    MainApp.getSingleton().getLobbiRooms().startGame(true);
+                    MainApp.getSingleton().getLogic().step();
+                } else {
+                    MainApp.getSingleton().getLobbiRooms().startGame(false);
+                    MainApp.getSingleton().getLogic().stepEnemy();
+                }
                 break;
             case ERROR_CONNECTED_LOBBI:
                 break;
