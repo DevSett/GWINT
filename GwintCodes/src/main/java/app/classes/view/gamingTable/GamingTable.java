@@ -160,6 +160,46 @@ public class GamingTable extends AnchorPane {
         AnchorPane.setTopAnchor(vBox, ScreenResolution.PADDING.CIRCLE_SICE.TOP / MainApp.getSingleton().getDel());
 
 
+        ShirtCard shirtCardPackFrendly = new ShirtCard(
+                getClass().getResource("/images/gamingTable/cards/shirt.png").toExternalForm(),
+                ScreenResolution.SIZE.CARD.TRASH.WIDTH,
+                ScreenResolution.SIZE.CARD.TRASH.HEIGHT,
+                true
+        );
+
+        ShirtCard shirtCardTrashFrendly = new ShirtCard(
+                getClass().getResource("/images/gamingTable/cards/shirt.png").toExternalForm(),
+                ScreenResolution.SIZE.CARD.TRASH.WIDTH,
+                ScreenResolution.SIZE.CARD.TRASH.HEIGHT,
+                true
+        );
+
+        ShirtCard shirtCardPackEnemy = new ShirtCard(
+                getClass().getResource("/images/gamingTable/cards/shirt.png").toExternalForm(),
+                ScreenResolution.SIZE.CARD.TRASH.WIDTH,
+                ScreenResolution.SIZE.CARD.TRASH.HEIGHT,
+                true
+        );
+
+        ShirtCard shirtCardTrashEnemy = new ShirtCard(
+                getClass().getResource("/images/gamingTable/cards/shirt.png").toExternalForm(),
+                ScreenResolution.SIZE.CARD.TRASH.WIDTH,
+                ScreenResolution.SIZE.CARD.TRASH.HEIGHT,
+                true
+        );
+
+        AnchorPane.setRightAnchor(shirtCardPackFrendly, ScreenResolution.PADDING.TRASH.RIGHT_SECOND / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(shirtCardPackFrendly, ScreenResolution.PADDING.TRASH.FRIENDLY.TOP / MainApp.getSingleton().getDel());
+
+        AnchorPane.setRightAnchor(shirtCardTrashFrendly, ScreenResolution.PADDING.TRASH.RIGHT_FIRST / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(shirtCardTrashFrendly, ScreenResolution.PADDING.TRASH.FRIENDLY.TOP / MainApp.getSingleton().getDel());
+
+        AnchorPane.setRightAnchor(shirtCardPackEnemy, ScreenResolution.PADDING.TRASH.RIGHT_SECOND / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(shirtCardPackEnemy, ScreenResolution.PADDING.TRASH.ENEMY.TOP / MainApp.getSingleton().getDel());
+
+        AnchorPane.setRightAnchor(shirtCardTrashEnemy, ScreenResolution.PADDING.TRASH.RIGHT_FIRST / MainApp.getSingleton().getDel());
+        AnchorPane.setTopAnchor(shirtCardTrashEnemy, ScreenResolution.PADDING.TRASH.ENEMY.TOP / MainApp.getSingleton().getDel());
+
         enemyLider = drawCard(
                 idEnemyLider,
                 ScreenResolution.SIZE.CARD.LIDER.WIDTH,
@@ -194,7 +234,11 @@ public class GamingTable extends AnchorPane {
                 heartEnemyFirst,
                 heartFrendlyFirst,
                 heartFrendlySecond,
-                vBox
+                vBox,
+                shirtCardPackEnemy,
+                shirtCardPackFrendly,
+                shirtCardTrashEnemy,
+                shirtCardTrashFrendly
         ));
         Platform.runLater(() -> this.getChildren().addAll(fieldsForGame));
 

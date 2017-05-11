@@ -6,96 +6,17 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Alert.java" line="40" />
     <bookmark url="file://$PROJECT_DIR$/src/main/resources/cards.json" line="38" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java" line="21" />
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" line="164" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" line="204" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/Gwent.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/black.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/31.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/33.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/34.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/35.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/36.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/37.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/38.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/39.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/41.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/42.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/43.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/44.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/45.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/46.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/47.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/49.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/50.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/MainApp.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/MainApp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/other/HelpClass.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/other/HelpClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/rulesGaming/CardForm.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/rulesGaming/CardForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/Alert.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/Alert.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/AnimationDescription.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/AnimationDescription.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/ShirtCard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/CustomButton.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/CustomButton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingCard.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingCard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingTable$1.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingTable$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingTable.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/GamingTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/Logic$1.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/Logic$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/Logic.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/gamingTable/Logic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/lobbiGame/classes/Lobbi.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/lobbiGame/classes/Lobbi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/view/menuGame/classes/Menu.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/view/menuGame/classes/Menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/config/RootConfig.class" afterPath="$PROJECT_DIR$/target/classes/app/classes/webNetwork/config/RootConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/0.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/0.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/1.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/10.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/11.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/11.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/12.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/13.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/13.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/14.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/14.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/15.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/15.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/16.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/17.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/17.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/18.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/18.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/19.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/19.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/2.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/20.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/20.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/21.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/21.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/22.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/22.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/23.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/23.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/24.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/24.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/25.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/25.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/26.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/26.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/27.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/27.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/28.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/28.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/29.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/29.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/3.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/30.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/30.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/4.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/5.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/6.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/7.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/8.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/9.png" afterPath="$PROJECT_DIR$/target/classes/images/gamingTable/cards/9.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_file.log" afterPath="$PROJECT_DIR$/log_file.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/MainApp.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/MainApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardForm.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Alert.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Alert.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/AnimationDescription.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/AnimationDescription.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CustomButton.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CustomButton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Logic.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Logic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/cards.json" afterPath="$PROJECT_DIR$/src/main/resources/cards.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/css/button.css" afterPath="$PROJECT_DIR$/src/main/resources/css/button.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/css/lobbi.css" afterPath="$PROJECT_DIR$/src/main/resources/css/lobbi.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cards.json" afterPath="$PROJECT_DIR$/target/classes/cards.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/css/button.css" afterPath="$PROJECT_DIR$/target/classes/css/button.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../GwintServer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../GwintServer/.idea/workspace.xml" />
     </list>
@@ -184,37 +105,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
+      <file leaf-file-name="ShirtCard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/ShirtCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="225" column="63" lean-forward="false" selection-start-line="225" selection-start-column="63" selection-end-line="225" selection-end-column="63" />
-              <folding />
+            <state relative-caret-position="-908">
+              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamingTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
+      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="153" column="10" lean-forward="false" selection-start-line="153" selection-start-column="10" selection-end-line="153" selection-end-column="10" />
-              <folding>
-                <element signature="e#2531#2532#0" expanded="false" />
-                <element signature="e#2559#2560#0" expanded="false" />
-                <element signature="e#2603#2604#0" expanded="false" />
-                <element signature="e#2643#2644#0" expanded="false" />
-                <element signature="e#2688#2689#0" expanded="false" />
-                <element signature="e#2729#2730#0" expanded="false" />
-                <element signature="e#2771#2772#0" expanded="false" />
-                <element signature="e#2809#2810#0" expanded="false" />
-                <element signature="e#2852#2853#0" expanded="false" />
-                <element signature="e#2891#2892#0" expanded="false" />
-                <element signature="e#9567#9568#0" expanded="false" />
-                <element signature="e#9608#9609#0" expanded="false" />
-                <element signature="e#17116#17117#0" expanded="false" />
-                <element signature="e#17183#17184#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="1335">
+              <caret line="225" column="63" lean-forward="false" selection-start-line="225" selection-start-column="63" selection-end-line="225" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -222,8 +130,8 @@
       <file leaf-file-name="CustomButton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CustomButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="106">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -231,27 +139,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/MainApp.java">
+      <file leaf-file-name="GamingTable.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="146" column="5" lean-forward="false" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
-              <folding>
-                <element signature="e#5031#5032#0" expanded="true" />
-                <element signature="e#5081#5082#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="217">
+              <caret line="237" column="35" lean-forward="true" selection-start-line="237" selection-start-column="35" selection-end-line="237" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -269,11 +162,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lobbi.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lobbi.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/css/lobbi.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="495">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -292,8 +185,8 @@
       <file leaf-file-name="button.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/css/button.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="331">
+              <caret line="104" column="1" lean-forward="true" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -367,9 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/AnimationCardTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardRare.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CardsBox.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardType.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/main.java" />
@@ -411,13 +301,16 @@
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Alert.java" />
         <option value="$PROJECT_DIR$/src/main/resources/cards.json" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CustomButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/css/button.css" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/lobbi.css" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/ImageLoadTracker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CustomButton.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/css/button.css" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/ShirtCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java" />
       </list>
     </option>
   </component>
@@ -450,10 +343,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-225" />
-    <option name="y" value="872" />
-    <option name="width" value="1594" />
-    <option name="height" value="898" />
+    <option name="x" value="-1" />
+    <option name="width" value="1602" />
+    <option name="height" value="901" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -693,6 +585,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gamingTable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gamingTable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cards" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -968,12 +894,9 @@
     <property name="SONARLINT_ANALYSIS_RESULTS_SCOPE" value="VCS changed files" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/images/gamingTable/cards" />
-      <recent name="$PROJECT_DIR$/src/main/resources/css" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images/menuGame" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images" />
-      <recent name="$PROJECT_DIR$/src/main/resources/images/gamingTable" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="app.webNetwork.config" />
+      <recent name="app.view.gamingTable" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="images" />
@@ -993,9 +916,12 @@
       <recent name="app.webNetwork.classes" />
       <recent name="app.webNetwork.config" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="app.webNetwork.config" />
-      <recent name="app.view.gamingTable" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images/gamingTable/cards" />
+      <recent name="$PROJECT_DIR$/src/main/resources/css" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/menuGame" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+      <recent name="$PROJECT_DIR$/src/main/resources/images/gamingTable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1019,26 +945,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="app.classes.MainApp" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="GwintCodes" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Shapes3DViewer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="app.classes.webNetwork.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="app.classes.webNetwork.Shapes3DViewer" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1099,6 +1005,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="app.classes.view.gamingTable.testButton" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GwintCodes" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ImageLoadTracker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="app.classes.view.gamingTable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="app.classes.view.gamingTable.ImageLoadTracker" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1524,18 +1450,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="Application.MainApp" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Shapes3DViewer" />
-      <item index="3" class="java.lang.String" itemvalue="Application.test (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Application.test (2)" />
-      <item index="5" class="java.lang.String" itemvalue="Application.testButton" />
+      <item index="2" class="java.lang.String" itemvalue="Application.test (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.test (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.testButton" />
+      <item index="5" class="java.lang.String" itemvalue="Application.ImageLoadTracker" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.MainApp" />
-        <item index="1" class="java.lang.String" itemvalue="Application.test (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Application.testButton" />
-        <item index="3" class="java.lang.String" itemvalue="Application.test (2)" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Shapes3DViewer" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ImageLoadTracker" />
+        <item index="2" class="java.lang.String" itemvalue="Application.test (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.testButton" />
+        <item index="4" class="java.lang.String" itemvalue="Application.test (2)" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1614,7 +1540,7 @@
       <workItem from="1494238328181" duration="15969000" />
       <workItem from="1494310407740" duration="7942000" />
       <workItem from="1494416231119" duration="2973000" />
-      <workItem from="1494462900302" duration="6264000" />
+      <workItem from="1494462900302" duration="12929000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1484886881893</created>
@@ -1704,7 +1630,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309012000" />
+    <option name="totallyTimeSpent" value="315677000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1716,8 +1642,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-225" y="872" width="1594" height="898" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1" y="0" width="1602" height="901" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1741,7 +1666,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32862645" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.21296297" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" x="1041" y="224" width="355" height="604" />
+      <window_info id="Project" active="true" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936507" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" x="1041" y="224" width="355" height="604" />
       <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1822,8 +1747,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logo.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/SplashScreenLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/AbstractJavaFxApplicationSupport.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/css/main.css" />
     <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/SystemInfo.java" />
@@ -1879,13 +1802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/control/Skinnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/Parent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1898,6 +1814,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1916,14 +1833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/layout/Region.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="144" column="25" lean-forward="false" selection-start-line="144" selection-start-column="25" selection-end-line="144" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/control/Label.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1936,14 +1845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="95" column="40" lean-forward="true" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/control/Control.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="81" column="22" lean-forward="false" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1980,6 +1881,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="690" column="22" lean-forward="false" selection-start-line="690" selection-start-column="22" selection-end-line="690" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2009,14 +1911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2175">
           <caret line="145" column="51" lean-forward="false" selection-start-line="145" selection-start-column="51" selection-end-line="145" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/control/ProgressIndicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2102,29 +1996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="153" column="10" lean-forward="false" selection-start-line="153" selection-start-column="10" selection-end-line="153" selection-end-column="10" />
-          <folding>
-            <element signature="e#2531#2532#0" expanded="false" />
-            <element signature="e#2559#2560#0" expanded="false" />
-            <element signature="e#2603#2604#0" expanded="false" />
-            <element signature="e#2643#2644#0" expanded="false" />
-            <element signature="e#2688#2689#0" expanded="false" />
-            <element signature="e#2729#2730#0" expanded="false" />
-            <element signature="e#2771#2772#0" expanded="false" />
-            <element signature="e#2809#2810#0" expanded="false" />
-            <element signature="e#2852#2853#0" expanded="false" />
-            <element signature="e#2891#2892#0" expanded="false" />
-            <element signature="e#9567#9568#0" expanded="false" />
-            <element signature="e#9608#9609#0" expanded="false" />
-            <element signature="e#17116#17117#0" expanded="false" />
-            <element signature="e#17183#17184#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -2136,44 +2007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="225" column="63" lean-forward="false" selection-start-line="225" selection-start-column="63" selection-end-line="225" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="93" column="110" lean-forward="false" selection-start-line="93" selection-start-column="110" selection-end-line="93" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CustomButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2191,18 +2028,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/button.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/lobbi.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="495">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/css/lobbi.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/ImageLoadTracker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="330">
+          <caret line="22" column="141" lean-forward="false" selection-start-line="22" selection-start-column="141" selection-end-line="22" selection-end-column="141" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/control/Skinnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/layout/Region.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43635">
+          <caret line="144" column="8" lean-forward="false" selection-start-line="144" selection-start-column="8" selection-end-line="144" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/control/Control.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="81" column="39" lean-forward="true" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/scene/control/ProgressIndicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="68" column="41" lean-forward="true" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="93" column="110" lean-forward="false" selection-start-line="93" selection-start-column="110" selection-end-line="93" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/css/button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="104" column="1" lean-forward="true" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/CustomButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/rulesGaming/CardForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/ShirtCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-908">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="225" column="63" lean-forward="false" selection-start-line="225" selection-start-column="63" selection-end-line="225" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="237" column="35" lean-forward="true" selection-start-line="237" selection-start-column="35" selection-end-line="237" selection-end-column="35" />
           <folding />
         </state>
       </provider>

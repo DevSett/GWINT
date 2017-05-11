@@ -14,7 +14,7 @@ public class CustomButton extends ProgressIndicator {
     private boolean check;
 
     public CustomButton(ChangeListener<Number> numberChangeListener) {
-
+        this.getStylesheets().add(getClass().getResource("/css/button.css").toExternalForm());
         setProgress(0);
         final AnimationTimer timer = new AnimationTimer() {
 
@@ -40,5 +40,11 @@ public class CustomButton extends ProgressIndicator {
             }
         });
 
+        //
+
+
+
+        //
     }
+
 }

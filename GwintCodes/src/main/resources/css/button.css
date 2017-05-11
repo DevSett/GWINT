@@ -100,4 +100,24 @@
     -fx-background-repeat: stretch;
     -fx-text-fill: white;
 }
+.progress-indicator{
+    -fx-progress-color: orange ;
+}
+.progress-indicator .progress{
+    -fx-border-color: orangered;
+}
+.progress-indicator .indicator{
+    -fx-background-color: #32241B;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
+    -fx-border-color: black;
+}
+.progress-indicator:hover .indicator{
+    -fx-border-color: rgba(83, 42, 19, 0.5);
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+}
+
+.progress-indicator .percentage{
+-fx-fill: transparent;
+}
 
