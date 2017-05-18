@@ -1,8 +1,8 @@
 package app.classes.view.lobbiGame.classes;
 
 import app.classes.MainApp;
+import app.classes.other.Alerts;
 import app.classes.other.HelpClass;
-import app.classes.other.Messager;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Node;
@@ -85,19 +85,23 @@ public class Lobbi {
         return HelpClass.customButton(button, 200, 40, "button-accept", event -> {
             int selectionIndex = tableView.getSelectionModel().getSelectedIndex();
             if (selectionIndex == -1) {
-                new Messager(stage).showPopupMessage("Выберете лобби или создайте!", Messager.ERROR, 2, false);
+                HelpClass.alert("Выберете лобби или создайте!",null,null,panel);
+
+//                new Messager(stage).showPopupMessage("Выберете лобби или создайте!", Messager.ERROR, 2, false);
                 return;
             }
             if (tableView.getItems().get(selectionIndex).getIdName().equals(MainApp.getSingleton().getRootConfig().getId())) {
-                new Messager(stage).showPopupMessage("Невозможно подключится к себе", Messager.ERROR, 2, false);
+                HelpClass.alert("Невозможно подключится к себе!",null,null,panel,Alerts.ERROR);
+//                new Messager(stage).showPopupMessage("Невозможно подключится к себе", Messager.ERROR, 2, false);
                 return;
             }
             if (tableView.getItems().get(selectionIndex).getIdSecondName().isEmpty()) {
                 MainApp.getSingleton().client.ConnecteLobbi(tableView.getItems().get(selectionIndex).getId());
-                new Messager(stage).showPopupMessage("Подключение", Messager.INFO, 2, true);
+                HelpClass.alert("Успешное подключение!",null,null,panel,Alerts.SUCCESS);
+//                new Messager(stage).showPopupMessage("Подключение", Messager.INFO, 2, true);
             } else {
-                new Messager(stage).showPopupMessage("Лобби занято!", Messager.ERROR, 2, false);
-                return;
+                HelpClass.alert("Лобби занято!",null,null,panel,Alerts.ERROR);
+//                new Messager(stage).showPopupMessage("Лобби занято!", Messager.ERROR, 2, false);
             }
         });
     }
@@ -105,7 +109,9 @@ public class Lobbi {
     private Button buttonCreate(Button button) {
         return HelpClass.customButton(button, 200, 40, "button-create", event -> {
             createLobbi();
-            new Messager(stage).showPopupMessage("Создание и подключение к лобби", Messager.INFO, 2);
+            HelpClass.alert("Создание и подключение к лобби",null,null,panel);
+
+//            new Messager(stage).showPopupMessage("Создание и подключение к лобби", Messager.INFO, 2);
         });
     }
 
@@ -116,7 +122,8 @@ public class Lobbi {
     private Button buttonDisconnect2(Button button) {
         return HelpClass.customButton(button, 200, 40, "button-disconnect", event -> {
             actionDisconnectLobbi();
-            new Messager(stage).showPopupMessage("Отключение", Messager.INFO, 2, true);
+            HelpClass.alert("Отключение",null,null,panel,Alerts.ERROR);
+//            new Messager(stage).showPopupMessage("Отключение", Messager.INFO, 2, true);
         });
     }
 
@@ -125,7 +132,8 @@ public class Lobbi {
             for (LobbiItems lobbiItems : tableView.getItems()) {
                 if (lobbiItems.getIdName().equals(MainApp.getSingleton().getRootConfig().getId())) {
                     if (lobbiItems.getStatusCircle().getFill().equals(Color.GREEN)) {
-                        new Messager(stage).showPopupMessage("Лобби пустое", Messager.ERROR, 2, false);
+                        HelpClass.alert("Лобби пустое",null,null,panel, Alerts.ERROR);
+//                        new Messager(stage).showPopupMessage("Лобби пустое", Messager.ERROR, 2, false);
                     } else {
                         MainApp.getSingleton().client.startGame();
                     }
@@ -198,7 +206,7 @@ public class Lobbi {
     }
 
     public void animatedDeletedLobbi() {
-        if (!buttonThird.getText().equals("Старт"))
+        if (!buttonThird.getId().equals("button-start"))
             Platform.runLater(() -> {
                 buttonSecond.setVisible(true);
                 buttonJoin(buttonThird);

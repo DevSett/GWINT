@@ -4,8 +4,10 @@ import app.classes.MainApp;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import static java.lang.System.exit;
@@ -61,7 +63,7 @@ public class OptionController {
     }
 
     public void setImage(Image image) {
-        panePicture.setBackground(new Background(new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(panePicture.getPrefWidth(), panePicture.getPrefHeight(), true, true, true, true))));
-
+        panePicture.setBackground(new Background(new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(panePicture.getPrefWidth(), panePicture.getPrefHeight(), true, true, true, false))));
+        panePicture.setEffect(new DropShadow(10, Color.BLACK));
     }
 }

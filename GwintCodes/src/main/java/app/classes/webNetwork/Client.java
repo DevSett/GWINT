@@ -1,15 +1,16 @@
 package app.classes.webNetwork;
 
 import app.classes.MainApp;
+import app.classes.other.Alerts;
+import app.classes.other.HelpClass;
 import app.classes.view.StatusWindow;
-import app.classes.other.Messager;
 import javafx.application.Platform;
 import org.apache.log4j.Logger;
 
 import javax.websocket.*;
 import java.util.HashMap;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 @ClientEndpoint
 public class Client {
@@ -30,7 +31,7 @@ public class Client {
     @OnMessage
     public void onMessage(String message) {
         System.out.println("(O_O) Получил => " + message);
-
+        logger.info("(O_O) Получил => " + message);
         HashMap map = (HashMap) MainApp.getSingleton().getRootConfig().checkCommands(message);
         if (map != null) {
             if (map.get("message") != null) System.out.println("(O_O) Oтправляет (message) => " + map.get("message"));
@@ -41,15 +42,18 @@ public class Client {
     @OnClose
     public void onClose(Session session, CloseReason closeReason) {
         out.println("Close");
+
         Platform.runLater(() -> {
             MainApp.getSingleton().getRootConfig().clearJson();
             if (MainApp.getSingleton().getStatus().equals(StatusWindow.LOBBI)) {
-                new Messager(MainApp.getSingleton().getStage()).showPopupMessage("Сервер не доступен!", 0, 2);
+                HelpClass.alert("Сервер не доступен!", null, null, MainApp.getSingleton().getStage(), Alerts.ERROR);
+//                new Messager(MainApp.getSingleton().getStage()).showPopupMessage("Сервер не доступен!", 0, 2);
                 MainApp.getSingleton().data.clear();
                 MainApp.getSingleton().getLobbiRooms().backToMenu();
             }
             if (MainApp.getSingleton().getStatus().equals(StatusWindow.MULTI)) {
-                new Messager(MainApp.getSingleton().getStage()).showPopupMessage("Сервер не доступен!", 0, 2);
+                HelpClass.alert("Сервер не доступен!", null, null, MainApp.getSingleton().getStage(),Alerts.ERROR);
+//                new Messager(MainApp.getSingleton().getStage()).showPopupMessage("Сервер не доступен!", 0, 2);
                 MainApp.getSingleton().data.clear();
                 MainApp.getSingleton().getLogic().backToMenu();
                 //не тестировалось

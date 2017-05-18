@@ -5,6 +5,7 @@ import app.classes.rulesGaming.Card;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
@@ -93,22 +94,23 @@ public class ShirtCard extends Region {
         timeline.setCycleCount(2);
 
         setOnMouseEntered(event -> {
-            timeline.play();
+            Platform.runLater(() -> timeline.play());
             onCard = true;
         });
 
         timeline.currentTimeProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue.toSeconds() == 0.07 && onCard) {
-                timeline.pause();
+                Platform.runLater(() -> timeline.pause());
             }
+            if (!onCard && newValue != Duration.ZERO )
+                timeline.play();
         });
 
         setOnMouseExited(event -> {
             onCard = false;
-            if (timeline.getCurrentTime() != Duration.ZERO)
-                timeline.play();
+            if (!timeline.getCurrentTime().equals(Duration.ZERO))
+                Platform.runLater(() -> timeline.play());
         });
-
 
     }
 

@@ -21,7 +21,7 @@ public class CardsBox extends HBox {
         sizeX = x / MainApp.getSingleton().getDel();
         sizeY = y / MainApp.getSingleton().getDel();
 
-        setMaxSize(x, y);
+        setMaxSize(sizeX, sizeY);
 
 //        setStyle("-fx-border-color: aliceblue");
     }

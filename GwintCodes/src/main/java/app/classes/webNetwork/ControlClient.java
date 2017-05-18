@@ -1,7 +1,7 @@
 package app.classes.webNetwork;
 
 import app.classes.MainApp;
-import app.classes.rulesGaming.Card;
+import app.classes.view.gamingTable.GamingCard;
 import app.classes.webNetwork.config.CommandGwent;
 import org.apache.log4j.Logger;
 
@@ -53,6 +53,7 @@ public class ControlClient {
     }
 
     public void send(String text) {
+        logger.info("(O_O) Получил => " + text);
         session.getAsyncRemote().sendText(text);
     }
 
@@ -79,7 +80,25 @@ public class ControlClient {
         send(CommandGwent.START_GAME.toString());
     }
 
-    public void step(Card card) {
-        send(CommandGwent.STEP+"|"+card.toString());
+    public void step(GamingCard card) {
+        send(CommandGwent.STEP + "|" + card.toString() + "|-1|-1|-1|-1|-1");
+    }
+
+
+    public void step(GamingCard gamingCard, GamingCard gamingCard2, int finalI1, int i) {
+        if (gamingCard2 != null)
+            send(CommandGwent.STEP + "|" + gamingCard.toString() + "|" + gamingCard2.toString() + "|" + finalI1 + "|" + i);
+        else {
+            send(CommandGwent.STEP + "|" + gamingCard.toString() + "|-1|-1|-1|" + finalI1 + "|" + i);
+
+        }
+    }
+
+    public void surrender() {
+        send(CommandGwent.SURRENDER.toString());
+    }
+
+    public void endGame() {
+        send(CommandGwent.END_GAME.toString());
     }
 }

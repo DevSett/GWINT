@@ -104,10 +104,14 @@ public class RootConfig {
             }
 
             case START_GAME: {
+
+
                 configGame.add((String) arrayMessage[0], configLobbi.getConnectedLobbi(arrayMessage[0]));
+                configLobbi.update((String) arrayMessage[0], -1, -1);
+                configLobbi.update( configGame.findIdEnemy((String) arrayMessage[0]), -1, -1);
                 map.put("id", "double");
                 map.put("id-1", arrayMessage[0]);
-                map.put("id-2", configLobbi.getConnectedLobbi(arrayMessage[0]));
+                map.put("id-2", configGame.findIdEnemy((String) arrayMessage[0]));
                 map.put("message", message);
                 return map;
             }
@@ -119,14 +123,14 @@ public class RootConfig {
                 map.put("message", message);
                 return map;
             }
-
-            /*case CommandGwent.DAMAGE: {
-                return CommandGwent.damage(arrayMessage);
-            }*/
-            /*case CommandGwent.EFFECT: {
-                return CommandGwent.effect(arrayMessage);
-            }*/
-
+            case SURRENDER:
+                map.put("id", "first");
+                map.put("id-1", configGame.findIdEnemy((String) arrayMessage[0]));
+                map.put("message", message);
+                return map;
+            case END_GAME:
+                configGame.remove((String) arrayMessage[0]);
+                break;
             case IDCARDSHAND: {
 //                return CommandGwent.idCardsHand(arrayMessage);
             }

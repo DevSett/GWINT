@@ -2,6 +2,7 @@ package app.classes.view.gamingTable;
 
 
 import app.classes.MainApp;
+import app.classes.other.Alerts;
 import app.classes.other.HelpClass;
 import com.sun.javafx.tk.FontLoader;
 import com.sun.javafx.tk.Toolkit;
@@ -11,6 +12,7 @@ import javafx.animation.Timeline;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
+import javafx.scene.text.TextAlignment;
 import javafx.util.Duration;
 
 
@@ -18,7 +20,7 @@ public class Alert extends Region {
     private Timeline timeline = new Timeline();
     private Label label;
 
-    public Alert(String alert, double perSecondUpdate) {
+    public Alert(String alert, double perSecondUpdate, Alerts alerts) {
 
 
         Pane pane = new Pane();
@@ -29,16 +31,32 @@ public class Alert extends Region {
 
         label = new Label(alert);
         label.setWrapText(true);
-        label.setStyle("-fx-text-fill: navajowhite");
+        switch (alerts) {
+            case ERROR:
+                label.setStyle("-fx-text-fill: darkred");
+                break;
+            case SUCCESS:
+                label.setStyle("-fx-text-fill: forestgreen");
+                break;
+            default:
+                label.setStyle("-fx-text-fill: navajowhite");
+                break;
+        }
         label.setOpacity(0);
         label.setFont(HelpClass.getFont(100 / MainApp.getSingleton().getDel()));
 
         label.setLayoutY(pane.getPrefHeight() / 2 - label.getFont().getSize());
+        label.setTextAlignment(TextAlignment.CENTER);
         FontLoader fontLoader = Toolkit.getToolkit().getFontLoader();
-        label.setLayoutX(
-                pane.getPrefWidth() / 2 - fontLoader.computeStringWidth(label.getText(), label.getFont()) / 2
-        );
-
+        if (alert.length() < 10)
+            label.setLayoutX(
+                    pane.getPrefWidth() / 2 - fontLoader.computeStringWidth(label.getText(), label.getFont()) / 2
+            );
+        else {
+            label.setLayoutX(pane.getPrefWidth() / 4);
+            label.setLayoutY(pane.getPrefHeight() / 2 - label.getFont().getSize() * 2);
+        }
+        label.setMaxWidth(pane.getPrefWidth() / 2);
         getChildren().addAll(pane, label);
 
 

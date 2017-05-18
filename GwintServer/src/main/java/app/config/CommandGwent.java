@@ -22,7 +22,9 @@ public enum CommandGwent {
     ID_USER("IdUser"),
     SUCCESS_CREATE_LOBBI("SuccessCreateLobbi"),
     SUCCESS_CONNECTED_LOBBI("SuccessConnectedLobbi"),
-    ERROR_CONNECTED_LOBBI("ErrorConnectedLobbi");
+    ERROR_CONNECTED_LOBBI("ErrorConnectedLobbi"),
+    SURRENDER("Surrender"),
+    END_GAME("EndGame");
 
     private String string;
 

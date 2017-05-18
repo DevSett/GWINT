@@ -29,6 +29,7 @@ public class Server {
 //
         message = session.getId() + "|" + message;
         HashMap map = main.rootConfig.checkCommands(message);
+        if (map == null) return;
         System.out.println("(O_O) Oтправляет (message) => " + map.get("message"));
         if (map.get("message-1") != null) System.out.println("(O_O) Oтправляет (message-1) => " + map.get("message-1"));
         if (map.get("message-2") != null) System.out.println("(O_O) Oтправляет (message-2) => " + map.get("message-2"));

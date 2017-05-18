@@ -26,6 +26,13 @@ public final class ScreenResolution {
     public static final class SIZE {
         private SIZE() {/* do not use */ }
 
+        public static final class GAME {
+            public static final Integer WIDTH = 440;
+            public static final Integer HEIGHT = 460;
+
+            private GAME() {/* do not use */ }
+        }
+
         public static final class CARD {
             private CARD() {/* do not use */ }
 
@@ -43,13 +50,6 @@ public final class ScreenResolution {
                 private LIDER() {/* do not use */ }
             }
 
-            public static final class GAME {
-                public static final Integer WIDTH = 132;
-                public static final Integer HEIGHT = 191;
-
-                private GAME() {/* do not use */ }
-            }
-
             public static final class TRASH {
                 public static final Integer WIDTH = 144;
                 public static final Integer HEIGHT = 210;
@@ -61,7 +61,7 @@ public final class ScreenResolution {
                 public static final Integer WIDTH = 624;
                 public static final Integer HEIGHT = 906;
 
-                private FOR_ANIMATION(){/* do not use*/}
+                private FOR_ANIMATION() {/* do not use*/}
             }
         }
 
@@ -212,6 +212,32 @@ public final class ScreenResolution {
                 private ENEMY() {/* do not use */ }
 
             }
+
         }
+
+        public static final class FULL_FIELD {
+            public static final Integer LEFT_FIRST = 248;
+            public static final Integer LEFT_SECOND = 698;
+            public static final Integer LEFT_THERT = 1146;
+
+            private FULL_FIELD() { /* do not use */ }
+
+            public static final class FRIENDLY {
+                public static final Integer TOP = 484;
+                public static final Integer BOTTOM = 136;
+
+                private FRIENDLY() {/* do not use */}
+            }
+
+            public static final class ENEMY {
+                public static final Integer TOP = 0;
+                public static final Integer BOTTOM = 618;
+
+                private ENEMY() {/* do not use */}
+
+            }
+
+        }
+
     }
 }

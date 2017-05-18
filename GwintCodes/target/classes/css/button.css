@@ -40,12 +40,15 @@
 #button-disconnect:pressed {
     -fx-background-image: url("../images/menuGame/disconnectButtonPressed.png");
 }
-#button-start{
+
+#button-start {
     -fx-background-image: url("../images/menuGame/startButton.png");
 }
-#button-start:pressed{
+
+#button-start:pressed {
     -fx-background-image: url("../images/menuGame/startButtonPressed.png");
 }
+
 #single-button {
     -fx-background-image: url("../images/menuGame/singleButton.png");
 }
@@ -75,14 +78,14 @@
     -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
 }
 
-#multy-button:hover, #exit-button:hover, #single-button:hover, #button-accept:hover, #button-back:hover,#button-start:hover, #button-create:hover, #button-disconnect:hover {
+#multy-button:hover, #exit-button:hover, #single-button:hover, #button-accept:hover, #button-back:hover, #button-start:hover, #button-create:hover, #button-disconnect:hover {
     -fx-border-color: rgba(83, 42, 19, 0.5);
     -fx-border-width: 2px;
     -fx-border-insets: -5px;
     -fx-border-radius: 10;
 }
 
-#single-button, #exit-button, #multy-button, #button-accept, #button-back, #button-start, #button-create, #button-disconnect{
+#single-button, #exit-button, #multy-button, #button-accept, #button-back, #button-start, #button-create, #button-disconnect {
     -fx-background-size: contain;
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
@@ -100,24 +103,32 @@
     -fx-background-repeat: stretch;
     -fx-text-fill: white;
 }
-.progress-indicator{
-    -fx-progress-color: orange ;
+
+.progress-indicator {
+    -fx-progress-color: orange;
 }
-.progress-indicator .progress{
+
+.progress-indicator .progress {
     -fx-border-color: orangered;
 }
-.progress-indicator .indicator{
+
+.progress-indicator .indicator {
     -fx-background-color: #32241B;
     -fx-effect: dropshadow(three-pass-box, black, 10, 0.5, 0, 0);
     -fx-border-color: black;
 }
-.progress-indicator:hover .indicator{
+
+.progress-indicator:hover .indicator {
     -fx-border-color: rgba(83, 42, 19, 0.5);
     -fx-border-width: 2px;
     -fx-border-radius: 10;
 }
 
-.progress-indicator .percentage{
--fx-fill: transparent;
+.progress-indicator .percentage {
+    -fx-fill: transparent;
 }
 
+#single-button:disabled {
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}

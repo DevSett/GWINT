@@ -3,12 +3,15 @@ package app.classes.view.menuGame.classes;
 import app.classes.MainApp;
 import app.classes.other.HelpClass;
 import javafx.geometry.Pos;
+import javafx.scene.ImageCursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
+
+import java.util.Random;
 
 
 /**
@@ -67,10 +70,17 @@ public class Menu {
                                 true))));
 
         showButton();
+        Image image2 = new Image(getClass().getResource("/images/cursor.png").toExternalForm());  //pass in the image path
 
-
-        Scene scene = new Scene(pane);
-        stage.setScene(scene);
+        if (stage.getScene()==null) {
+            Scene scene = new Scene(pane);
+            scene.setCursor(new ImageCursor(image2));
+            stage.setScene(scene);
+        }else {
+            stage.getScene().setRoot(pane);
+            stage.getScene().setCursor(new ImageCursor(image2));
+        }
+        stage.setTitle("Оплот");
         stage.show();
     }
 
@@ -78,10 +88,13 @@ public class Menu {
         pane.getChildren().clear();
         pane.getStylesheets().add(MainApp.class.getResource("/css/button.css").toExternalForm());
 
-        singlePlay = HelpClass.customButton(null, 500, 100, "single-button", event -> {
+        singlePlay = HelpClass.customButton(null,500, 100, "single-button", event -> {
             MainApp.getSingleton().setStage(stage);
             MainApp.getSingleton().playGameTable();
         });
+
+        singlePlay.setText("В разработке...");
+        singlePlay.setDisable(true);
 
         multyPlay = HelpClass.customButton(null, 500, 100, "multy-button", event -> actionMultyButton());
 
@@ -105,8 +118,8 @@ public class Menu {
         HBox hBox2 = new HBox(30);
         HBox hBox3 = new HBox(30);
 
-        Button acceptMultyButton = HelpClass.customButton(null,500, 100, "button-accept", event -> actionAcceptButton());
-        Button backMultyButton = HelpClass.customButton(null,500, 100, "button-back", event -> actionBackButton());
+        Button acceptMultyButton = HelpClass.customButton(null, 500, 100, "button-accept", event -> actionAcceptButton());
+        Button backMultyButton = HelpClass.customButton(null, 500, 100, "button-back", event -> actionBackButton());
         //ждут отрисовки книпоки
 
         hBox2.setAlignment(Pos.CENTER);
@@ -114,9 +127,11 @@ public class Menu {
 
 
         fieldIp = HelpClass.customField("Введите ip адресс", "field", 200, 40);
+        fieldIp.setText("localhost");
         fieldPort = HelpClass.customField("Введите порт", "field", 200, 40);
+        fieldPort.setText("7896");
         fieldName = HelpClass.customField("Никнейм", "field", 200, 40);
-
+        fieldName.setText("uncnown"+new Random().nextInt(1000));
         hBox3.getChildren().addAll(fieldName);
         hBox3.setAlignment(Pos.CENTER);
 

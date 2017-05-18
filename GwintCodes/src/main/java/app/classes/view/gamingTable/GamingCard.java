@@ -2,10 +2,12 @@ package app.classes.view.gamingTable;
 
 import app.classes.MainApp;
 import app.classes.rulesGaming.Card;
+import app.classes.rulesGaming.CardForm;
 import app.classes.rulesGaming.CardType;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.scene.Parent;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -23,11 +25,13 @@ public class GamingCard extends Region {
     Long idn;
     private double width;
     private double height;
+    private int damage;
     private Card card;
     private Timeline timeline;
     private boolean onCard = false;
     private boolean animation;
     private Label label;
+    private CardForm cardForm;
 
     public GamingCard(Card card, double width, double height, boolean animation, Long id) {
         super();
@@ -37,11 +41,17 @@ public class GamingCard extends Region {
         this.card = card;
         this.animation = animation;
         this.idn = id;
-
+        this.cardForm = card.getForm();
+        this.damage = card.getDamage();
         draw();
         if (animation)
             animation();
     }
+
+    public CardForm getForm() {
+        return cardForm;
+    }
+
 
     public Long identificator() {
         return idn;
@@ -136,20 +146,22 @@ public class GamingCard extends Region {
         timeline.setCycleCount(2);
 
         setOnMouseEntered(event -> {
-            timeline.play();
+            Platform.runLater(() -> timeline.play());
             onCard = true;
         });
 
         timeline.currentTimeProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue.toSeconds() == 0.07 && onCard) {
-                timeline.pause();
+                Platform.runLater(() -> timeline.pause());
             }
+            if (!onCard && newValue != Duration.ZERO)
+                timeline.play();
         });
 
         setOnMouseExited(event -> {
             onCard = false;
-            if (timeline.getCurrentTime() != Duration.ZERO)
-                timeline.play();
+            if (!timeline.getCurrentTime().equals(Duration.ZERO))
+                Platform.runLater(() -> timeline.play());
         });
 
 
@@ -173,8 +185,25 @@ public class GamingCard extends Region {
         });
     }
 
+    public void setDamage(int damage) {
+        this.damage = damage;
+        label.setText(String.valueOf(damage));
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
     public boolean isAnimation() {
         return animation;
     }
 
+    @Override
+    public String toString() {
+        return "" + getCard().getId() + "|" + getDamage() + "|" + getForm();
+    }
+
+    public void setForm(CardForm form) {
+        this.cardForm = form;
+    }
 }

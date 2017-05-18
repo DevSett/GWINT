@@ -126,10 +126,9 @@ public class RootConfig {
                 break;
             case STEP: {
                 Platform.runLater(() -> {
-                    MainApp.getSingleton().getLogic().step(arrayMessage[2], arrayMessage[3]);
+                    MainApp.getSingleton().getLogic().step(arrayMessage[2], arrayMessage[3], arrayMessage[4], arrayMessage[5], arrayMessage[6], arrayMessage[7], arrayMessage[8], arrayMessage[9]);
                 });
 
-                MainApp.getSingleton().getLogic().step();
                 break;
             }
             case CREATE_LOBBI:
@@ -170,26 +169,30 @@ public class RootConfig {
                 lobbiUpdate();
                 break;
             case DISCONNECTION:
-                MainApp.getSingleton().data.forEach(lobbiItems -> {
-                    if (arrayMessage[0].equals(lobbiItems.getIdName())) {
-                        Platform.runLater(() -> {
-                            MainApp.getSingleton().data.remove(lobbiItems);
-                        });
-                    }
-                    if (arrayMessage[0].equals(lobbiItems.getIdSecondName())) {
-                        lobbiItems.setIdSecondName("");
-                        lobbiItems.setSecondName("");
-                        lobbiItems.setColor(Color.GREEN);
-                    }
-                    if (MainApp.getSingleton().getStatus() == StatusWindow.MULTI) {
-                        if (configLobbi.checkConnection(getId())) {
-                            MainApp.getSingleton().getLogic().getGamingTable().alert(
-                                    "Соперник отключился!",
-                                    event -> MainApp.getSingleton().getLogic().backMenu(),
-                                    null);
+                if (MainApp.getSingleton().data.size() != 0)
+                    MainApp.getSingleton().data.forEach(lobbiItems -> {
+                        if (arrayMessage[0].equals(lobbiItems.getIdName())) {
+                            Platform.runLater(() -> {
+                                MainApp.getSingleton().data.remove(lobbiItems);
+                            });
                         }
+                        if (arrayMessage[0].equals(lobbiItems.getIdSecondName())) {
+                            lobbiItems.setIdSecondName("");
+                            lobbiItems.setSecondName("");
+                            lobbiItems.setColor(Color.GREEN);
+                        }
+                    });
+                if (MainApp.getSingleton().getStatus() == StatusWindow.MULTI) {
+                    if (configLobbi.checkConnection((String) arrayMessage[0])) {
+                        HelpClass.alert(
+                                "Соперник отключился!",
+                                event -> {
+                                    MainApp.getSingleton().getLogic().backMenu();
+                                    MainApp.getSingleton().client.stop();
+                                },
+                                null, MainApp.getSingleton().getLogic().getGamingTable());
                     }
-                });
+                }
 
                 configLobbi.remove(String.valueOf(arrayMessage[0]));
                 lobbiUpdate();
@@ -200,7 +203,6 @@ public class RootConfig {
                     if (t.getIdName().equals(arrayMessage[0])) Platform.runLater(() -> {
                         if (getId().equals(t.getIdSecondName())) {
                             configLobbi.update(getId(), -1, -1);
-
                         }
                         configLobbi.update(t.getIdName(), -1, -1);
                         MainApp.getSingleton().data.remove(t);
@@ -231,6 +233,9 @@ public class RootConfig {
                 }
                 break;
             case ERROR_CONNECTED_LOBBI:
+                break;
+            case SURRENDER:
+                MainApp.getSingleton().getLogic().surrender();
                 break;
             default:
                 System.out.println("(O_O)!uncnown command!(O_O) ==> " + commandGwent);
