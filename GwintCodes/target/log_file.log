@@ -1,1 +1,5 @@
 2017-05-18 10:46:26 ERROR MainApp:171 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-05-18 11:58:11 ERROR MainApp:171 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-05-18 11:58:18 INFO  Client:25 - Open new session: 0ec73c48-21a0-4429-93ca-2050af94f1b2
+2017-05-18 11:58:18 INFO  Client:34 - (O_O) Получил => 01966ce8-7394-41be-a474-59590bcb1e3d|IdUser
+2017-05-18 11:58:18 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":-1,"nickname":"uncnown918","id":"01966ce8-7394-41be-a474-59590bcb1e3d","lobbiConnection":-1}]|InfoUsers
