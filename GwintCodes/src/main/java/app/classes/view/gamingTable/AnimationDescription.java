@@ -36,7 +36,7 @@ public class AnimationDescription extends Region {
         tempGamingCard.setLayoutX(tempGamingCard.getSizeX() * -1);
         tempGamingCard.setLayoutY(pane.getPrefHeight() / 2 - tempGamingCard.getPrefHeight() / 2);
 
-        Label label = new Label(tempGamingCard.getCard().getId()+" ttt "+tempGamingCard.getCard().getDescription());
+        Label label = new Label(tempGamingCard.getCard().getDescription());
 
         label.setWrapText(true);
         label.setStyle("-fx-text-fill: whitesmoke");

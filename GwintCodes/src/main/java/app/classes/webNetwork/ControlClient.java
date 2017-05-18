@@ -23,16 +23,12 @@ public class ControlClient {
         url = "ws://" + fieldIp + ":" + fieldPort + "/ws/gwent";
     }
 
-    public void start() throws DeploymentException {
+    public void start() throws DeploymentException, IOException {
         WebSocketContainer container = ContainerProvider
                 .getWebSocketContainer();
-        try {
             session = container.connectToServer(Client.class,
                     URI.create(url));
-        } catch (IOException e) {
-            logger.error("start IO", e);
-            e.printStackTrace();
-        }
+
     }
 
     public void stop() {

@@ -169,7 +169,7 @@ public class RootConfig {
                 lobbiUpdate();
                 break;
             case DISCONNECTION:
-                if (MainApp.getSingleton().data.size() != 0)
+                if (MainApp.getSingleton().data.size() != 0) {
                     MainApp.getSingleton().data.forEach(lobbiItems -> {
                         if (arrayMessage[0].equals(lobbiItems.getIdName())) {
                             Platform.runLater(() -> {
@@ -182,6 +182,7 @@ public class RootConfig {
                             lobbiItems.setColor(Color.GREEN);
                         }
                     });
+                }
                 if (MainApp.getSingleton().getStatus() == StatusWindow.MULTI) {
                     if (configLobbi.checkConnection((String) arrayMessage[0])) {
                         HelpClass.alert(
@@ -225,6 +226,7 @@ public class RootConfig {
                 break;
             case START_GAME:
                 if (arrayMessage[2].equals("true")) {
+                    MainApp.getSingleton().setStatus(StatusWindow.MULTI);
                     MainApp.getSingleton().getLobbiRooms().startGame(true);
                     MainApp.getSingleton().getLogic().step();
                 } else {

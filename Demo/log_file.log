@@ -1,0 +1,39 @@
+2017-05-18 12:16:48 INFO  Client:25 - Open new session: 560d09a3-bcdd-4153-a858-b1eda4bb13b1
+2017-05-18 12:16:48 INFO  Client:34 - (O_O) Получил => 01b05e9b-6c83-4b19-8cd6-cfc30e776861|IdUser
+2017-05-18 12:16:48 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":-1,"nickname":"uncnown329","id":"01b05e9b-6c83-4b19-8cd6-cfc30e776861","lobbiConnection":-1}]|InfoUsers
+2017-05-18 12:16:52 INFO  ControlClient:56 - (O_O) Получил => CreateLobbi
+2017-05-18 12:16:52 INFO  Client:34 - (O_O) Получил => 0|SuccessCreateLobbi
+2017-05-18 12:17:14 INFO  Client:34 - (O_O) Получил => fdbf837a-148b-4c24-a760-6b2ba282e3e7|Nickname|killse1
+2017-05-18 12:17:18 INFO  Client:34 - (O_O) Получил => fdbf837a-148b-4c24-a760-6b2ba282e3e7|CreateLobbi|1
+2017-05-18 12:17:24 INFO  ControlClient:56 - (O_O) Получил => RemoveLobbi
+2017-05-18 12:17:27 INFO  ControlClient:56 - (O_O) Получил => ConnectedLobbi|1
+2017-05-18 12:17:27 INFO  Client:34 - (O_O) Получил => 1|SuccessConnectedLobbi
+2017-05-18 12:17:31 INFO  Client:34 - (O_O) Получил => fdbf837a-148b-4c24-a760-6b2ba282e3e7|StartGame|true
+2017-05-18 12:17:38 INFO  ControlClient:56 - (O_O) Получил => Step|14|7|TWO_STONE|-1|-1|-1|-1|-1
+2017-05-18 12:18:07 INFO  Client:34 - (O_O) Получил => fdbf837a-148b-4c24-a760-6b2ba282e3e7|Disconnection
+2017-05-18 12:18:09 INFO  Client:62 - Close session: 560d09a3-bcdd-4153-a858-b1eda4bb13b1
+Reason: 
+2017-05-18 12:22:35 INFO  Client:25 - Open new session: c193436e-3c5e-46b5-9527-e19ac55da5c1
+2017-05-18 12:22:35 INFO  Client:34 - (O_O) Получил => 0a300aba-6a7c-46ed-b9f7-a044fa5d49f9|IdUser
+2017-05-18 12:22:35 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":0,"nickname":"analnyZud","id":"678b901b-5bc6-4687-9cb6-9efea453a068","lobbiConnection":0},{"lobbiCreate":-1,"nickname":"killsett","id":"0a300aba-6a7c-46ed-b9f7-a044fa5d49f9","lobbiConnection":-1}]|InfoUsers
+2017-05-18 12:22:46 INFO  ControlClient:56 - (O_O) Получил => ConnectedLobbi|0
+2017-05-18 12:22:46 INFO  Client:34 - (O_O) Получил => 0|SuccessConnectedLobbi
+2017-05-18 12:22:52 INFO  Client:34 - (O_O) Получил => 678b901b-5bc6-4687-9cb6-9efea453a068|StartGame|true
+2017-05-18 12:31:29 ERROR MainApp:171 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-05-18 12:31:35 ERROR MainApp:171 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-05-18 12:31:43 INFO  Client:25 - Open new session: 008bf54b-f624-4599-9677-c9a65d4b9ae0
+2017-05-18 12:31:43 INFO  Client:34 - (O_O) Получил => b49a70bd-745a-4f58-8dc8-5e00cc723b15|IdUser
+2017-05-18 12:31:43 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":-1,"nickname":"uncnown276","id":"b49a70bd-745a-4f58-8dc8-5e00cc723b15","lobbiConnection":-1}]|InfoUsers
+2017-05-18 12:31:44 INFO  ControlClient:56 - (O_O) Получил => CreateLobbi
+2017-05-18 12:31:44 INFO  Client:34 - (O_O) Получил => 0|SuccessCreateLobbi
+2017-05-18 12:31:49 INFO  Client:25 - Open new session: 06432d19-69d2-458d-9761-06b518e8f960
+2017-05-18 12:31:49 INFO  Client:34 - (O_O) Получил => 4fc9576d-14b1-4022-a3fc-43638fcb1028|Nickname|uncnown512
+2017-05-18 12:31:49 INFO  Client:34 - (O_O) Получил => 4fc9576d-14b1-4022-a3fc-43638fcb1028|IdUser
+2017-05-18 12:31:49 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":0,"nickname":"uncnown276","id":"b49a70bd-745a-4f58-8dc8-5e00cc723b15","lobbiConnection":0},{"lobbiCreate":-1,"nickname":"uncnown512","id":"4fc9576d-14b1-4022-a3fc-43638fcb1028","lobbiConnection":-1}]|InfoUsers
+2017-05-18 12:31:52 INFO  ControlClient:56 - (O_O) Получил => ConnectedLobbi|0
+2017-05-18 12:31:52 INFO  Client:34 - (O_O) Получил => 4fc9576d-14b1-4022-a3fc-43638fcb1028|ConnectedLobbi|0
+2017-05-18 12:31:52 INFO  Client:34 - (O_O) Получил => 0|SuccessConnectedLobbi
+2017-05-18 12:31:53 INFO  ControlClient:56 - (O_O) Получил => StartGame
+2017-05-18 12:31:53 INFO  Client:34 - (O_O) Получил => b49a70bd-745a-4f58-8dc8-5e00cc723b15|StartGame|false
+2017-05-18 12:31:53 INFO  Client:34 - (O_O) Получил => b49a70bd-745a-4f58-8dc8-5e00cc723b15|StartGame|true
+2017-05-18 12:31:58 INFO  Client:34 - (O_O) Получил => b49a70bd-745a-4f58-8dc8-5e00cc723b15|Disconnection

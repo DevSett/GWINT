@@ -156,9 +156,11 @@ public class MainApp extends Application {
     }
 
     public ControlClient client;
+    public boolean check = true;
 
     public void startClient(String fieldIp, String fieldPort, String fieldName, Stage stage) {
         status = StatusWindow.LOBBI;
+        check=true;
 
         this.stage = stage;
         setNickname(fieldName);
@@ -170,19 +172,33 @@ public class MainApp extends Application {
             } catch (DeploymentException e) {
                 logger.error("Error DE :" + e);
                 e.printStackTrace();
-                HelpClass.alert("Ошибка подключения к серверу!",null,null,getStage(), Alerts.ERROR);
-//                new Messager(stage).showPopupMessage("Ошибка подключения к серверу!", 0, 2);
+                HelpClass.alert("Ошибка подключения к серверу!", null, null, getStage(), Alerts.ERROR);
+                status = StatusWindow.MAIN_MENU;
+                check = false;
+
+            } catch (IOException e) {
+                logger.error("Error IO :" + e);
+                e.printStackTrace();
+                HelpClass.alert("Ошибка подключения к серверу!", null, null, getStage(), Alerts.ERROR);
+                status = StatusWindow.MAIN_MENU;
+                check = false;
             }
         });
         threadClient.start();
 
         //экран загрузки
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            logger.error("Ошибка задержки", e);
-            e.printStackTrace();
-            Thread.currentThread().interrupt();
+        while (client == null || !client.isAlive()) {
+            try {
+                if (!check){
+                    break;
+                }
+                System.out.println(check);
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+                logger.error("Ошибка задержки", e);
+                e.printStackTrace();
+                Thread.currentThread().interrupt();
+            }
         }
         //
         if (client.isAlive()) lobbi();
