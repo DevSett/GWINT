@@ -2,6 +2,7 @@ package app;
 
 
 import app.config.RootConfig;
+import org.apache.log4j.Logger;
 
 import javax.websocket.DeploymentException;
 import java.io.IOException;
@@ -11,6 +12,7 @@ import java.util.Map;
 
 public class main {
     static RootConfig rootConfig = new RootConfig();
+    private static Logger logger = Logger.getLogger(main.class);
 
     public static void main(String[] args) throws DeploymentException,
             IOException {
@@ -31,10 +33,10 @@ public class main {
                     System.out.println(rootConfig.getConfigGame());
                 }
             }
-            ;
 
         } finally {
             server.stop();
+            logger.info("Server has closed");
         }
     }
 }

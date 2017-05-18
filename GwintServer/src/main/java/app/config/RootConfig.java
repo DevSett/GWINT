@@ -1,5 +1,7 @@
 package app.config;
 
+import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
@@ -8,6 +10,8 @@ import java.util.StringTokenizer;
  * Created by kills on 27.02.2017.
  */
 public class RootConfig {
+    private Logger logger = Logger.getLogger(RootConfig.class);
+
     int idCreateLobbi = 0;
     private jsonConfigGame configGame;
     private jsonConfigLobbi configLobbi;
@@ -144,8 +148,9 @@ public class RootConfig {
 //                return CommandGwent.readyToLobbi(arrayMessage);
             }
             default:
+                logger.error("(O_O)!uncnown command!(O_O) ==> " + commandGwent);
                 System.out.println("(O_O)!uncnown command!(O_O) ==> " + commandGwent);
-
+                break;
         }
         return null;
     }

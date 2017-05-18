@@ -66,10 +66,8 @@ class jsonConfigLobbi {
 
     public boolean remove(String id) {
         boolean check = findId(id);
-        System.out.println("до json: " + getJson());
         if (check) {
             array.remove(indexFind(id));
-            System.out.println("после json: " + getJson());
             return true;
         }
         return false;

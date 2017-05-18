@@ -1,6 +1,8 @@
 package app;
 
 
+import org.apache.log4j.Logger;
+
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
@@ -13,6 +15,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 @ServerEndpoint("/gwent")
 public class Server {
     private static CopyOnWriteArraySet<Session> sessions = new CopyOnWriteArraySet<Session>();
+    private Logger logger = Logger.getLogger(Server.class);
 
 
     @OnOpen
@@ -24,17 +27,24 @@ public class Server {
     @OnMessage
     public void onMessage(String message, Session session) {
         System.out.println("(O_O) Получил [" + message + "] " + session.getId());
-
+        logger.info("(O_O) Получил [" + message + "] " + session.getId());
 
 //
         message = session.getId() + "|" + message;
         HashMap map = main.rootConfig.checkCommands(message);
         if (map == null) return;
         System.out.println("(O_O) Oтправляет (message) => " + map.get("message"));
-        if (map.get("message-1") != null) System.out.println("(O_O) Oтправляет (message-1) => " + map.get("message-1"));
-        if (map.get("message-2") != null) System.out.println("(O_O) Oтправляет (message-2) => " + map.get("message-2"));
+        logger.info("(O_O) Oтправляет (message) => " + map.get("message"));
+        if (map.get("message-1") != null) {
+            System.out.println("(O_O) Oтправляет (message-1) => " + map.get("message-1"));
+            logger.info("(O_O) Oтправляет (message-1) => " + map.get("message-1"));
 
-        else System.out.println();
+        }
+        if (map.get("message-2") != null) {
+            System.out.println("(O_O) Oтправляет (message-2) => " + map.get("message-2"));
+            logger.info("(O_O) Oтправляет (message-2) => " + map.get("message-2"));
+
+        } else System.out.println();
         if (map == null) return;
         if (map.get("id").equals("all")) {
             for (Session s : sessions)
@@ -78,8 +88,11 @@ public class Server {
     @OnClose
     public void onClose(Session session) {
         System.out.println("[close] " + session);
+        logger.info("[close] " + session);
         String message = (String) main.rootConfig.checkCommands(session.getId() + "|Disconnection").get("message");
         System.out.println("(O_O) Oтправляет об отключении(message) => " + message);
+        logger.info("(O_O) Oтправляет об отключении(message) => " + message);
+
         sessions.remove(session);
         for (Session s : sessions)
             s.getAsyncRemote().sendText(
