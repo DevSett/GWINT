@@ -1,0 +1,5 @@
+
+Rsquid:S1244"=Equality tests should not be made with floating point values.(ï½—ï
+Fsquid:S1602",Remove useless curly braces around statement(ÊÉèşÿÿÿÿ
+Asquid:S1602",Remove useless curly braces around statement(—Õ¤Ö
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(–åµÏûÿÿÿÿ

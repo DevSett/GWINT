@@ -1,4 +1,13 @@
 
-ksquid:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(ÿ°™•
-lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(üîßùÿÿÿÿ
 Gsquid:S1199"-Extract this nested code block into a method.(¯ºœ×üÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 67 to the 15 allowed.(üîßùÿÿÿÿ
+Psquid:S1066"/Merge this if statement with the enclosing one.(Ëâµüüÿÿÿÿ8áÇşƒÉ+
+Isquid:S1199"-Extract this nested code block into a method.(Ù—ÇÕ8áÇşƒÉ+
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(óú„8áÇşƒÉ+
+bsquid:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8áÇşƒÉ+
+Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8áÇşƒÉ+
+Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8áÇşƒÉ+
+Hsquid:S1602",Remove useless curly braces around statement(ÃÉş©8áÇşƒÉ+
+tsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(õûæ8áÇşƒÉ+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8áÇşƒÉ+

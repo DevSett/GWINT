@@ -1,8 +1,0 @@
-
-V
-squid:S106";Replace this usage of System.out or System.err by a logger.(š´è8ÓÅí›»+
-[
-squid:S106";Replace this usage of System.out or System.err by a logger.(‹½˜‘úÿÿÿÿ8ÎÁñ›»+
-Msquid:S1602",Remove useless curly braces around statement(Èîì‚şÿÿÿÿ8ÎÁñ›»+
-Msquid:S1602",Remove useless curly braces around statement(êÃ½”ùÿÿÿÿ8ÓÅí›»+
-Msquid:S1612",Replace this lambda with a method reference.(Èîì‚şÿÿÿÿ8ÎÁñ›»+

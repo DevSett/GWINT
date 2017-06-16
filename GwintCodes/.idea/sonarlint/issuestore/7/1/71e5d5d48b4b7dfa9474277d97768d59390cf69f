@@ -1,0 +1,11 @@
+
+dsquid:S1192"HDefine a constant instead of duplicating this literal "message" 3 times.(¶©Û8ÒÇşƒÉ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÄİÇó8ÒÇşƒÉ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÄİÇó8ÒÇşƒÉ+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(“×·ôşÿÿÿÿ8ÒÇşƒÉ+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(×‡—øÿÿÿÿ8ÒÇşƒÉ+
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(¶©Û8ÒÇşƒÉ+
+tsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(šŒø…8ÒÇşƒÉ+

@@ -1,6 +1,16 @@
 
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ğÇşƒÉ+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Í¨÷ùÿÿÿÿ8ğÇşƒÉ+
+„"squid:ClassVariableVisibilityCheck"QMake check a static final constant or non-public and provide accessors if needed.(âİ–8ğÇşƒÉ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(±ö¢Ë8ğÇşƒÉ+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ğÇşƒÉ+
+„"squid:ClassVariableVisibilityCheck"RMake client a static final constant or non-public and provide accessors if needed.(˜Œèo8ğÇşƒÉ+
 Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¢ÿõÎ¸+
-Dsquid:S1068"(Remove this unused "menu" private field.(î·öÁ8¤…×Ë¸+
-osquid:S1450"SRemove the "menu" field and declare it as a local variable in the relevant methods.(î·öÁ8û«ëÎ¸+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Çû‡8ğÇşƒÉ+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(‰œ¼ãşÿÿÿÿ8ğÇşƒÉ+
+dsquid:S2259"CA "NullPointerException" could be thrown; "client" is nullable here(Î±ó‚úÿÿÿÿ8ğÇşƒÉ+
+ˆ"squid:ClassVariableVisibilityCheck"PMake data a static final constant or non-public and provide accessors if needed.(á¿—¥şÿÿÿÿ8ğÇşƒÉ+
 Rsquid:S2696"6Make the enclosing method "static" or remove this set.(şå±Ê8ÄôÏ¸+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8©ùÎ¸+
+Dsquid:S1068"(Remove this unused "menu" private field.(î·öÁ8¤…×Ë¸+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ¬¾„É+

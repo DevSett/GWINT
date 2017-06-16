@@ -9,8 +9,6 @@ S
 #src/main/resources/fxml/option.fxml,4/5/45d685f452c522e5196ba1dfd9161dd7e72a10c5
 Q
 !src/main/resources/css/button.css,3/8/38a8505651ddbb1de7c2966e6101feebd00e4cdd
-e
-5src/main/java/app/classes/webNetwork/StartClient.java,e/d/ed266aa6ff0f8ed0402348c3fd2bd6d2b0076261
 k
 ;src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java,8/8/88f962ddea63d5c584940d829175d8d5d94cf8b6
 `
@@ -26,8 +24,6 @@ p
 k
 ;src/main/java/app/classes/webNetwork/config/RootConfig.java,b/4/b4da4566bd35304049d7c287d4d83bbe0ee54e36
 _
-/src/main/java/app/classes/StatusMainWindow.java,e/9/e95aa25a242616579eae9e97e6c66a2bd51ce729
-_
 /src/main/java/app/classes/rulesGaming/Card.java,a/1/a111288e909ac08bf7449f129670423d37f3cd9b
 `
 0src/main/java/app/classes/rulesGaming/Cards.java,d/f/df2716d71cae4f355c0efd62e6b4bb7ad8229037
@@ -37,10 +33,6 @@ i
 9src/main/java/app/classes/view/menuGame/classes/Menu.java,0/c/0cd68b6c09fa536932b87999807e5a696314b886
 V
 &src/main/java/app/classes/MainApp.java,5/b/5b07def81e5bd7b6b675183deb3fccea326044ca
-T
-$src/main/java/app/classes/Logic.java,8/9/89299f80c614144d940a020db6225d3de081ae91
-c
-3src/main/java/app/classes/rulesGaming/TypeCard.java,5/4/5451f845a1b2e9aa3ea5198b29912197adb9302f
 j
 :src/main/java/app/classes/view/gamingTable/GamingCard.java,5/b/5b35f83570e2950e29f3dbf8d3d6e74855cfd809
 k
@@ -49,11 +41,11 @@ w
 Gsrc/main/java/app/classes/view/optionGame/classes/ScreenResolution.java,8/a/8ae8e74df471fe27467be98c69f12200d2c25015
 w
 Gsrc/main/java/app/classes/view/optionGame/classes/OptionController.java,5/b/5b54216797a10f3062b782d8ed74a2d0460c609b
-i
-9src/main/java/app/classes/view/gamingTable/CardsHand.java,2/a/2aee38885dd0a79bba9f04cd74fd22664ac6305b
-q
-Asrc/main/java/app/classes/view/gamingTable/AnimationCardTest.java,f/d/fdf5ab71fffd9d0eeeb016d9195a4497d9767c47
 p
 @src/main/java/app/classes/view/lobbiGame/classes/LobbiItems.java,9/8/9802876543d912a6755c5e406984f8b6812cdc8f
-l
-<src/main/java/app/classes/view/gamingTable/TimelineCard.java,a/6/a6085dccf2ac2617d434b2fa5aabc3d7eed3a75b
+g
+7src/main/java/app/classes/webNetwork/ControlClient.java,d/b/dbe92e97f56423fff6588d437fce5414467acbf3
+t
+Dsrc/main/java/app/classes/view/gamingTable/AnimationDescription.java,9/e/9e886e81003704d014b7db52cccc25465f7a2ea8
+e
+5src/main/java/app/classes/view/gamingTable/Logic.java,2/a/2ae8b994ddd00533e701dfcff73c30d64012d820

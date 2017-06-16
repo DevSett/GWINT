@@ -1,0 +1,63 @@
+
+‘"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(—­àœüÿÿÿÿ8ÒÇşƒÉ+
+‘"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(—­àœüÿÿÿÿ8ÒÇşƒÉ+
+‘"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(—­àœüÿÿÿÿ8ÒÇşƒÉ+
+‘"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(—­àœüÿÿÿÿ8ÒÇşƒÉ+
+‘"squid:SwitchLastCaseIsDefaultCheck"YComplete cases by adding the missing enum constants or add a default case to this switch.(—­àœüÿÿÿÿ8ÒÇşƒÉ+
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ÅÏøÿÿÿÿ8ÒÇşƒÉ+
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ÅÏøÿÿÿÿ8ÒÇşƒÉ+
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ÅÏøÿÿÿÿ8ÒÇşƒÉ+
+Z"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(ÕÄªâşÿÿÿÿ8ÒÇşƒÉ+
+dsquid:S1192"HDefine a constant instead of duplicating this literal "#4d0000" 4 times.(â§‡É8ÒÇşƒÉ+
+…squid:S1192"dDefine a constant instead of duplicating this literal "/images/gamingTable/cards/shirt.png" 4 times.(Ô‡ÛÆşÿÿÿÿ8ÒÇşƒÉ+
+Nsquid:S1199"-Extract this nested code block into a method.(ğÁ–Óûÿÿÿÿ8ÒÇşƒÉ+
+Isquid:S1199"-Extract this nested code block into a method.(­Ó–Ô8ÒÇşƒÉ+
+Hsquid:S1199"-Extract this nested code block into a method.(Ö—Îc8ÒÇşƒÉ+
+Isquid:S1199"-Extract this nested code block into a method.(ô‹Êâ8ÒÇşƒÉ+
+Isquid:S1199"-Extract this nested code block into a method.(…ß¾£8ÒÇşƒÉ+
+usquid:S1450"YRemove the "enemyLider" field and declare it as a local variable in the relevant methods.(ç¨‚8ÒÇşƒÉ+
+Psquid:S1444"/Make this "public static countCard" field final(»¦üÿÿÿÿ8ÒÇşƒÉ+
+Bsquid:S1219"&Remove this misleading "_STONE" label.(àï›ş8ÒÇşƒÉ+
+lsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(—­àœüÿÿÿÿ8ÒÇşƒÉ+
+lsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(—­àœüÿÿÿÿ8ÒÇşƒÉ+
+lsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(—­àœüÿÿÿÿ8ÒÇşƒÉ+
+lsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ÅÏøÿÿÿÿ8ÒÇşƒÉ+
+lsquid:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ÅÏøÿÿÿÿ8ÒÇşƒÉ+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸äø–ûÿÿÿÿ8ÒÇşƒÉ+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Í³ÉÒùÿÿÿÿ8ÒÇşƒÉ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(øû¡å8ÒÇşƒÉ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‘Ùû«8ÒÇşƒÉ+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(À–í–ıÿÿÿÿ8ÒÇşƒÉ+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(…‰8ÒÇşƒÉ+
+`squid:S2583"DChange this condition so that it does not always evaluate to "false"(ŞÓ¿¢8ÒÇşƒÉ+
+bsquid:S1126"AReplace this if-then-else statement by a single return statement.(°ê©èøÿÿÿÿ8ÒÇşƒÉ+
+Rsquid:S2696"6Make the enclosing method "static" or remove this set.(š¸åë8ÒÇşƒÉ+
+Rsquid:S2696"6Make the enclosing method "static" or remove this set.(š¸åë8ÒÇşƒÉ+
+`squid:HiddenFieldCheck"9Rename "image" which hides the field declared at line 31.(¢­Ï8ÒÇşƒÉ+
+csquid:HiddenFieldCheck"=Rename "cardsHand" which hides the field declared at line 33.(Ö½ô;8ÒÇşƒÉ+
+dsquid:HiddenFieldCheck"=Rename "countCard" which hides the field declared at line 35.(¨çÉ°8ÒÇşƒÉ+
+"squid:ClassVariableVisibilityCheck"UMake countCard a static final constant or non-public and provide accessors if needed.(»¦üÿÿÿÿ8ÒÇşƒÉ+
+Psquid:S1481"/Remove this unused "finalIndex" local variable.(ŞÜŸùıÿÿÿÿ8ÒÇşƒÉ+
+Lsquid:S1481"+Remove this unused "finalI" local variable.(ĞªëÒúÿÿÿÿ8ÒÇşƒÉ+
+Isquid:S1481"-Remove this unused "cardForm" local variable.(­µİ8ÒÇşƒÉ+
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ŒŠğÈùÿÿÿÿ8ÒÇşƒÉ+
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(•Öı¨8ÒÇşƒÉ+
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(‰ñ“®8ÒÇşƒÉ+
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 65 to the 15 allowed.(Å‰«–8ÒÇşƒÉ+
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(†²œ²şÿÿÿÿ8ÒÇşƒÉ+
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ñĞ³Åùÿÿÿÿ8ÒÇşƒÉ+
+l squid:LabelsShouldNotBeUsedCheck";Refactor the code to remove this label and the need for it.(àï›ş8ÒÇşƒÉ+
+ksquid:S2259"JA "NullPointerException" could be thrown; "gamingCardMax" is nullable here(¡ñşÿÿÿÿ8ÒÇşƒÉ+
+Hsquid:S1602",Remove useless curly braces around statement(éƒ€à8ÒÇşƒÉ+
+Hsquid:S1602",Remove useless curly braces around statement(éƒ€à8ÒÇşƒÉ+
+Msquid:S1602",Remove useless curly braces around statement(ğãùÒúÿÿÿÿ8ÒÇşƒÉ+
+Esquid:S00108")Either remove or fill this block of code.(óö„@8ÒÇşƒÉ+
+Ksquid:S00108")Either remove or fill this block of code.(‡Ë…€úÿÿÿÿ8ÒÇşƒÉ+
+5squid:S1065"Remove this unused label.(àï›ş8ÒÇşƒÉ+
+]squid:S1854"<Remove this useless assignment to local variable "cardForm".(É¹˜şÿÿÿÿ8ÒÇşƒÉ+
+Tsquid:S1611"3Remove the parentheses around the "event" parameter(¸çöûÿÿÿÿ8ÒÇşƒÉ+
+ysquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(–åµÏûÿÿÿÿ8ÒÇşƒÉ+
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(¢£„8ÒÇşƒÉ+
+_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(°ê©èøÿÿÿÿ8ÒÇşƒÉ+
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(¶€¹®8ÒÇşƒÉ+
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(¢£„8ÒÇşƒÉ+

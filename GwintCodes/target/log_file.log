@@ -3,3 +3,21 @@
 2017-05-18 11:58:18 INFO  Client:25 - Open new session: 0ec73c48-21a0-4429-93ca-2050af94f1b2
 2017-05-18 11:58:18 INFO  Client:34 - (O_O) Получил => 01966ce8-7394-41be-a474-59590bcb1e3d|IdUser
 2017-05-18 11:58:18 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":-1,"nickname":"uncnown918","id":"01966ce8-7394-41be-a474-59590bcb1e3d","lobbiConnection":-1}]|InfoUsers
+2017-06-16 17:46:49 ERROR MainApp:173 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-06-16 17:46:52 ERROR MainApp:173 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-06-16 17:47:48 INFO  Client:25 - Open new session: 7cf584f5-dd97-4da3-99e5-31851095b16f
+2017-06-16 17:47:48 INFO  Client:34 - (O_O) Получил => 2fa51230-2645-4ad5-a687-6f1c8ced0651|IdUser
+2017-06-16 17:47:48 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":-1,"nickname":"uncnown514","id":"2fa51230-2645-4ad5-a687-6f1c8ced0651","lobbiConnection":-1}]|InfoUsers
+2017-06-16 17:47:50 INFO  ControlClient:52 - (O_O) Получил => CreateLobbi
+2017-06-16 17:47:50 INFO  Client:34 - (O_O) Получил => 0|SuccessCreateLobbi
+2017-06-16 17:47:52 INFO  Client:25 - Open new session: dc259a85-57ad-4d7d-99d8-ee0e55aa7cf0
+2017-06-16 17:47:52 INFO  Client:34 - (O_O) Получил => a8db1b29-d721-42d1-87ec-413fde80e97d|Nickname|uncnown531
+2017-06-16 17:47:52 INFO  Client:34 - (O_O) Получил => a8db1b29-d721-42d1-87ec-413fde80e97d|IdUser
+2017-06-16 17:47:52 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":0,"nickname":"uncnown514","id":"2fa51230-2645-4ad5-a687-6f1c8ced0651","lobbiConnection":0},{"lobbiCreate":-1,"nickname":"uncnown531","id":"a8db1b29-d721-42d1-87ec-413fde80e97d","lobbiConnection":-1}]|InfoUsers
+2017-06-16 17:47:56 INFO  ControlClient:52 - (O_O) Получил => ConnectedLobbi|0
+2017-06-16 17:47:56 INFO  Client:34 - (O_O) Получил => a8db1b29-d721-42d1-87ec-413fde80e97d|ConnectedLobbi|0
+2017-06-16 17:47:56 INFO  Client:34 - (O_O) Получил => 0|SuccessConnectedLobbi
+2017-06-16 17:47:58 INFO  ControlClient:52 - (O_O) Получил => StartGame
+2017-06-16 17:47:58 INFO  Client:34 - (O_O) Получил => 2fa51230-2645-4ad5-a687-6f1c8ced0651|StartGame|true
+2017-06-16 17:47:58 INFO  Client:34 - (O_O) Получил => 2fa51230-2645-4ad5-a687-6f1c8ced0651|StartGame|false
+2017-06-16 17:48:03 INFO  Client:34 - (O_O) Получил => a8db1b29-d721-42d1-87ec-413fde80e97d|Disconnection
