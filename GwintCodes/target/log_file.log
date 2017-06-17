@@ -24,3 +24,19 @@
 2017-06-17 12:11:38 ERROR MainApp:171 - Error DE :javax.websocket.DeploymentException: Connection failed.
 2017-06-17 12:14:13 ERROR MainApp:173 - Error DE :javax.websocket.DeploymentException: Connection failed.
 2017-06-17 12:16:12 ERROR MainApp:173 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-06-17 12:29:51 ERROR MainApp:173 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-06-17 12:31:57 INFO  Client:25 - Open new session: 959b1568-2621-4cd7-9986-657ab8c6fde8
+2017-06-17 12:31:57 INFO  Client:34 - (O_O) Получил => 6525a6f6-ff90-4541-a742-e18df50d3c80|IdUser
+2017-06-17 12:31:57 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":-1,"nickname":"uncnown916","id":"6525a6f6-ff90-4541-a742-e18df50d3c80","lobbiConnection":-1}]|InfoUsers
+2017-06-17 12:31:58 INFO  ControlClient:52 - (O_O) Получил => CreateLobbi
+2017-06-17 12:31:58 INFO  Client:34 - (O_O) Получил => 1|SuccessCreateLobbi
+2017-06-17 12:32:00 INFO  Client:62 - Close session: 959b1568-2621-4cd7-9986-657ab8c6fde8
+Reason: 
+2017-06-17 12:32:02 INFO  Client:25 - Open new session: 4aba5e54-c085-429c-a89b-80c5e9485afb
+2017-06-17 12:32:02 INFO  Client:34 - (O_O) Получил => bc3ce5dc-6734-40a9-a4e5-00f61c51dd7d|IdUser
+2017-06-17 12:32:02 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":-1,"nickname":"uncnown62","id":"bc3ce5dc-6734-40a9-a4e5-00f61c51dd7d","lobbiConnection":-1}]|InfoUsers
+2017-06-17 12:32:24 INFO  Client:62 - Close session: 4aba5e54-c085-429c-a89b-80c5e9485afb
+Reason: 
+2017-06-17 12:32:29 INFO  Client:25 - Open new session: 7597f4c7-a7b8-4282-b5e1-8ef8ef690e4b
+2017-06-17 12:32:29 INFO  Client:34 - (O_O) Получил => 8e5242a0-d2e3-427d-8d17-a63021079bc2|IdUser
+2017-06-17 12:32:29 INFO  Client:34 - (O_O) Получил => [{"lobbiCreate":-1,"nickname":"uncnown431","id":"8e5242a0-d2e3-427d-8d17-a63021079bc2","lobbiConnection":-1}]|InfoUsers

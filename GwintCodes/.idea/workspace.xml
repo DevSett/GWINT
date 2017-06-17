@@ -11,10 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Добавил правила, играюсь с анимацией, доделываю клас карт в руке">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GwintCodes-1.0-jar-with-dependencies.jar" afterPath="$PROJECT_DIR$/target/GwintCodes-1.0-jar-with-dependencies.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/GwintCodes-1.0.jar" afterPath="$PROJECT_DIR$/target/GwintCodes-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Demo/log_file.log" afterPath="$PROJECT_DIR$/../Demo/log_file.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/log_file.log" afterPath="$PROJECT_DIR$/target/log_file.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log_file.log" afterPath="$PROJECT_DIR$/log_file.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" afterPath="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,28 +92,41 @@
       <file leaf-file-name="GamingTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4950">
+            <state relative-caret-position="15">
               <caret line="366" column="31" lean-forward="false" selection-start-line="366" selection-start-column="31" selection-end-line="366" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnimationDescription.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/AnimationDescription.java">
+      <file leaf-file-name="Lobbi.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+            <state relative-caret-position="307">
+              <caret line="80" column="51" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+              <folding>
+                <element signature="e#6909#6910#0" expanded="true" />
+                <element signature="e#6963#6964#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/MainApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180">
+              <caret line="40" column="37" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="40" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/MainApp.java">
+      <file leaf-file-name="CommandGwent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/CommandGwent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="40" column="37" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="356">
+              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -134,36 +145,8 @@
       <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2655">
-              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#548#549#0" expanded="false" />
-                <element signature="e#592#593#0" expanded="false" />
-                <element signature="e#619#620#0" expanded="false" />
-                <element signature="e#670#671#0" expanded="false" />
-                <element signature="e#712#713#0" expanded="false" />
-                <element signature="e#755#756#0" expanded="false" />
-                <element signature="e#11321#11322#0" expanded="false" />
-                <element signature="e#11346#11347#0" expanded="false" />
-                <element signature="e#11382#11383#0" expanded="false" />
-                <element signature="e#11410#11411#0" expanded="false" />
-                <element signature="e#11443#11444#0" expanded="false" />
-                <element signature="e#11486#11487#0" expanded="false" />
-                <element signature="e#11525#11526#0" expanded="false" />
-                <element signature="e#11574#11575#0" expanded="false" />
-                <element signature="e#11605#11606#0" expanded="false" />
-                <element signature="e#11640#11641#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log_file.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log_file.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1433">
+              <caret line="171" column="62" lean-forward="false" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -198,8 +181,8 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+            <state relative-caret-position="78">
+              <caret line="47" column="80" lean-forward="true" selection-start-line="47" selection-start-column="80" selection-end-line="47" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -218,8 +201,8 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="199">
+              <caret line="78" column="17" lean-forward="false" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -335,7 +318,6 @@
         <option value="$PROJECT_DIR$/src/main/java/app/classes/other/Alerts.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/Alert.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/other/HelpClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingCard.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/button.css" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/JsonConfigLobbi.java" />
@@ -351,6 +333,7 @@
         <option value="$PROJECT_DIR$/log_file.log" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/app/classes/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java" />
       </list>
     </option>
   </component>
@@ -843,6 +826,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="menuGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GwintCodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lobbiGame" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1708,7 +1733,7 @@
       <workItem from="1495340387751" duration="104000" />
       <workItem from="1497006059863" duration="77000" />
       <workItem from="1497072898779" duration="2860000" />
-      <workItem from="1497669312280" duration="66000" />
+      <workItem from="1497669312280" duration="1410000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1484886881893</created>
@@ -1798,7 +1823,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="434223000" />
+    <option name="totallyTimeSpent" value="435567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1825,7 +1850,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24967825" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21957672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1441799" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3068783" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
@@ -1833,7 +1859,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.3148148" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23148148" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" x="1041" y="224" width="355" height="604" />
+      <window_info id="Project" active="false" anchor="top" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" x="1041" y="224" width="355" height="604" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3227513" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1850,7 +1876,6 @@
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3068783" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="87" y="100" width="1404" height="704" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5056" order="0" side_tool="true" content_ui="tabs" />
@@ -2240,13 +2265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="89" column="113" lean-forward="true" selection-start-line="89" selection-start-column="113" selection-end-line="89" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/css/button.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
@@ -2267,19 +2285,6 @@
         <state relative-caret-position="3285">
           <caret line="234" column="40" lean-forward="false" selection-start-line="234" selection-start-column="40" selection-end-line="234" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/CommandGwent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-          <folding>
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#952#953#0" expanded="false" />
-            <element signature="e#998#999#0" expanded="false" />
-            <element signature="e#1027#1028#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2372,48 +2377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#548#549#0" expanded="false" />
-            <element signature="e#592#593#0" expanded="false" />
-            <element signature="e#619#620#0" expanded="false" />
-            <element signature="e#670#671#0" expanded="false" />
-            <element signature="e#712#713#0" expanded="false" />
-            <element signature="e#755#756#0" expanded="false" />
-            <element signature="e#11321#11322#0" expanded="false" />
-            <element signature="e#11346#11347#0" expanded="false" />
-            <element signature="e#11382#11383#0" expanded="false" />
-            <element signature="e#11410#11411#0" expanded="false" />
-            <element signature="e#11443#11444#0" expanded="false" />
-            <element signature="e#11486#11487#0" expanded="false" />
-            <element signature="e#11525#11526#0" expanded="false" />
-            <element signature="e#11574#11575#0" expanded="false" />
-            <element signature="e#11605#11606#0" expanded="false" />
-            <element signature="e#11640#11641#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4950">
-          <caret line="366" column="31" lean-forward="false" selection-start-line="366" selection-start-column="31" selection-end-line="366" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/ControlClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -2438,14 +2401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2464,9 +2419,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="-180">
           <caret line="40" column="37" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="40" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/menuGame/classes/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="78" column="17" lean-forward="false" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/gamingTable/GamingTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="366" column="31" lean-forward="false" selection-start-line="366" selection-start-column="31" selection-end-line="366" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/CommandGwent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/config/RootConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1433">
+          <caret line="171" column="62" lean-forward="false" selection-start-line="171" selection-start-column="62" selection-end-line="171" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/webNetwork/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="47" column="80" lean-forward="true" selection-start-line="47" selection-start-column="80" selection-end-line="47" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/app/classes/view/lobbiGame/classes/Lobbi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="80" column="51" lean-forward="true" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="51" />
+          <folding>
+            <element signature="e#6909#6910#0" expanded="true" />
+            <element signature="e#6963#6964#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
