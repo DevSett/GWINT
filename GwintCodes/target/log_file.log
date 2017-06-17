@@ -21,3 +21,6 @@
 2017-06-16 17:47:58 INFO  Client:34 - (O_O) Получил => 2fa51230-2645-4ad5-a687-6f1c8ced0651|StartGame|true
 2017-06-16 17:47:58 INFO  Client:34 - (O_O) Получил => 2fa51230-2645-4ad5-a687-6f1c8ced0651|StartGame|false
 2017-06-16 17:48:03 INFO  Client:34 - (O_O) Получил => a8db1b29-d721-42d1-87ec-413fde80e97d|Disconnection
+2017-06-17 12:11:38 ERROR MainApp:171 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-06-17 12:14:13 ERROR MainApp:173 - Error DE :javax.websocket.DeploymentException: Connection failed.
+2017-06-17 12:16:12 ERROR MainApp:173 - Error DE :javax.websocket.DeploymentException: Connection failed.
